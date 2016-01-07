@@ -10,13 +10,12 @@
 
 		<!-- <link rel="stylesheet" href=" //site_url('assets/css/bootstrap.min.css')"> -->
 		<link rel="stylesheet" href="http://localhost/GitRepo/join_ristek/assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://localhost/GitRepo/join_ristek/assets/css/template.css">
 	</head>
 	<body>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4"><p></p></div>
-			    <div class="col-md-4">.col-md-4</div>
-				<div class="col-md-4"><p></p></div>
+				<h1 class="headline">OPEN RECRUITMENT SIG STAFF <bR> RISTEK FASILKOM UI 2016</h1>				
 			</div>
 		</div>
 		<!--<script type="text/javascript" src="<//site_url('assets/js/jquery.min.js') ?>">//</script>-->
