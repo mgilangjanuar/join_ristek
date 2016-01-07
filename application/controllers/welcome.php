@@ -19,7 +19,7 @@ class Welcome extends MY_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('template.php');
+		$this->load->view('home');
 	}
 }
 
