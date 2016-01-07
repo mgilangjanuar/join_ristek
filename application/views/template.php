@@ -14,8 +14,8 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="row">
-				<img class="headline" src="http://localhost/GitRepo/join_ristek/assets/img/logo-blue.png" alt="logo-ristek" width="30" height="40">
+			<div class="row row-centered">
+				<img class="img-responsive text-center" src="http://localhost/GitRepo/join_ristek/assets/img/logo-blue.png" alt="logo-ristek" width="30" height="40">
 				<h1 class="headline">OPEN RECRUITMENT SIG STAFF <bR> RISTEK FASILKOM UI 2016</h1>				
 			</div>
 		</div>
