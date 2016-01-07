@@ -11,3 +11,23 @@
     /* inline-block space fix */
     margin-right:-4px;
 }
+
+.head-font {
+	font-family: Montserrat, Arial, sans-serif;
+}
+
+.content-font {
+	font-family: Open Sans, serif;
+}
+
+.ristek-btn {
+	border-radius: 0;
+	border: 0;
+	color: #FFFFFF;
+	background-color: #2F31A0;
+	max-width: 124px;	
+}
+	.ristek-btn:hover {
+		background-color: #0F1168;
+		color: #FFFFFF;
+	}
