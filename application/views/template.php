@@ -8,7 +8,9 @@
 
 		<title>OPEN RECRUITMENT PORTAL - RISTEK FASILKOM UI</title>
 
-		<!-- <link rel="stylesheet" href=" //site_url('assets/css/bootstrap.min.css')"> -->
+		<link rel="stylesheet" href="<?= site_url('assets/css/bootstrap.min.css') ?>">
+		<link rel="stylesheet" href="<?= site_url('assets/css/main.css') ?>">
+		<link rel="stylesheet" href="<?= site_url('assets/css/template.css') ?>">
 		<link rel="stylesheet" href="http://localhost/GitRepo/join_ristek/assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://localhost/GitRepo/join_ristek/assets/css/main.css">
 		<link rel="stylesheet" href="http://localhost/GitRepo/join_ristek/assets/css/template.css">
@@ -53,9 +55,9 @@
 				<a href="#" class="btn btn-default btn-lg ristek-btn center-block">SSO Login</a>
 			</div>
 		</div>
-		<!--<script type="text/javascript" src="<//site_url('assets/js/jquery.min.js') ?>">//</script>-->
+		<script type="text/javascript" src="<?= site_url('assets/js/jquery.min.js') ?>"></script>
 		<script type="text/javascript" src="http://localhost/GitRepo/join_ristek/assets/js/jquery.min.js"></script>
-		<!--<script type="text/javascript" src="//site_url('assets/js/bootstrap.min.js') ?>"></script>-->
+		<script type="text/javascript" src="<?= site_url('assets/js/bootstrap.min.js') ?>"></script>
 		<script type="text/javascript" src="http://localhost/GitRepo/join_ristek/assets/js/bootstrap.min.js"></script>
 	</body>
 </html>
