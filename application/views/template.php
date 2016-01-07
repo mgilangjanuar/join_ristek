@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Open recruitment RisTek Fasilkom UI 2016 telah dibuka. Silakan login dengan akun SSO kamu.">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>OPEN RECRUITMENT PORTAL - RISTEK FASILKOM UI</title>
