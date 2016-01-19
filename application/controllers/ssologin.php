@@ -47,8 +47,10 @@ class Ssologin extends MY_controller {
 			);
 
 		$username = $user->username;
-		
+
+		// check if user is admin
 		if (in_array($username, $admin_arr)) {
+			// redirect to admin747835
 			redirect(site_url('admin747835'));
 		}
 

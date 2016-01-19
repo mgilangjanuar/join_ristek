@@ -7,11 +7,15 @@ class Admin extends CI_Model {
 	}
 
 	public function getAll($sig = NULL) {
-		if ($sig != NULL) {
+		$this->db->from('biodata b');
+		$this->db->join('tugas t', 't.username=b.username');
+		$this->db->join('pilihan p', 'p.username=b.username');
+		if ($sig != NULL) $this->db->where('sig1='.$sig.' or sig2='.$sig);
+		$this->db->order_by('b.timestamp', 'asc');
 
-		} else {
+		$result = $this->db->get();
 
-		}
+		return $result;
 	}
 
 	public function isTaskComplete($username) {		
@@ -22,5 +26,5 @@ class Admin extends CI_Model {
 
 		if($isResumeComplete & $isTugas1Complete & $isTugas2Complete) return true;
 		else return false;
-	}
+	}	
 }

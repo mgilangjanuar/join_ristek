@@ -33,10 +33,10 @@
 			    		<?php else: ?>
 			    		<tr class="danger">		
 			    		<?php endif; ?>
-			    			<td>20-01-2015 18:00:00</td>
-			    			<td>Jundi Ahmad</td>
-			    			<td class="text-center">WebDev</td>
-			    			<td class="text-center">MobApps</td>
+			    			<td><?= $r->timestamp ?></td>
+			    			<td><?= $r->nama ?></td>
+			    			<td class="text-center"><?= $r->pilihan1 ?></td>
+			    			<td class="text-center"><?= $r->pilihan2 ?></td>
 			    			<td class="text-center">
 			    				<?php if ($r->resume != NULL):?>
 			    				<a href="<?= $r->resume ?>"><span class="glyphicon glyphicon-save"></span></a>
@@ -52,119 +52,10 @@
 			    				<a href="<?= $r->tugas2 ?>"><span class="glyphicon glyphicon-save"></span></a>
 			    				<?php endif; ?>
 			    			</td>
-			    			<td>jundi.alwan@gmail.com</td>
-			    			<td>+6281399274252</td>			    			
+			    			<td><?= $r->email ?></td>
+			    			<td><?= $r->phone ?></td>			    			
 			    		</tr>
-			    		<?php endforeach; ?>
-
-			    		<tr class="success">		    			
-			    			<td>20-01-2015 18:00:00</td>
-			    			<td>Jundi Ahmad Alwaaaaaannnnnnnn</td>
-			    			<td class="text-center">CP</td>
-			    			<td class="text-center">Netsos</td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td>jundi.alwan@gmail.com</td>
-			    			<td>+6281399274252</td>
-			    			
-			    		</tr>
-			    		<tr class="success">		    			
-			    			<td>20-01-2015 18:00:00</td>
-			    			<td>Jundi Alwannnnnnnnnnnnnnnn</td>
-			    			<td class="text-center">Embed</td>
-			    			<td class="text-center">DatSci</td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td>jundi.alwan@gmail.com</td>
-			    			<td>+6281399274252</td>
-			    			
-			    		</tr>
-			    		<tr class="success">		    			
-			    			<td>20-01-2015 18:00:00</td>
-			    			<td>Jundi Alwannnnnnnnnnnnnnnn</td>
-			    			<td class="text-center">UI/UX</td>
-			    			<td class="text-center">GameDev</td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td>jundi.alwan@gmail.com</td>
-			    			<td>+6281399274252</td>
-			    			
-			    		</tr>
-			    		<tr class="danger">		    			
-			    			<td>20-01-2015 18:00:00</td>
-			    			<td>Jundi Alwannnnnnnnnnnnnnnn</td>
-			    			<td class="text-center">Embed</td>
-			    			<td class="text-center">GameDev</td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td>jundi.alwan@gmail.com</td>
-			    			<td>+6281399274252</td>
-			    			
-			    		</tr>
-			    		<tr class="success">		    			
-			    			<td>20-01-2015 18:00:00</td>
-			    			<td>Jundi Alwannnnnnnnnnnnnnnn</td>
-			    			<td class="text-center">Embed</td>
-			    			<td class="text-center">GameDev</td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td>jundi.alwan@gmail.com</td>
-			    			<td>+6281399274252</td>
-			    			
-			    		</tr>
-			    		<tr class="danger">		    			
-			    			<td>20-01-2015 18:00:00</td>
-			    			<td>Jundi Alwannnnnnnnnnnnnnnn</td>
-			    			<td class="text-center">Embed</td>
-			    			<td class="text-center">GameDev</td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""></a></td>
-			    			<td>jundi.alwan@gmail.com</td>
-			    			<td>+6281399274252</td>
-			    			
-			    		</tr>
-			    		<tr class="danger">		    			
-			    			<td>20-01-2015 18:00:00</td>
-			    			<td>Jundi Alwannnnnnnnnnnnnnnn</td>
-			    			<td class="text-center">Embed</td>
-			    			<td class="text-center">GameDev</td>
-			    			<td class="text-center"><a href=""></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td>jundi.alwan@gmail.com</td>
-			    			<td>+6281399274252</td>
-			    			
-			    		</tr>
-			    		<tr class="success">		    			
-			    			<td>20-01-2015 18:00:00</td>
-			    			<td>Jundi Alwannnnnnnnnnnnnnnn</td>
-			    			<td class="text-center">Embed</td>
-			    			<td class="text-center">GameDev</td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td>jundi.alwan@gmail.com</td>
-			    			<td>+6281399274252</td>
-			    			
-			    		</tr>
-			    		<tr class="danger">		    			
-			    			<td>20-01-2015 18:00:00</td>
-			    			<td>Jundi Alwannnnnnnnnnnnnnnn</td>
-			    			<td class="text-center">Embed</td>
-			    			<td class="text-center">GameDev</td>
-			    			<td class="text-center"><a href=""></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td class="text-center"><a href=""><span class="glyphicon glyphicon-save"></span></a></td>
-			    			<td>jundi.alwan@gmail.com</td>
-			    			<td>+6281399274252</td>
-			    			
-			    		</tr>
+			    		<?php endforeach; ?>			    		
 			    	</tbody>
 			  	</table>
 			  </div>
