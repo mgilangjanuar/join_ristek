@@ -22,7 +22,7 @@
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://ristek.cs.ui.ac.id/_tmp/join_ristek/';
+$config['base_url'] = 'http://localhost/join_ristek/';
 
 /*
 |--------------------------------------------------------------------------
@@ -287,7 +287,7 @@ $config['cookie_secure']	= FALSE;
 | COOKIE data is encountered
 |
 */
-$config['global_xss_filtering'] = FALSE;
+$config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------

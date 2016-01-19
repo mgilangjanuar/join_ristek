@@ -178,6 +178,25 @@ class CI_Form_validation {
 	// --------------------------------------------------------------------
 
 	/**
+	 * Validate URL
+	 *
+	 * @access    public
+	 * @param    string
+	 * @return    string
+	 */
+	function valid_url($url)
+	{	    
+	    if (!filter_var($url, FILTER_VALIDATE_URL))
+	    {
+	        return FALSE;
+	    }
+
+	    return TRUE;
+	}
+
+	// ---------------------------------------------------------------------
+
+	/**
 	 * Set The Error Delimiter
 	 *
 	 * Permits a prefix/suffix to be added to each error message

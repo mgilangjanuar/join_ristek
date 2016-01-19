@@ -5,3 +5,23 @@ body {
 .headline {
 	text-align: center;
 }
+
+.login-btn {
+	border: 0;
+	border-radius: 0;
+	background: #2F31A0;
+}
+	.login-btn:focus {
+		background: #0F1168 !important;
+	}
+
+	.login-btn:hover {
+		background: #4549CF !important;
+	}
+	
+.SIG-table {	
+	border-spacing: 8px;	
+}
+	.SIG-table td {
+		width: 148px;		
+	}

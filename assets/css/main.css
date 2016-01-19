@@ -9,6 +9,71 @@
 	src: url('http://ristek.cs.ui.ac.id/fonts/montserrat/Montserrat-Bold.otf') format('opentype');
 }
 
+body {
+	padding-bottom: 24px;
+}
+
+header {
+	background: url('http://ristek.cs.ui.ac.id/img/bg.png');
+	padding: 8px;
+}
+
+footer {
+	background: #FFFFFF;
+	position: absolute;
+	bottom: 0;
+	height: 36px;
+	padding: 8px;
+	margin-top: 24px;
+}
+
+.btn-primary:link, .sso-btn:link {
+	color: #FFFFFF;
+	background: #2F31A0;
+}
+	.btn-primary:visited, .sso-btn:visited {
+		color: #FFFFFF;
+		background: #2F31A0;
+	}
+
+	.btn-primary:hover, .sso-btn:hover {
+		color: #FFFFFF;
+		background: #4549CF;	
+	}
+
+	.btn-primary:focus, .sso-btn:focus {
+		color: #FFFFFF;
+		background: #0F1168;
+	}
+
+textarea {
+	resize: none;
+}
+
+.container {
+	height: 100%;
+}
+
+.ristek-color {
+	color: #2F31A0;
+}
+
+.text-info {
+	color: #2F31A0;
+}
+
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+} 
+
+.page-title {
+	font-size: 1.6em;
+}
+
 /* centered columns styles */
 .row-centered {
     text-align:center;
@@ -31,9 +96,26 @@
 	font-family: 'Open Sans', serif;
 }
 
-.ristek-btn {
-	border-radius: 0;
+.form-control {
+	border-radius: 0 !important;
+}
+
+.login-btn {
 	border: 0;
+	border-radius: 0;
+	background: #2F31A0;
+}
+	.login-btn:focus {
+		background: #0F1168 !important;
+	}
+
+	.login-btn:hover {
+		background: #4549CF !important;
+	}
+
+/*.ristek-btn {
+	border-radius: 0;
+	border: 1px solid #000000;
 	color: #FFFFFF;
 	background-color: #2F31A0;
 	max-width: 124px;	
@@ -41,9 +123,15 @@
 	.ristek-btn:active {
 		color: #FFFFFF;
 		background-color: #2F31A0;
+	}
+
+	.ristek-btn:hover {
+		color: #FFFFFF;
+		background-color: #4549CF;	
 	}	
 
 	.ristek-btn:visited {
 		color: #FFFFFF;
 		background-color: #2F31A0;
-	}
+		border: 1px solid #000000;
+	}*/

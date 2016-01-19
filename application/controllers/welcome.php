@@ -18,9 +18,39 @@ class Welcome extends MY_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
-	{
+	{	
+		# load home view
 		$this->load->view('home');
 	}
+
+	public function form() {
+		$data['title'] = 'Registration Form';
+		$data['username'] = 'jundialwan';		
+		$this->render('form', $data);
+	}
+
+	public function template() {
+		$data['title'] = 'Registration Form';
+		$data['username'] = 'jundialwan';		
+		$data['content'] = '';	
+		$this->load->view('template', $data);
+	}
+
+	public function dashboard() {
+		$data['title'] = 'Dashboard';
+		$data['username'] = 'jundialwan';				
+		$this->render('dashboard', $data);	
+	}
+
+	// public function in() {
+	// 	$data['register'] = $this;
+	// 	$this->load->view('sso_in', $data);
+	// }
+
+	// public function out() {
+	// 	$this->session->unset_userdata('user_data');
+	// 	$this->load->view('sso_out');
+	// }
 }
 
 /* End of file welcome.php */
