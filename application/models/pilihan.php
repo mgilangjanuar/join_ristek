@@ -12,8 +12,7 @@ Class Pilihan extends CI_Model {
 			return $this->db->get('pilihan')->row();
 		} else {
 			return $this->db->get('pilihan')->result();	
-		}
-		
+		}		
 	}
 
 	public function create($user_pilihan) {

@@ -11,13 +11,14 @@ class MY_Controller extends CI_Controller {
 		if (function_exists('date_default_timezone_set')) date_default_timezone_set('Asia/Jakarta');
 		
 		$user_data = $this->session->userdata('user_data');
-		
 		$date = new DateTime();
 		$data['date'] = $date->getTimestamp();
 		$data['user'] = $user_data;
 		$data['content'] = $this->load->view($view, $data, TRUE);		
 		$data['isLogin'] = $this->is_logged_in();	
-		$data['isAdmin'] = $this->isAdmin($user_data['username']);		
+		$data['isAdmin'] = $this->isAdmin($user_data['username']);
+		$data['isRegistered'] = $this->isRegistered($user_data['username']);
+		if ($this->is_logged_in()) $this->refresh_userdata();
 		$this->load->view('template', $data);
 	}
 
@@ -35,19 +36,12 @@ class MY_Controller extends CI_Controller {
 		return $this->session->userdata('user_data');
 	}
 
-	private function isAdmin($username) {
-		$admin_arr = array(
-			'jundi.ahmad', 
-			'muhammad.firza', 
-			'siti.fatimah34',
-			'made.nindyatama',
-			'ammar.fathin',
-			'mohammad.awwaab',
-			'anthony31'
-			);
+	public function isAdmin($username) {
+		return $this->useradmin->isAdmin($username);
+	}
 
-		if (in_array($username, $admin_arr)) return true;
-		else return false;
+	public function isRegistered($username) {
+		return $this->biodata->isUserRegistered($username);
 	}
 
 	private function refresh_userdata() {		

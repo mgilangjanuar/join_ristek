@@ -25,6 +25,8 @@ Class Register extends MY_Controller {
 						// user not logged in
 						// redirect to sso login
 						redirect(site_url('ssologin'));
+					} else if ($isAdmin) {
+						rediretc(site_url('admin747835'));					
 					} else {
 						// user logged in
 

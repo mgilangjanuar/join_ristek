@@ -35,7 +35,6 @@ Class Biodata extends CI_Model {
 		else {
 			if ($result->timestamp == NULL) return false;
 			else return true;
-		}
-		
+		}		
 	}
 }

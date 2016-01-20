@@ -1,5 +1,6 @@
 <div class="row">
 	<div class="col-md-12">
+		<p>Logged in as <?= $admindata->username ?></p>
 		<div class="panel panel-default">
 		 	<!-- Default panel contents -->
 		 	<div class="panel-heading">Pendaftar</div>
@@ -27,33 +28,67 @@
 			    		</tr>
 			    	</thead>
 			    	<tbody>
-			    		<?php foreach($result as $r): ?>
-			    		<?php if(($r->resume != NULL) & ($r->tugas1 != NULL) & ($r->tugas2 != NULL)): ?>
+			    		<?php foreach($pendaftar as $p): ?>
+			    		<?php if(($p->resume != NULL) & ($p->tugas1 != NULL) & ($p->tugas2 != NULL)): ?>
 			    		<tr class="success">		    			
 			    		<?php else: ?>
 			    		<tr class="danger">		
 			    		<?php endif; ?>
-			    			<td><?= $r->timestamp ?></td>
-			    			<td><?= $r->nama ?></td>
-			    			<td class="text-center"><?= $r->pilihan1 ?></td>
-			    			<td class="text-center"><?= $r->pilihan2 ?></td>
+			    			<td><?= $p->timestamp ?></td>
+			    			<td><?= $p->name ?></td>
 			    			<td class="text-center">
-			    				<?php if ($r->resume != NULL):?>
-			    				<a href="<?= $r->resume ?>"><span class="glyphicon glyphicon-save"></span></a>
+			    				<?php 
+			    					$sig1 = $p->sig1; 
+
+			    					if ($sig1 == 'cp') $sig1 = 'CP';
+			    					else if ($sig1 == 'ds') $sig1 = 'DatSci';
+			    					else if ($sig1 == 'es') $sig1 = 'Embed';
+			    					else if ($sig1 == 'ns') $sig1 = 'Netsos';
+			    					else if ($sig1 == 'gd') $sig1 = 'GameDev';
+			    					else if ($sig1 == 'md') $sig1 = 'MobDev';
+			    					else if ($sig1 == 'ux') $sig1 = 'UI/UX';
+			    					else if ($sig1 == 'wb') $sig1 = 'WebDev';
+			    					else if ($sig1 == 'hr') $sig1 = 'HRM';
+			    					else if ($sig1 == 'pr') $sig1 = 'PR';
+
+			    					echo $sig1;
+			    				?>
+			    			</td>
+			    			<td class="text-center">
+								<?php 
+			    					$sig2 = $p->sig2; 
+
+			    					if ($sig2 == 'cp') $sig2 = 'CP';
+			    					else if ($sig2 == 'ds') $sig2 = 'DatSci';
+			    					else if ($sig2 == 'es') $sig2 = 'Embed';
+			    					else if ($sig2 == 'ns') $sig2 = 'Netsos';
+			    					else if ($sig2 == 'gd') $sig2 = 'GameDev';
+			    					else if ($sig2 == 'md') $sig2 = 'MobDev';
+			    					else if ($sig2 == 'ux') $sig2 = 'UI/UX';
+			    					else if ($sig2 == 'wb') $sig2 = 'WebDev';
+			    					else if ($sig2 == 'hr') $sig2 = 'HRM';
+			    					else if ($sig2 == 'pr') $sig2 = 'PR';
+
+			    					echo $sig2;
+			    				?>
+			    			</td>
+			    			<td class="text-center">
+			    				<?php if ($p->resume != NULL):?>
+			    				<a href="<?= $p->resume ?>"><span class="glyphicon glyphicon-save"></span></a>
 			    				<?php endif; ?>
 			    			</td>
 			    			<td class="text-center">
-			    				<?php if ($r->tugas1 != NULL):?>
-			    				<a href="<?= $r->tugas1 ?>"><span class="glyphicon glyphicon-save"></span></a>
+			    				<?php if ($p->tugas1 != NULL):?>
+			    				<a href="<?= $p->tugas1 ?>"><span class="glyphicon glyphicon-save"></span></a>
 			    				<?php endif; ?>
 			    			</td>
 			    			<td class="text-center">
-			    				<?php if ($r->tugas2 != NULL):?>
-			    				<a href="<?= $r->tugas2 ?>"><span class="glyphicon glyphicon-save"></span></a>
+			    				<?php if ($p->tugas2 != NULL):?>
+			    				<a href="<?= $p->tugas2 ?>"><span class="glyphicon glyphicon-save"></span></a>
 			    				<?php endif; ?>
 			    			</td>
-			    			<td><?= $r->email ?></td>
-			    			<td><?= $r->phone ?></td>			    			
+			    			<td><?= $p->email ?></td>
+			    			<td><?= $p->phone ?></td>			    			
 			    		</tr>
 			    		<?php endforeach; ?>			    		
 			    	</tbody>

@@ -27,45 +27,26 @@ class Ssologin extends MY_controller {
 		$this->session->unset_userdata('user_data');
 		$this->session->set_userdata('user_data', $user_data);
 
-		// if admin redirect to admin747835
-		// Username SIAK:
-		// muhammad.firza
-		// siti.fatimah34
-		// made.nindyatama
-		// ammar.fathin
-		// mohammad.awwaab
-		// anthony31
-
-		$admin_arr = array(
-			'jundi.ahmad', 
-			'muhammad.firza', 
-			'siti.fatimah34',
-			'made.nindyatama',
-			'ammar.fathin',
-			'mohammad.awwaab',
-			'anthony31'
-			);
-
-		$username = $user->username;
-
 		// check if user is admin
-		if (in_array($username, $admin_arr)) {
+		if ($this->useradmin->isAdmin($user->username)) {
 			// redirect to admin747835
 			redirect(site_url('admin747835'));
+		} else {
+			// check if user exist or not
+			if ($this->biodata->isUserRegistered($user->username)) {
+				// user exist
+				// redirect to dashboard
+				redirect(site_url('dashboard'));
+			} else {
+				// user not exist
+				// create initial data in database
+				if(!($this->biodata->get($user->username))) $this->saveUserDataToDatabase($user_data);
+				// redirect to form
+				redirect(site_url('register'));
+			}	
 		}
 
-		// check if user exist or not
-		if ($this->biodata->isUserRegistered($user->username)) {
-			// user exist
-			// redirect to dashboard
-			redirect(site_url('dashboard'));
-		} else {
-			// user not exist
-			// create initial data in database
-			if(!($this->biodata->get($user->username))) $this->saveUserDataToDatabase($user_data);
-			// redirect to form
-			redirect(site_url('register'));
-		}
+		
 	}
 
 	private function parseTahunAngkatan($npm) {
