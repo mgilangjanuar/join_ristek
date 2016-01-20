@@ -44,23 +44,31 @@ footer {
 	border: 1px solid #2F31A0 !important;
 }
 
-.btn-primary:link, .sso-btn:link {
+.icon {
 	color: #FFFFFF;
-	background: #2F31A0;
+}
+
+.btn-primary, .sso-btn:link {
+	color: #FFFFFF !important;
+	background-image: none !important;
+	background-color: #2F31A0 !important;
 }
 	.btn-primary:visited, .sso-btn:visited {
-		color: #FFFFFF;
-		background: #2F31A0;
+		color: #FFFFFF !important;
+		background-image: none;
+		background-color: #2F31A0 !important;
 	}
 
 	.btn-primary:hover, .sso-btn:hover {
-		color: #FFFFFF;
-		background: #4549CF;	
+		color: #FFFFFF !important;
+		background-image: none !important;
+		background-color: #4549CF !important;	
 	}
 
 	.btn-primary:focus, .sso-btn:focus {
-		color: #FFFFFF;
-		background: #0F1168;
+		color: #FFFFFF !important;
+		background-image: none !important;
+		background-color: #0F1168 !important;
 	}
 
 textarea {

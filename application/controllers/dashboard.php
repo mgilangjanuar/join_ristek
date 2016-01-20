@@ -74,7 +74,14 @@ Class Dashboard extends MY_Controller {
 				// get pilihan data
 				$r_pilihan = $this->pilihan->get($user['username']);
 				$data['pilihan'] = $r_pilihan;
-				
+
+				// get booking object
+				$book1 = $this->booking->getBooking($r_pilihan->sig1);
+				$book2 = $this->booking->getBooking($r_pilihan->sig2);
+
+				$data['book1'] = $book1;
+				$data['book2'] = $book2;
+
 				// render dashboard
 				$data['title'] = 'Dashboard';
 				$this->render('dashboard', $data);									
