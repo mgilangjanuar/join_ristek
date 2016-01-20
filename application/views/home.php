@@ -24,7 +24,7 @@
 					<div class="row">
 						<img class="img-responsive center-block" src="http://ristek.cs.ui.ac.id/img/logo-blue.png" alt="logo-ristek" width="90" height="120">
 						<h2 class="headline head-font"><b>EXPLORING TECHNOLOGY</b></h2>
-						<h3 class="headline content-font">Open Recruitment SIG Junior Member <bR> Ristek Fasilkom UI</h3>				
+						<h3 class="headline content-font">Open Recruitment <br>SIG Junior Member &amp; Supporting Division Staff <bR> Ristek Fasilkom UI</h3>				
 					</div>
 					<div class="row">
 						<table class="table borderless SIG-table col-md-10">
@@ -77,8 +77,8 @@
 						
 					</div><br>
 					<div class="row">						
-						<div class="col-md-4 col-md-offset-2 text-center ">					
-							<a href="<?= site_url('ssologin') ?>" class="btn btn-primary btn-lg center-block sso-btn">More info</a>	
+						<div class="col-md-4 col-md-offset-3 text-center ">					
+							<a href="<?= site_url('info') ?>" class="btn btn-primary btn-lg center-block sso-btn">More info</a>	
 						</div>
 						<div class="col-md-4 text-center ">					
 							<a href="<?= site_url('ssologin') ?>" class="btn btn-default btn-lg center-block">SSO Login</a>	

@@ -50,7 +50,7 @@
 							Selamat mengerjakan tugas :)
 			    		</p>
 		    			<br>
-		    			<div class="panel panel-default">
+		    			<div class="panel panel-primary">
 					  		<div class="panel-heading">
 					    		<h5 class="panel-title">Download File Template Resume dan Tugas</h5>
 					  		</div>
@@ -114,7 +114,7 @@
 					</div>
 					<div class="col-md-4">
 			    		<h4>Submisi</h4>
-			    		<div class="panel panel-default">
+			    		<div class="panel panel-primary">
 							<div class="panel-heading">
 						    	<h5 class="panel-title">Submisi Link Resume dan Tugas</h5>
 						  	</div>
@@ -302,15 +302,15 @@
 		  	<div class="col-md-12">
 		  		<div class="row">
 		  			<div class="col-md-12">
-				  		<div class="panel panel-default">
+				  		<div class="panel panel-primary">
 					  		<div class="panel-heading">Head of Human Resource Management</div>
 					  		<div class="panel-body">Ifa Nasution: +6287887241010</div>
 						</div>
 			  		</div>
 		  			<div class="col-md-6">
-				  		<div class="panel panel-default">
+				  		<div class="panel panel-primary">
 							<!-- Default panel contents -->
-							<div class="panel-heading">Computer Science & Computational Intelligence Group</div>			
+							<div class="panel-heading">Computer System &amp; Computational Intelligence Group</div>			
 							<!-- Table -->
 							<table class="table">
 							    <tbody>
@@ -344,7 +344,7 @@
 						</div>	  		    	    	
 			  		</div>
 			  		<div class="col-md-6">
-				  		<div class="panel panel-default">
+				  		<div class="panel panel-primary">
 							<!-- Default panel contents -->
 							<div class="panel-heading">Development Group</div>			
 							<!-- Table -->

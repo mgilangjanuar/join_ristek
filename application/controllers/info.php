@@ -6,6 +6,7 @@ Class Info extends MY_Controller {
 	}
 
 	public function index() {
-		
+		$data['title'] = 'Open Recruitment Info';
+		$this->load->view('info', $data);
 	}
 }

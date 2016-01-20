@@ -2,7 +2,7 @@
 	<p>Logged in as <?= $user['username'] ?></p>
 	<form action="<?= site_url('register') ?>" class="" method="post">
 		<div class="col-md-6">
-			<div class="panel panel-default">
+			<div class="panel panel-primary">
 				<div class="panel-heading">Biodata</div>
 				<div class="panel-body">
 					<div class="form-group">
@@ -39,14 +39,14 @@
 			</div>				
 		</div>
 		<div class="col-md-6">			
-			<div class="panel panel-default">
-		  		<div class="panel-heading">SIG & Divisi</div>
+			<div class="panel panel-primary">
+		  		<div class="panel-heading">SIG &amp; Divisi</div>
 		  		<div class="panel-body">				    
 		  			<p>Jika Anda hanya ingin memliih satu SIG/Divisi saja maka isi pilihan 2 dengan SIG/Divisi yang sama begitu juga dengan kolom alasan</p>
 		    		<div class="form-group">
 						<label for="sig1_input">Pilihan 1</label>
 						<select name="sig1_input" id="sig1_input" class="form-control">
-							<option disabled>Computer Science & Computational Intellegence Group</option>
+							<option disabled>Computer System &amp; Computational Intellegence Group</option>
 							<option value="cp">&nbsp;&nbsp;&nbsp;&nbsp;Competitive Programming SIG</option>
 							<option value="ds">&nbsp;&nbsp;&nbsp;&nbsp;Data Science SIG</option>
 							<option value="es">&nbsp;&nbsp;&nbsp;&nbsp;Embedded System SIG</option>
@@ -69,7 +69,7 @@
 					<div class="form-group">
 						<label for="sig2_input">Pilihan 2</label>
 						<select name="sig2_input" id="sig2_input" class="form-control">
-							<option disabled>Computer Science & Computational Intellegence Group</option>
+							<option disabled>Computer System &amp; Computational Intellegence Group</option>
 							<option value="cp">&nbsp;&nbsp;&nbsp;&nbsp;Competitive Programming SIG</option>
 							<option value="ds">&nbsp;&nbsp;&nbsp;&nbsp;Data Science SIG</option>
 							<option value="es">&nbsp;&nbsp;&nbsp;&nbsp;Embedded System SIG</option>

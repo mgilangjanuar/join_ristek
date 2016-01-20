@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-md-12">
 		<p>Logged in as <?= $admindata->username ?></p>
-		<div class="panel panel-default">
+		<div class="panel panel-primary">
 		 	<!-- Default panel contents -->
 		 	<div class="panel-heading">Pendaftar</div>
 		 	<div class="panel-body">
@@ -74,17 +74,17 @@
 			    			</td>
 			    			<td class="text-center">
 			    				<?php if ($p->resume != NULL):?>
-			    				<a href="<?= $p->resume ?>"><span class="glyphicon glyphicon-save"></span></a>
+			    				<a href="<?= $p->resume ?>" target="_blank"><span class="glyphicon glyphicon-save"></span></a>
 			    				<?php endif; ?>
 			    			</td>
 			    			<td class="text-center">
 			    				<?php if ($p->tugas1 != NULL):?>
-			    				<a href="<?= $p->tugas1 ?>"><span class="glyphicon glyphicon-save"></span></a>
+			    				<a href="<?= $p->tugas1 ?>" target="_blank"><span class="glyphicon glyphicon-save"></span></a>
 			    				<?php endif; ?>
 			    			</td>
 			    			<td class="text-center">
 			    				<?php if ($p->tugas2 != NULL):?>
-			    				<a href="<?= $p->tugas2 ?>"><span class="glyphicon glyphicon-save"></span></a>
+			    				<a href="<?= $p->tugas2 ?>" target="_blank"><span class="glyphicon glyphicon-save"></span></a>
 			    				<?php endif; ?>
 			    			</td>
 			    			<td><?= $p->email ?></td>

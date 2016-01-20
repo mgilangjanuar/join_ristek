@@ -27,6 +27,23 @@ footer {
 	margin-top: 24px;
 }
 
+.info-content {
+	font-size: 1.2em;
+}
+
+.panel-link:active {
+	color: #FFFFFF !important;
+}
+
+.panel-heading {
+	background-image: none;
+	background-color: #2F31A0 !important;
+}
+
+.panel {
+	border: 1px solid #2F31A0 !important;
+}
+
 .btn-primary:link, .sso-btn:link {
 	color: #FFFFFF;
 	background: #2F31A0;
