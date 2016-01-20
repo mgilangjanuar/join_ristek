@@ -1,24 +1,31 @@
 <div class="row">
 	<p>Logged in as <?= $user['username'] ?></p>
 	<ul class="nav nav-tabs">
-	  <li class="active"><a class="ristek-color" data-toggle="tab" href="#info">INFO</a></li>
+	  <li class="active"><a class="ristek-color" data-toggle="tab" href="#home">HOME</a></li>
 	  <li><a class="ristek-color" data-toggle="tab" href="#tugas">TUGAS</a></li>
 	  <li><a class="ristek-color" data-toggle="tab" href="#wawancara">WAWANCARA</a></li>
 	  <li><a class="ristek-color" data-toggle="tab" href="#kontak">KONTAK</a></li>
 	</ul>
 
 	<div class="tab-content">
-		<div id="info" class="tab-pane in active">	 
+		<div id="home" class="tab-pane in active">	 
 	  		<br>
 	  		<div class="col-md-12">
 	  			<div class="row">
 	  				<div class="col-md-12">
 	  					<h4>Petunjuk</h4>
 	  					<p class="content-font">
-	  						Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. 
-	  						Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. 
-	  						Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. 
-	  						Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. 	  						
+	  						Halo <?= $user['username'] ?>, terima kasih telah mendaftar sebagai calon anggota Ristek Fasilkom UI!	
+
+							Proses Open Recruitment Anggota Ristek Fasilkom UI dilaksanakan dalam 2 tahap yaitu Pengerjaan Tugas dan Wawancara.
+							Masa Pengerjaan Tugas adalah 26 Januari - 6 Februari 2016
+							Pendaftar dapat melakukan tahap Wawancara jika dan hanya jika lolos seleksi tugas yang akan diumumkan pada 8 Februari 2016. Pendaftar yang lolos ke tahap wawancara dipersilahkan memilih jadwal wawancara yang tersedia.
+							Masa Wawancara adalah 9 - 14 Februari 2016
+
+							Selamat mengerjakan tugas :)
+
+							Ristek Fasilkom UI
+							#ExploringTechnology
 	  					</p>	
 	  				</div>	  				
 	  			</div>
@@ -31,12 +38,14 @@
 		    		<div class="col-md-8">
 		    			<h4>Petunjuk</h4>
 			    		<p class="content-font">
-			    			Deadline pengumpulan link tugas adalah x Januari 2016 pukul 23:55.
+			    			Deadline pengumpulan link tugas adalah <b>6 Januari 2016 pukul 23:55</b>.
 			    			Submisi link file tugas dan Resume dapat dilakukan lebih dari satu kali dan hanya file dari link terakhir yang dinilai.		    			
 			    			Template Resume dan file tugas tersedia pada link dibawah. Resume yang Anda buat harus sesuai dengan template yang kami berikan.
 							<br><br>
 			    			Pastikan bahwa link yang Anda share adalah public link, bisa diakses oleh orang lain. 
 			    			Jangan lupa untuk selalu menyematkan 'http://' pada setiap link yang akan Anda submit.		    			
+							<br><br>
+							<b>Format penamaan CV: CV_Nama.pdf. Contoh: CV_Firza Pratama.pdf</b>
 							<br><br>
 							Selamat mengerjakan tugas :)
 			    		</p>
@@ -183,7 +192,9 @@
 	  		<div class="col-md-12">
 	  			<div class="row">
 		  			<div class="col-md-12">
-		  				<ul class="nav pagination nav-tabs">
+		  				<ul class="nav pagination nav-tabs">		  				
+		  					<li class="active"><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1">Youcanbook.me Competitive Programming SIG</a></li>
+
 		  					<?php if(strcmp((string)$pilihan->sig1, 'cp') == 0): ?>
 				    		<li class="active"><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1">Youcanbook.me Competitive Programming SIG</a></li>
 				    		<?php elseif(strcmp((string)$pilihan->sig1, 'ds') == 0): ?>					    		
@@ -208,25 +219,25 @@
 				    		
 				    		<?php if (strcmp((string)$pilihan->sig2, (string)$pilihan->sig1) != 0) : ?>
 				    		<?php if(strcmp((string)$pilihan->sig2, 'cp') == 0): ?>
-				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1">Youcanbook.me Competitive Programming SIG</a></li>
+				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2">Youcanbook.me Competitive Programming SIG</a></li>
 				    		<?php elseif(strcmp((string)$pilihan->sig2, 'ds') == 0): ?>					    		
-				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1">Youcanbook.me Data Science SIG</a></li>
+				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2">Youcanbook.me Data Science SIG</a></li>
 				    		<?php elseif(strcmp((string)$pilihan->sig2, 'es') == 0): ?>
-				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1">Youcanbook.me Embedded System SIG</a></li>
+				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2">Youcanbook.me Embedded System SIG</a></li>
 				    		<?php elseif(strcmp((string)$pilihan->sig2, 'ns') == 0): ?>
-				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1">Youcanbook.me Network Security and Operating System SIG</a></li>
+				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2">Youcanbook.me Network Security and Operating System SIG</a></li>
 				    		<?php elseif(strcmp((string)$pilihan->sig2, 'gd') == 0): ?>
-				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1">Youcanbook.me Game Development SIG</a></li>
+				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2">Youcanbook.me Game Development SIG</a></li>
 				    		<?php elseif(strcmp((string)$pilihan->sig2, 'md') == 0): ?>
-				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1">Youcanbook.me Mobile Application Development SIG</a></li>
+				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2">Youcanbook.me Mobile Application Development SIG</a></li>
 				    		<?php elseif(strcmp((string)$pilihan->sig2, 'ux') == 0): ?>
-				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1">Youcanbook.me UI/UX SIG</a></li>
+				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2">Youcanbook.me UI/UX SIG</a></li>
 				    		<?php elseif(strcmp((string)$pilihan->sig2, 'wb') == 0): ?>
-				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1">Youcanbook.me Web Development SIG</a></li>
+				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2">Youcanbook.me Web Development SIG</a></li>
 				    		<?php elseif(strcmp((string)$pilihan->sig2, 'hr') == 0): ?>
-				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1">Youcanbook.me Human Resource Management Division</a></li>
+				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2">Youcanbook.me Human Resource Management Division</a></li>
 				    		<?php elseif(strcmp((string)$pilihan->sig2, 'pr') == 0): ?>
-				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1">Youcanbook.me Public Relation Division</a></li>
+				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2">Youcanbook.me Public Relation Division</a></li>
 				    		<?php endif;?>
 				    		<?php endif; ?>				    		
 				 		</ul>

@@ -18,7 +18,19 @@ body {
 	.login-btn:hover {
 		background: #4549CF !important;
 	}
-	
+
+.quote {
+	font-size: 1.6em;
+}
+
+.borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+    border: none;
+}
+
+.quote-row {
+	margin-top: 240px;
+}
+
 .SIG-table {	
 	border-spacing: 8px;	
 }

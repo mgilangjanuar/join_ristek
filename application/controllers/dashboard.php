@@ -6,6 +6,7 @@ Class Dashboard extends MY_Controller {
 
 		# load helper and library
 		$this->load->helper('form');
+		$this->load->model('booking');
 		$this->load->library('form_validation');
 	}
 
@@ -73,7 +74,7 @@ Class Dashboard extends MY_Controller {
 				// get pilihan data
 				$r_pilihan = $this->pilihan->get($user['username']);
 				$data['pilihan'] = $r_pilihan;
-
+				
 				// render dashboard
 				$data['title'] = 'Dashboard';
 				$this->render('dashboard', $data);									
