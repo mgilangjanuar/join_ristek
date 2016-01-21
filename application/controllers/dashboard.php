@@ -45,6 +45,13 @@ Class Dashboard extends MY_Controller {
 
 							// run form validation
 							if ($this->form_validation->run()) $result = $this->tugas->submitResume($user['username'], $link);
+						} else if ($this->input->post('which_form') == 'essay') {
+							// form resume submitted
+							$this->form_validation->set_rules('essay_link_input', 'Resume', 'trim|required|xss_clean');														
+							$link = prep_url($this->input->post('essay_link_input'));
+
+							// run form validation
+							if ($this->form_validation->run()) $result = $this->tugas->submitEssay($user['username'], $link);
 						} else if ($this->input->post('which_form') == 'tugas1') {
 							// form tugas1 submitted
 							$this->form_validation->set_rules('tugas1_link_input', 'Tugas SIG Pilihan 1', 'trim|required|xss_clean');						

@@ -24,30 +24,18 @@ Class Tugas extends CI_Model {
 	public function update($username, $tugas_arr) {
 		$this->db->where('username', $username);
 		return $this->db->update('tugas', $tugas_arr);
-	}
-
-	public function getResumeLink($username) {
-		$this->db->select('resume');
-		$this->db->where('username', $username);
-		return $this->db->get('tugas')->row();
-	}
-
-	public function getTugas1Link($username) {
-		$this->db->select('tugas1');
-		$this->db->where('username', $username);
-		return $this->db->get('tugas')->row();
-	}
-
-	public function getTugas2Link($username) {
-		$this->db->select('tugas2');
-		$this->db->where('username', $username);
-		return $this->db->get('tugas')->row();
-	}
+	}	
 
 	public function submitResume($username, $link) {		
 		# insert link to database
 		$this->db->where('username', $username);
 		return $this->db->update('tugas', array('resume' => $link));
+	}
+
+	public function submitEssay($username, $link) {		
+		# insert link to database
+		$this->db->where('username', $username);
+		return $this->db->update('tugas', array('essay' => $link));
 	}
 
 	public function submitTugas1($username, $link) {		
@@ -60,23 +48,5 @@ Class Tugas extends CI_Model {
 		# insert link to database
 		$this->db->where('username', $username);
 		return $this->db->update('tugas', array('tugas2' => $link));
-	}
-
-	public function isResumeNull($username) {
-		$this->db->where('username', $username);
-		$result = $this->db->get('tugas')->result_array();
-		return $result->resume == NULL;
-	}
-
-	public function isTugas1Null($username) {
-		$this->db->where('username', $username);
-		$result = $this->db->get('tugas')->result_array();
-		return $result->tugas1 == NULL;
-	}
-
-	public function isTugas2Null($username) {
-		$this->db->where('username', $username);
-		$result = $this->db->get('tugas')->result_array();
-		return $result->tugas2 == NULL;
 	}
 }

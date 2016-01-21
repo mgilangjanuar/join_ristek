@@ -1,31 +1,3 @@
-<?php 
-	// Require the required files.
-	// if (!(defined('CAS_SERVER_HOST'))) require '/vendor/SSO/SSO/SSO.php';	
-	
-	// use SSO\SSO;
-
-	// // Set the CAS path.
-	// SSO::setCASPath('/vendor/CAS/CAS.php');
-
-	// # check if user is logged in
-	// if (!(SSO::check())) {
-	// 	# if is not
-	// 	SSO::authenticate();			
-	// }
-
-	// # check if user is registered
-	// # if user is registered
-	// if(true) { 
-	// 	# save user session
-	// 	# redirect to dashboard.php
-	// 	redirect(base_url('dashboard'));
-	// } else {
-	// 	# save user session
-	// 	# redirect to form.php
-	// 	redirect(base_url('form'));
-	// }
-	
-?>
 <!DOCTYPE Html>
 <html lang="en">
 	<head>
@@ -35,10 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title><?= $title; ?> - Ristek Fasilkom UI</title>
-
-		<!-- <link rel="stylesheet" href=" site_url('assets/css/bootstrap.min.css') ">
-		<link rel="stylesheet" href=" site_url('assets/css/main.css') ">
-		<link rel="stylesheet" href=" site_url('assets/css/template.css') "> -->
+		
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>">
 		<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
@@ -53,7 +22,7 @@
 		</header>
 		
 		<div class="container">
-			<br>
+			
 			<!-- where the content goes -->
 			<!-- $content -->
 			<?= $content; ?>

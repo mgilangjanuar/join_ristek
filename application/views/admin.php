@@ -20,6 +20,7 @@
 			    			<td class="col-md-3"><b>Nama</b></td>
 			    			<td class="text-center col-md-1"><b>Pilihan 1</b></td>
 			    			<td class="text-center col-md-1"><b>Pilihan 2</b></td>
+			    			<td class="text-center col-md-1"><b>Essay</b></td>
 			    			<td class="text-center col-md-1"><b>Resume</b></td>
 			    			<td class="text-center col-md-1"><b>Tugas 1</b></td>
 			    			<td class="text-center col-md-1"><b>Tugas 2</b></td>
@@ -29,7 +30,7 @@
 			    	</thead>
 			    	<tbody>
 			    		<?php foreach($pendaftar as $p): ?>
-			    		<?php if(($p->resume != NULL) & ($p->tugas1 != NULL) & ($p->tugas2 != NULL)): ?>
+			    		<?php if(($p->resume != NULL) & ($p->tugas1 != NULL) & ($p->tugas2 != NULL) $($p->essay != NULL)): ?>
 			    		<tr class="success">		    			
 			    		<?php else: ?>
 			    		<tr class="danger">		
@@ -71,6 +72,11 @@
 
 			    					echo $sig2;
 			    				?>
+			    			</td>
+			    			<td class="text-center">
+			    				<?php if ($p->essay != NULL):?>
+			    				<a href="<?= $p->essay ?>" target="_blank"><span class="glyphicon glyphicon-save"></span></a>
+			    				<?php endif; ?>
 			    			</td>
 			    			<td class="text-center">
 			    				<?php if ($p->resume != NULL):?>
