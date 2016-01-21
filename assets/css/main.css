@@ -27,6 +27,10 @@ footer {
 	margin-top: 24px;
 }
 
+.borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+    border: none;
+}
+
 .info-content {
 	font-size: 1.2em;
 }
@@ -35,12 +39,12 @@ footer {
 	color: #FFFFFF !important;
 }
 
-.panel-heading {
+.info-panel-heading {
 	background-image: none;
 	background-color: #2F31A0 !important;
 }
 
-.panel {
+.info-panel {
 	border: 1px solid #2F31A0 !important;
 }
 

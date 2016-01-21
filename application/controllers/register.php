@@ -12,8 +12,12 @@ Class Register extends MY_Controller {
 			redirect(site_url('ssologin'));
 		} else {
 			# user logged in
+
 			// get user data from session
 			$user = $this->session->userdata('user_data');
+
+			// if admin redirect to admin page
+			if ($this->isAdmin($user['username'])) redirect(site_url('admin747835'));
 
 			// check if user registered or not
 			if (!($this->isRegistered($user['username']))) {
@@ -25,8 +29,6 @@ Class Register extends MY_Controller {
 						// user not logged in
 						// redirect to sso login
 						redirect(site_url('ssologin'));
-					} else if ($isAdmin) {
-						rediretc(site_url('admin747835'));					
 					} else {
 						// user logged in
 

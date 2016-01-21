@@ -23,6 +23,11 @@ class Ssologin extends MY_controller {
 				'jurusan' 				=> $user->study_program				
 			);
 
+		// 2012-- is not allowed, redirect to index
+		if($user_data['angkatan'] != '2013' & $user_data['angkatan'] != '2014' & $user_data['angkatan'] != '2015') {
+			redirect(site_url());
+		}
+
 		// re-set session
 		$this->session->unset_userdata('user_data');
 		$this->session->set_userdata('user_data', $user_data);
@@ -30,7 +35,7 @@ class Ssologin extends MY_controller {
 		// check if user is admin
 		if ($this->useradmin->isAdmin($user->username)) {
 			// redirect to admin747835
-			// redirect(site_url('admin747835'));
+			redirect(site_url('admin747835'));
 		} 
 
 		// check if user exist or not
@@ -44,9 +49,7 @@ class Ssologin extends MY_controller {
 			if(!($this->biodata->get($user->username))) $this->saveUserDataToDatabase($user_data);
 			// redirect to form
 			redirect(site_url('register'));
-		}
-
-		
+		}		
 	}
 
 	private function parseTahunAngkatan($npm) {

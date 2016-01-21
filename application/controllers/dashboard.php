@@ -16,8 +16,12 @@ Class Dashboard extends MY_Controller {
 			// user not logged in
 			redirect(site_url('ssologin'));
 		} else {			
+
 			// user logged in			
 			$user = $this->session->userdata('user_data');
+
+			// if admin redirect to admin page
+			if ($this->isAdmin($user['username'])) redirect(site_url('admin747835'));
 
 			// check if user registered or not
 			if ($this->isRegistered($user['username'])) {
@@ -29,8 +33,6 @@ Class Dashboard extends MY_Controller {
 						// user not logged in
 						// redirect to sso login
 						redirect(site_url('ssologin'));
-					} else if ($isAdmin) {
-						rediretc(site_url('admin747835'));					
 					} else {
 						// user logged in
 
@@ -82,7 +84,7 @@ Class Dashboard extends MY_Controller {
 				$r_pilihan = $this->pilihan->get($user['username']);
 				$data['pilihan'] = $r_pilihan;
 
-				// get booking object
+				// get sig property object
 				$sigprop1 = $this->sigproperty->getSIGProperty($r_pilihan->sig1);
 				$sigprop2 = $this->sigproperty->getSIGProperty($r_pilihan->sig2);
 

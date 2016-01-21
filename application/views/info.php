@@ -28,8 +28,8 @@
 					</div><br><br>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="panel panel-primary">
-						  		<div class="panel-heading">
+							<div class="panel panel-primary info-panel">
+						  		<div class="panel-heading info-panel-heading">
 						    		<h3 class="panel-title text-center">VISI</h3>
 						  		</div>
 						  		<div class="panel-body text-center">
@@ -42,8 +42,8 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="panel panel-primary">
-						  		<div class="panel-heading">
+							<div class="panel panel-primary info-panel">
+						  		<div class="panel-heading info-panel-heading">
 						    		<h3 class="panel-title text-center">MISI</h3>
 						  		</div>
 						  		<div class="panel-body">
@@ -59,8 +59,8 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="panel panel-primary">
-						  		<div class="panel-heading">
+							<div class="panel panel-primary info-panel">
+						  		<div class="panel-heading info-panel-heading">
 						    		<h3 class="panel-title text-center">NILAI</h3>
 						  		</div>
 						  		<div class="panel-body">
@@ -82,8 +82,8 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="panel panel-primary">
-						  		<div class="panel-heading">
+							<div class="panel panel-primary info-panel">
+						  		<div class="panel-heading info-panel-heading">
 						    		<h3 class="panel-title text-center">SASARAN STRATEGIS</h3>
 						  		</div>
 						  		<div class="panel-body">
@@ -105,8 +105,8 @@
 							<div class="panel-group" id="accordion">
 								<h3 class="headline content-font">Computer System &amp; Computational Intelligence Group</h3>
 
-						  		<div class="panel panel-primary">
-						    		<div class="panel-heading">
+						  		<div class="panel panel-primary info-panel">
+						    		<div class="panel-heading info-panel-heading">
 						      			<h4 class="panel-title">
 						        			<a data-toggle="collapse" data-parent="#accordion" href="#ns">Competitive Programming SIG</a>
 						      			</h4>
@@ -127,8 +127,8 @@
 						    		</div>
 						  		</div>
 
-						  		<div class="panel panel-primary">
-						    		<div class="panel-heading">
+						  		<div class="panel panel-primary info-panel">
+						    		<div class="panel-heading info-panel-heading">
 						      			<h4 class="panel-title">
 						        			<a data-toggle="collapse" data-parent="#accordion" href="#cp">Data Science SIG</a>
 						      			</h4>
@@ -149,8 +149,8 @@
 						    		</div>
 						  		</div>					  
 
-						  		<div class="panel panel-primary">
-						    		<div class="panel-heading">
+						  		<div class="panel panel-primary info-panel">
+						    		<div class="panel-heading info-panel-heading">
 						      			<h4 class="panel-title">
 						        			<a data-toggle="collapse" data-parent="#accordion" href="#ds">Embedded System SIG</a>
 						      			</h4>
@@ -171,8 +171,8 @@
 						    		</div>
 						  		</div>	
 
-						  		<div class="panel panel-primary">
-						    		<div class="panel-heading">
+						  		<div class="panel panel-primary info-panel">
+						    		<div class="panel-heading info-panel-heading">
 						      			<h4 class="panel-title">
 						        			<a data-toggle="collapse" data-parent="#accordion" href="#es">Network Security and Operating System SIG</a>
 						      			</h4>
@@ -196,8 +196,8 @@
 								<br><br>
 						  		<h3 class="headline content-font">Development Group</h3>
 
-						  		<div class="panel panel-primary">
-						    		<div class="panel-heading">
+						  		<div class="panel panel-primary info-panel">
+						    		<div class="panel-heading info-panel-heading">
 						      			<h4 class="panel-title">
 						        			<a data-toggle="collapse" data-parent="#accordion" href="#gd">Game Development SIG</a>
 						      			</h4>
@@ -218,8 +218,8 @@
 						    		</div>
 						  		</div>					  
 
-						  		<div class="panel panel-primary">
-						    		<div class="panel-heading">
+						  		<div class="panel panel-primary info-panel">
+						    		<div class="panel-heading info-panel-heading">
 						      			<h4 class="panel-title">
 						        			<a data-toggle="collapse" data-parent="#accordion" href="#md">Mobile Application Development SIG</a>
 						      			</h4>
@@ -240,8 +240,8 @@
 						    		</div>
 						  		</div>	
 
-						  		<div class="panel panel-primary">
-						    		<div class="panel-heading">
+						  		<div class="panel panel-primary info-panel">
+						    		<div class="panel-heading info-panel-heading">
 						      			<h4 class="panel-title">
 						        			<a data-toggle="collapse" data-parent="#accordion" href="#ux">UI/UX SIG</a>
 						      			</h4>
@@ -262,8 +262,8 @@
 						    		</div>
 						  		</div>	
 
-						  		<div class="panel panel-primary">
-						    		<div class="panel-heading">
+						  		<div class="panel panel-primary info-panel">
+						    		<div class="panel-heading info-panel-heading">
 						      			<h4 class="panel-title">
 						        			<a data-toggle="collapse" data-parent="#accordion" href="#wb">Web Development SIG</a>
 						      			</h4>
@@ -287,8 +287,8 @@
 						  		<br><br>
 						  		<h3 class="headline content-font">Supporting Division</h3>
 
-						  		<div class="panel panel-primary">
-						    		<div class="panel-heading">
+						  		<div class="panel panel-primary info-panel">
+						    		<div class="panel-heading info-panel-heading">
 						      			<h4 class="panel-title">
 						        			<a data-toggle="collapse" data-parent="#accordion" href="#hr">Human Resource Management Division</a>
 						      			</h4>
@@ -297,7 +297,7 @@
 						      			<div class="panel-body">
 						      				<div class="row">
 						      					<div class="col-md-12 text-center">	
-							      					<img class="img-responsive center-block" src="<?= base_url().'assets/img/game.png' ?>" alt="game" width="60" height="80">
+							      					<img class="img-responsive center-block" src="<?= base_url().'assets/img/hr.png' ?>" alt="game" width="60" height="80">
 													<span class="content-font headline"><b>Human Resource Management Division</b></span>	
 						      					</div>
 						      				</div>
@@ -309,8 +309,8 @@
 						    		</div>
 						  		</div>					  
 
-						  		<div class="panel panel-primary">
-						    		<div class="panel-heading">
+						  		<div class="panel panel-primary info-panel">
+						    		<div class="panel-heading info-panel-heading">
 						      			<h4 class="panel-title">
 						        			<a data-toggle="collapse" data-parent="#accordion" href="#pr">Public Relation Division</a>
 						      			</h4>
@@ -319,7 +319,7 @@
 						      			<div class="panel-body">
 						      				<div class="row">
 						      					<div class="col-md-12 text-center">	
-							      					<img class="img-responsive center-block" src="<?= base_url().'assets/img/mob.png' ?>" alt="mobapps" width="60" height="80">
+							      					<img class="img-responsive center-block" src="<?= base_url().'assets/img/pr.png' ?>" alt="mobapps" width="60" height="80">
 													<span class="content-font headline"><b>Public Relation Division</b></span>	
 						      					</div>
 						      				</div>

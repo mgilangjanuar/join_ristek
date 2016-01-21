@@ -30,8 +30,8 @@
 	  					</p>	  					
 	  				</div>
   					<div class="col-md-5">			  			
-		  				<div class="panel panel-primary">
-		  					<div class="panel-heading">
+		  				<div class="panel panel-primary info-panel">
+		  					<div class="panel-heading info-panel-heading">
 		  						<div class="panel-title">SIG/Divisi Plihan</div>
 		  					</div>
 		  					<div class="panel-body">
@@ -70,8 +70,8 @@
 							Selamat mengerjakan tugas :)
 			    		</p>
 		    			<br>
-		    			<div class="panel panel-primary">
-					  		<div class="panel-heading">
+		    			<div class="panel panel-primary info-panel">
+					  		<div class="panel-heading info-panel-heading">
 					    		<h5 class="panel-title">Download File Template Resume dan Tugas</h5>
 					  		</div>
 					  		<div class="panel-body">
@@ -134,8 +134,8 @@
 						</div>				
 					</div>
 					<div class="col-md-5">			    		
-			    		<div class="panel panel-primary">
-							<div class="panel-heading">
+			    		<div class="panel panel-primary info-panel">
+							<div class="panel-heading info-panel-heading">
 						    	<h5 class="panel-title">Submisi Link Resume dan Tugas</h5>
 						  	</div>
 						  	<div class="panel-body">
@@ -277,23 +277,23 @@
 		  	<div class="col-md-12">
 		  		<div class="row">
 		  			<div class="col-md-6">
-				  		<div class="panel panel-primary">
-					  		<div class="panel-heading">Head of Human Resource Management Division</div>
+				  		<div class="panel panel-primary info-panel">
+					  		<div class="panel-heading info-panel-heading">Head of Human Resource Management Division</div>
 					  		<div class="panel-body">Ifa Nasution: +6287887241010</div>
 						</div>
 			  		</div>
 			  		<div class="col-md-6">
-				  		<div class="panel panel-primary">
-					  		<div class="panel-heading">Head of Public Relation Division</div>
+				  		<div class="panel panel-primary info-panel">
+					  		<div class="panel-heading info-panel-heading">Head of Public Relation Division</div>
 					  		<div class="panel-body">Made Nindyatama: +6282120500471</div>
 						</div>
 			  		</div>
 			  	</div>
 			  	<div class="row">
 		  			<div class="col-md-6">
-				  		<div class="panel panel-primary">
+				  		<div class="panel panel-primary info-panel">
 							<!-- Default panel contents -->
-							<div class="panel-heading">Computer System &amp; Computational Intelligence Group</div>			
+							<div class="panel-heading info-panel-heading">Computer System &amp; Computational Intelligence Group</div>			
 							<!-- Table -->
 							<table class="table">
 							    <tbody>
@@ -327,9 +327,9 @@
 						</div>	  		    	    	
 			  		</div>
 			  		<div class="col-md-6">
-				  		<div class="panel panel-primary">
+				  		<div class="panel panel-primary info-panel">
 							<!-- Default panel contents -->
-							<div class="panel-heading">Development Group</div>			
+							<div class="panel-heading info-panel-heading">Development Group</div>			
 							<!-- Table -->
 							<table class="table">			    
 							    <tbody>
