@@ -11,26 +11,46 @@
 		<div id="home" class="tab-pane in active">	 
 	  		<br>
 	  		<div class="col-md-12">
-	  			<div class="row">
-	  				<div class="col-md-12">
+	  			<div class="row">	  									
+	  				<div class="col-md-7">
 	  					<h4>Informasi</h4>
 	  					<p class="content-font">
 	  						Halo <?= $user['username'] ?>, terima kasih telah mendaftar sebagai calon anggota Ristek Fasilkom UI!	
 							<br><br>
-							Proses Open Recruitment Anggota Ristek Fasilkom UI dilaksanakan dalam 2 tahap yaitu <B>Pengerjaan Tugas dan Wawancara.</b> <br>
-							<b>Masa Pengerjaan Tugas adalah 26 Januari - 6 Februari 2016.</b> <br><br>
+							Proses Open Recruitment Anggota Ristek Fasilkom UI dilaksanakan dalam 2 tahap yaitu <B>Pengerjaan Tugas dan Wawancara.</b> <br><br>
+							<b>Masa Pengerjaan Tugas adalah <u>26 Januari - 6 Februari 2016</u>.</b> <br><br>
 							Pendaftar dapat melakukan tahap Wawancara <b>jika dan hanya jika lolos seleksi tugas</b> yang akan diumumkan pada 8 Februari 2016. <br>
-							Pendaftar yang lolos ke tahap wawancara dipersilahkan memilih jadwal wawancara yang tersedia. <br>
-							<b>Masa Wawancara adalah 9 - 14 Februari 2016</b>
+							Pendaftar yang lolos ke tahap wawancara dipersilahkan memilih jadwal wawancara yang tersedia. <br><br>
+							<b>Masa Wawancara adalah <u>9 - 14 Februari 2016</u></b>
 							<br><br>
 							Selamat mengerjakan tugas :)
 							<br><br>
 							Ristek Fasilkom UI <br>
 							<b>#ExploringTechnology</b>
-	  					</p>	
-	  				</div>	  				
+	  					</p>	  					
+	  				</div>
+  					<div class="col-md-5">			  			
+		  				<div class="panel panel-primary">
+		  					<div class="panel-heading">
+		  						<div class="panel-title">SIG/Divisi Plihan</div>
+		  					</div>
+		  					<div class="panel-body">
+		  						<div class="col-md-6 text-center">
+		  							<span class="content-font">Pilihan 1</span><br><br>
+		  							<img class="img-responsive center-block" src="<?= base_url().($sigprop1->logolink) ?>" alt="CP" width="60" height="80">
+									<span class="content-font headline"><b><?= $sigprop1->signame ?></b></span>
+		  						</div>
+		  						<div class="col-md-6 text-center">
+		  							<span class="content-font">Pilihan 2</span><br><br>
+		  							<img class="img-responsive center-block" src="<?= base_url().($sigprop2->logolink) ?>" alt="CP" width="60" height="80">
+									<span class="content-font headline"><b><?= $sigprop2->signame ?></b></span>
+		  						</div>
+		  					</div>
+		  				</div>			  			
+			  		</div>		  						
 	  			</div>
-	  		</div>	    	
+	  		</div>
+	  		
 	  	</div>
 	  	<div id="tugas" class="tab-pane">
 		  	<br>	 
@@ -39,7 +59,7 @@
 		    		<div class="col-md-7">
 		    			<h4>Petunjuk</h4>
 			    		<p class="content-font">
-			    			Deadline pengumpulan link tugas adalah <b>6 Januari 2016 pukul 23:55</b>.
+			    			Deadline pengumpulan link tugas adalah <b><u>6 Februari 2016 pukul 23:55</u></b>.
 			    			Submisi link file tugas dan Resume dapat dilakukan lebih dari satu kali dan hanya file dari link terakhir yang dinilai.		    			
 			    			Template Resume dan file tugas tersedia pada link dibawah. Resume yang Anda buat harus sesuai dengan template yang kami berikan.
 							<br><br>
@@ -54,7 +74,8 @@
 					  		<div class="panel-heading">
 					    		<h5 class="panel-title">Download File Template Resume dan Tugas</h5>
 					  		</div>
-					  		<div class="panel-body">				    
+					  		<div class="panel-body">
+					  			<p class="content-font">Download file template resume dan file tugas SIG/Divisi pilihan Anda pada ink dibawah ini:</p>				    
 					    		<ul>
 					    			<li>
 					    				<a href="<?= base_url() ?>">Template Resume</a>
@@ -125,7 +146,7 @@
 							  	<div class="form-group well-sm list-group-item-danger">
 							  	<?php endif; ?>
 
-							  		<label for="essay_link_input">Link Essay</label>	
+							  		<label for="essay_link_input">Link Essay Motivasi</label>	
 						  			<!-- <p class="content-font"><?= form_error('essay_link_input') ?></p> -->
 						  			<form id="essay_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">
 							  			<div class="form-group">
@@ -134,11 +155,11 @@
 											    <input class="form-control" type="text" id="essay_link_input" name="essay_link_input">
 											    <input type="hidden" name="which_form" value="essay">
 							  			   	</div>
-									  		<button type="submit" class="btn btn-primary">Save Link</button>
+									  		<button type="submit" class="btn btn-primary">Submit Link</button>
 									  		<?php if ($tugas->essay != NULL):?>
-						    				<a href="<?= $tugas->essay ?>" target="_blank" class="btn btn-primary">&nbsp;<span class="glyphicon glyphicon-save"></span>&nbsp;</a>		
+						    				<a href="<?= $tugas->essay ?>" target="_blank" class="btn btn-primary"><span class="glyphicon glyphicon-save"></span></a>		
 						    				<?php else: ?>
-						    				<a href="<?= $tugas->essay ?>" target="_blank" class="btn btn-primary disabled" role="button">&nbsp;<span class="glyphicon glyphicon-save"></span>&nbsp;</a>				    				
+						    				<a href="<?= $tugas->essay ?>" target="_blank" class="btn btn-primary disabled" role="button"><span class="glyphicon glyphicon-save"></span></a>				    				
 						    				<?php endif; ?>
 							  			</div>   
 							  		</form>								  		
@@ -159,11 +180,11 @@
 											    <input class="form-control" type="text" id="resume_link_input" name="resume_link_input">
 											    <input type="hidden" name="which_form" value="resume">
 										  	</div>
-										  	<button type="submit" class="btn btn-primary">Save Link</button>
+										  	<button type="submit" class="btn btn-primary">Submit Link</button>
 									  		<?php if ($tugas->resume != NULL):?>
-						    				<a href="<?= $tugas->resume ?>" target="_blank" class="btn btn-primary text-center">&nbsp;<span class="glyphicon glyphicon-save"></span>&nbsp;</a>		
+						    				<a href="<?= $tugas->resume ?>" target="_blank" class="btn btn-primary text-center"><span class="glyphicon glyphicon-save"></span></a>		
 						    				<?php else: ?>
-						    				<a href="<?= $tugas->resume ?>" target="_blank" class="btn btn-primary disabled" role="button">&nbsp;<span class="glyphicon glyphicon-save"></span>&nbsp;</a>				    				
+						    				<a href="<?= $tugas->resume ?>" target="_blank" class="btn btn-primary disabled" role="button"><span class="glyphicon glyphicon-save"></span></a>				    				
 						    				<?php endif; ?>
 						    			</div>
 							  		</form>								  		
@@ -184,11 +205,11 @@
 											    <input class="form-control" type="text" id="tugas1_link_input" name="tugas1_link_input">
 											    <input type="hidden" name="which_form" value="tugas1">
 											</div>
-									  		<button type="submit" class="btn btn-primary">Save Link</button>
+									  		<button type="submit" class="btn btn-primary">Submit Link</button>
 									  		<?php if ($tugas->tugas1 != NULL):?>
-						    				<a href="<?= $tugas->tugas1 ?>" target="_blank" class="btn btn-primary">&nbsp;<span class="glyphicon glyphicon-save"></span>&nbsp;</a>					    				
+						    				<a href="<?= $tugas->tugas1 ?>" target="_blank" class="btn btn-primary"><span class="glyphicon glyphicon-save"></span></a>					    				
 						    				<?php else: ?>
-						    				<a href="<?= $tugas->tugas1 ?>" target="_blank" class="btn btn-primary disabled" role="button">&nbsp;<span class="glyphicon glyphicon-save"></span>&nbsp;</a>					    				
+						    				<a href="<?= $tugas->tugas1 ?>" target="_blank" class="btn btn-primary disabled" role="button"><span class="glyphicon glyphicon-save"></span></a>					    				
 						    				<?php endif; ?>
 							    		</div>
 						  			</form>							  			
@@ -211,11 +232,11 @@
 											    <input class="form-control" type="text" id="tugas2_link_input" name="tugas2_link_input">
 											    <input type="hidden" name="which_form" value="tugas2">
 											</div>
-									  		<button type="submit" class="btn btn-primary">Save Link</button>
+									  		<button type="submit" class="btn btn-primary">Submit Link</button>
 									  		<?php if ($tugas->tugas2 != NULL):?>
-						    				<a href="<?= $tugas->tugas2 ?>" target="_blank" class="btn btn-primary">&nbsp;<span class="glyphicon glyphicon-save"></span>&nbsp;</a>					    				
+						    				<a href="<?= $tugas->tugas2 ?>" target="_blank" class="btn btn-primary"><span class="glyphicon glyphicon-save"></span></a>					    				
 						    				<?php else: ?>
-						    				<a href="<?= $tugas->tugas2 ?>" target="_blank" class="btn btn-primary disabled" role="button">&nbsp;<span class="glyphicon glyphicon-save"></span>&nbsp;</a>	
+						    				<a href="<?= $tugas->tugas2 ?>" target="_blank" class="btn btn-primary disabled" role="button"><span class="glyphicon glyphicon-save"></span></a>	
 						    				<?php endif; ?>
 						    			</div>
 							  		</form>						  			
@@ -232,17 +253,17 @@
 	  			<div class="row">
 		  			<div class="col-md-12">
 		  				<ul class="nav pagination nav-tabs">		  				
-		  					<li class="active"><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1"><?= $book1->name ?></a></li>		  						    					    		
-				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2"><?= $book2->name ?></a></li>				    				    		
+		  					<li class="active"><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1"><?= $sigprop1->linkname ?></a></li>		  						    					    		
+				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2"><?= $sigprop2->linkname ?></a></li>				    				    		
 				 		</ul>
 				 		<div class="tab-content">
 				 			<div id="ycbm-sig1" class="tab-pane in active">
-				 				<iframe src="<?= ($book1->link).'/?noframe=true&skipHeaderFooter=true' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 													
+				 				<iframe src="<?= ($sigprop1->booklink).'/?noframe=true&skipHeaderFooter=true' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 													
 								<script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
 				 			</div>
 				 			<?php if (strcmp((string)$pilihan->sig2, (string)$pilihan->sig1) != 0) : ?>
 				 			<div id="ycbm-sig2" class="tab-pane">
-				 				<iframe src="<?= ($book2->link).'/?noframe=true&skipHeaderFooter=true' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 				
+				 				<iframe src="<?= ($sigprop2->booklink).'/?noframe=true&skipHeaderFooter=true' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 				
 								<script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
 				 			</div>
 				 			<?php endif; ?>

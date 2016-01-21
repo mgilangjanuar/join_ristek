@@ -6,7 +6,7 @@ Class Dashboard extends MY_Controller {
 
 		# load helper and library
 		$this->load->helper('form');
-		$this->load->model('booking');
+		$this->load->model('sigproperty');
 		$this->load->library('form_validation');
 	}
 
@@ -83,11 +83,11 @@ Class Dashboard extends MY_Controller {
 				$data['pilihan'] = $r_pilihan;
 
 				// get booking object
-				$book1 = $this->booking->getBooking($r_pilihan->sig1);
-				$book2 = $this->booking->getBooking($r_pilihan->sig2);
+				$sigprop1 = $this->sigproperty->getSIGProperty($r_pilihan->sig1);
+				$sigprop2 = $this->sigproperty->getSIGProperty($r_pilihan->sig2);
 
-				$data['book1'] = $book1;
-				$data['book2'] = $book2;
+				$data['sigprop1'] = $sigprop1;
+				$data['sigprop2'] = $sigprop2;
 
 				// render dashboard
 				$data['title'] = 'Dashboard';
