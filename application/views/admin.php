@@ -57,7 +57,7 @@
 										<?php if (($p->tugas2 != NULL)):?>
 										<span class="text-success pull-right"><b>T2 &nbsp;</b></span>
 										<?php else: ?>
-										<span class="glyphicon glyphicon-remove text-danger pull-right"><b>T2 &nbsp;</b></span>
+										<span class="text-danger pull-right"><b>T2 &nbsp;</b></span>
 										<?php endif; ?>	
 										<?php endif; ?>	
 										
@@ -121,7 +121,7 @@
 					      					<div class="col-md-6">	
 						      					<span class="content-font"><b>SIG/Divisi Pilhan 1:</b></span><br>
 						      					<p>
-						      						<?= $p->sig1 ?>
+						      						<?= $sig1 ?>
 						      					</p>
 						      					<span class="content-font"><b>Alasan Pilihan 1:</b></span><br>
 						      					<p>
@@ -129,7 +129,7 @@
 						      					</p>
 						      					<span class="content-font"><b>SIG/Divisi Pilhan 2:</b></span><br>
 						      					<p>
-						      						<?= $p->sig2 ?>
+						      						<?= $sig2 ?>
 						      					</p>
 						      					<span class="content-font"><b>Alasan Plihan 2:</b></span><br>
 						      					<p>
