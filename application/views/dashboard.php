@@ -18,7 +18,7 @@
 							<br><br>
 							Proses Open Recruitment Anggota Ristek Fasilkom UI dilaksanakan dalam 2 tahap yaitu <B>Pengerjaan Tugas dan Wawancara.</b> <br><br>
 							<b>Masa Pengerjaan Tugas adalah <u>26 Januari - 6 Februari 2016</u>.</b> <br><br>
-							Pendaftar dapat melakukan tahap Wawancara <b>jika dan hanya jika lolos seleksi tugas</b> yang akan diumumkan pada 8 Februari 2016. <br>
+							Pendaftar dapat melakukan tahap Wawancara <b>jika dan hanya jika lolos seleksi tugas</b> yang akan diumumkan pada <b><u>8 Februari 2016</u></b>.
 							Pendaftar yang lolos ke tahap wawancara dipersilahkan memilih jadwal wawancara yang tersedia. <br><br>
 							<b>Masa Wawancara adalah <u>9 - 14 Februari 2016</u></b>
 							<br><br>
@@ -169,7 +169,7 @@
 							  	<?php endif; ?>
 
 							  		<label for="essay_link_input">Link Essay Motivasi</label>	
-						  			<!-- <p class="content-font"><?= form_error('essay_link_input') ?></p> -->
+						  			<p class="content-font"><?= form_error('essay_link_input') ?></p>
 						  			<form id="essay_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">
 							  			<div class="form-group">
 							  			   	<div class="input-group">						  			   		
@@ -194,7 +194,7 @@
 							  	<?php endif; ?>
 
 							  		<label for="resume_link_input">Link Resume</label>	
-						  			<!-- <p class="content-font"><?= form_error('resume_link_input') ?></p> -->
+						  			<p class="content-font"><?= form_error('resume_link_input') ?></p>
 						  			<form id="resume_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">
 						  				<div class="form-group">
 						  					<div class="input-group">
@@ -219,7 +219,7 @@
 							  	<?php endif; ?>	
 	
 							  		<label for="tugas1_link_input">Link Tugas SIG Pilihan 1</label>
-							  		<!-- <p class="content-font"><?= form_error('tugas1_link_input') ?></p>					     -->
+							  		<p class="content-font"><?= form_error('tugas1_link_input') ?></p>					    
 							  		<form id="tugas1_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">				  							   
 							  			<div class="form-group">
 							  				<div class="input-group">
@@ -246,7 +246,7 @@
 							  	<?php endif; ?>	
 
 							  		<label for="tugas2_link_input">Link Tugas SIG Pilihan 2</label>					    
-							  		<!-- <p class="content-font"><?= form_error('tugas2_link_input') ?></p> -->
+							  		<p class="content-font"><?= form_error('tugas2_link_input') ?></p>
 							  		<form id="tugas2_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">				  							   
 							  			<div class="form-group">
 							  				<div class="input-group">
@@ -274,22 +274,39 @@
 	  		<div class="col-md-12">
 	  			<div class="row">
 		  			<div class="col-md-12">
-		  				<ul class="nav pagination nav-tabs">		  				
+				 		<?php if(((time()-(60*60*24)) < strtotime('2016-02-09 00:00:00.0')) | ($isUserQualified->isPil1Qualified == 0 & $isUserQualified->isPil2Qualified == 0)): ?>
+				 		<br>
+				 		<div class="well well-lg content-font">Masa Wawancara belum dibuka atau Anda tidak lolos seleksi tugas. <br><b>Masa Wawancara adalah <u>9-14 Februari 2016</u></b></div>
+				 		<?php else: ?>
+		  				<ul class="nav pagination nav-tabs">
+		  					<?php if ($isUserQualified->isPil1Qualified == 1):?>		  				
 		  					<li class="active"><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1"><?= $sigprop1->linkname ?></a></li>		  						    					    		
+		  					<?php endif; ?>
+
+		  					<?php if ($isUserQualified->isPil2Qualified == 1):?>
 				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2"><?= $sigprop2->linkname ?></a></li>				    				    		
+				    		<?php endif; ?>
 				 		</ul>
 				 		<div class="tab-content">
+							
+							<?php if ($isUserQualified->isPil1Qualified == 1):?>
 				 			<div id="ycbm-sig1" class="tab-pane in active">
 				 				<iframe src="<?= ($sigprop1->booklink).'/?noframe=true&skipHeaderFooter=true' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 													
 								<script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
 				 			</div>
+				 			<?php endif; ?>
+				
 				 			<?php if (strcmp((string)$pilihan->sig2, (string)$pilihan->sig1) != 0) : ?>
+				 			<?php if ($isUserQualified->isPil2Qualified == 1):?>
 				 			<div id="ycbm-sig2" class="tab-pane">
 				 				<iframe src="<?= ($sigprop2->booklink).'/?noframe=true&skipHeaderFooter=true' ?>" style="width:100%;height:400px;border:0px;background-color:transparent;" frameborder="0" allowtransparency="true" onload="keepInView(this);"></iframe>				 				
 								<script>function keepInView(item) {if((document.documentElement&&document.documentElement.scrollTop)||document.body.scrollTop>item.offsetTop)item.scrollIntoView();}</script>
 				 			</div>
 				 			<?php endif; ?>
+				 			<?php endif; ?>
+
 				 		</div>	
+				 		<?php endif; ?>
 		  			</div>
 		  		</div>				  										 		  
 	  		</div>		  		
