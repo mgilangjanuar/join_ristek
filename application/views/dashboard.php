@@ -18,7 +18,7 @@
 							<br><br>
 							Proses Open Recruitment Anggota Ristek Fasilkom UI dilaksanakan dalam 2 tahap yaitu <B>Pengerjaan Tugas dan Wawancara.</b> 
 							<div class="alert alert-info" role="alert">
-							<b>Masa Pengerjaan Tugas adalah <u>26 Januari - 6 Februari 2016</u>.</b>
+							<b>Masa Pengerjaan Tugas adalah <u>26 Januari - 7 Februari 2016</u>.</b>
 							</div>
 
 							Pendaftar dapat melakukan tahap Wawancara <b>jika dan hanya jika lolos seleksi tugas</b> yang akan diumumkan pada <b><u>8 Februari 2016</u></b>.
@@ -26,9 +26,7 @@
 							
 							<div class="alert alert-info" role="alert">
 							<b>Masa Wawancara adalah <u>9 - 14 Februari 2016</u></b>
-							</div>
-
-							
+							</div>							
 							Selamat mengerjakan tugas :)
 							<br><br>
 							Ristek Fasilkom UI <br>
@@ -89,13 +87,13 @@
 		    			<h4>Petunjuk</h4>
 			    		<p class="content-font">
 			    			<div class="alert alert-danger" role="alert">
-			    				Deadline pengumpulan link tugas adalah <b><u>6 Februari 2016 pukul 23:55</u></b>.
+			    				Deadline pengumpulan link tugas adalah <b><u>7 Februari 2016 pukul 09:00</u></b>.
 			    			</div>
 			    			Submisi link file tugas dan Resume dapat dilakukan lebih dari satu kali dan hanya file dari link terakhir yang dinilai.		    			
 			    			Template Resume dan file tugas tersedia pada link dibawah. Resume yang Anda buat harus sesuai dengan template yang kami berikan.							
 			    			Pastikan bahwa link yang Anda share adalah public link, bisa diakses oleh orang lain. 			    			
 							<br><br>
-							<b>Format penamaan CV: CV_Nama.pdf. <br>Contoh: CV_Firza Pratama.pdf</b>
+							<b>Format penamaan Resume: Resume_Nama.pdf. <br>Contoh: Resume_Firza Pratama.pdf</b>
 							<br><br>
 							Selamat mengerjakan tugas :)
 			    		</p>
@@ -111,52 +109,12 @@
 					    				<a href="<?= base_url().'files/template_resume_ristek.docx' ?>">Template Resume</a>
 					    			</li>
 							    	<li>
-							    		<?php if(strcmp((string)$pilihan->sig1, 'cp') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Competitive Programming SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig1, 'ds') == 0): ?>					    		
-							    		<a href="<?= base_url() ?>">Tugas Data Science SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig1, 'es') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Embedded System SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig1, 'ns') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Network Security and Operating System SIG</a>					    		
-							    		<?php elseif(strcmp((string)$pilihan->sig1, 'gd') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Game Development SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig1, 'md') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Mobile Application Development SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig1, 'ux') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas UI/UX SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig1, 'wb') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Web Development SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig1, 'hr') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Human Resource Management Division</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig1, 'pr') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Public Relation Division</a>
-							    		<?php endif;?>
+							    		<a href="<?= base_url().($sigprop1->tasklink) ?>">Tugas <?= $sigprop1->signame ?></a>							    		
 							    	</li>
 					    	
 							    	<?php if (strcmp((string)$pilihan->sig2, (string)$pilihan->sig1) != 0) : ?>
 							    	<li>
-							    		<?php if(strcmp((string)$pilihan->sig2, 'cp') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Competitive Programming SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig2, 'ds') == 0): ?>					    		
-							    		<a href="<?= base_url() ?>">Tugas Data Science SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig2, 'es') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Embedded System SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig2, 'ns') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Network Security and Operating System SIG</a>					    		
-							    		<?php elseif(strcmp((string)$pilihan->sig2, 'gd') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Game Development SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig2, 'md') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Mobile Application Development SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig2, 'ux') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas UI/UX SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig2, 'wb') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Web Development SIG</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig2, 'hr') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Human Resource Management Division</a>
-							    		<?php elseif(strcmp((string)$pilihan->sig2, 'pr') == 0): ?>
-							    		<a href="<?= base_url() ?>">Tugas Public Relation Division</a>
-							    		<?php endif;?>
+							    		<a href="<?= base_url().($sigprop2->tasklink) ?>">Tugas <?= $sigprop2->signame ?></a>							    		
 							    	</li>
 							    	<?php endif; ?>					    	
 					    		</ul>
@@ -169,7 +127,7 @@
 						    	<h5 class="panel-title">Submisi Link Resume dan Tugas</h5>
 						  	</div>
 						  	<div class="panel-body">
-						  		<?php if ((time()-(60*60*24)) > strtotime('2016-02-06 23:59:59.0')): ?>
+						  		<?php if ((time()-(60*60*24)) > strtotime('2016-02-07 08:59:59.0')): ?>
 						  		<div class="well well-lg content-font">Masa pengumpulan tugas sudah berakhir. Anda tidak diperkenankan lagi untuk submit tugas.</div>
 						  		<?php else: ?>
 						  		<p class="content-font text-danger"><?php echo form_error('essay_link_input').form_error('resume_link_input').form_error('tugas1_link_input').form_error('tugas2_link_input'); ?></p>			
@@ -287,7 +245,7 @@
 	  		<div class="col-md-12">
 	  			<div class="row">
 		  			<div class="col-md-12">
-				 		<?php if(((time()-(60*60*24)) < strtotime('2016-02-08 00:00:00.0')) | ($isUserQualified->isPil1Qualified == 0 & $isUserQualified->isPil2Qualified == 0)): ?>
+				 		<?php if(((time()-(60*60*24)) < strtotime('2016-02-08 20:00:00.0')) | ($isUserQualified->isPil1Qualified == 0 & $isUserQualified->isPil2Qualified == 0)): ?>
 				 		<br>
 				 		<div class="well well-lg content-font">Masa Wawancara belum dibuka atau Anda tidak lolos seleksi tugas. <br><b>Masa Wawancara adalah <u>9-14 Februari 2016</u></b></div>
 				 		<?php else: ?>
