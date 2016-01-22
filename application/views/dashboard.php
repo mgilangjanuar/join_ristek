@@ -1,5 +1,4 @@
 <div class="row">
-	<p>Logged in as <?= $user['username'] ?></p>
 	<ul class="nav nav-tabs">
 	  <li class="active"><a class="ristek-color" data-toggle="tab" href="#home">HOME</a></li>
 	  <li><a class="ristek-color" data-toggle="tab" href="#tugas">TUGAS</a></li>
@@ -53,9 +52,21 @@
 		  					</div>
 		  					<div class="panel-body">
 		  						<span class="content-font"><b>SIG/Divisi Pilihan 1:</b></span>
+								
+								<?php if ($isUserQualified->isPil1Qualified == 0): ?>
 		  						<h4 class="text-danger text-center"><b>BELUM LOLOS SELEKSI TUGAS</b></h4>
+		  						<?php else: ?>
+		  						<h4 class="text-success text-center"><b>LOLOS SELEKSI TUGAS</b></h4>
+		  						<?php endif; ?>
+
 		  						<span class="content-font"><b>SIG/Divisi Pilihan 2:</b></span>
+
+		  						<?php if ($isUserQualified->isPil2Qualified == 0): ?>
 		  						<h4 class="text-danger text-center"><b>BELUM LOLOS SELEKSI TUGAS</b></h4>
+		  						<?php else: ?>
+		  						<h4 class="text-success text-center"><b>LOLOS SELEKSI TUGAS</b></h4>
+		  						<?php endif; ?>
+
 		  					</div>
 		  				</div>			  			
 			  		</div>		  						

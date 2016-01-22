@@ -6,7 +6,7 @@ Class Dashboard extends MY_Controller {
 
 		# load helper and library
 		$this->load->helper('form');
-		$this->load->model('sigproperty');
+		$this->load->model('sigproperty');		
 		$this->load->library('form_validation');
 	}
 
@@ -92,7 +92,7 @@ Class Dashboard extends MY_Controller {
 				$data['sigprop2'] = $sigprop2;
 
 				// is User Qualified
-				$data['isUserQualified'] = $this->biodata->isUserQualified($user['username']);
+				$data['isUserQualified'] = $this->kualifikasi->getQualifyData($user['username']);
 
 				// render dashboard
 				$data['title'] = 'Dashboard';

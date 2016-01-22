@@ -17,8 +17,12 @@
 	<body>
 		<header>			
 			<img class="img" src="http://ristek.cs.ui.ac.id/img/logo-blue.png" alt="logo-ristek" width="30" height="40">
-			<span class="head-font page-title"><b><?= $title; ?></b></span> <!-- $title -->															
-			<a class="btn btn-danger logout-btn pull-right" href="<?= site_url('logout') ?>">Logout</a>	 <!-- $username -->									
+			<span class="head-font page-title"><b><?= $title; ?></b></span> <!-- $title -->
+			<a class="btn btn-danger well-sm pull-right" href="<?= site_url('logout') ?>">Logout</a>	 <!-- $username -->									
+			<p class="pull-right">&nbsp;&nbsp;</p>															
+			<div class="well well-sm pull-right">
+					Logged in as <?= $user['username'] ?>								
+			</div>
 		</header>
 		
 		<div class="container">

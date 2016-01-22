@@ -84,6 +84,9 @@ class Ssologin extends MY_controller {
 
 		# create initial pilihan record
 		$this->pilihan->create(array('username' => $user_data['username']));
+
+		# create initial kualifikasi record
+		$this->kualifikasi->create(array('username' => $user_data['username'], 'biohash' => $user_data['biohash']));
 	}
 
 }

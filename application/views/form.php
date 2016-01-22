@@ -1,5 +1,4 @@
-<div class="row">
-	<p>Logged in as <?= $user['username'] ?></p>
+<div class="row">	
 	<form action="<?= site_url('register') ?>" class="" method="post">
 		<div class="col-md-6">
 			<div class="panel panel-primary">

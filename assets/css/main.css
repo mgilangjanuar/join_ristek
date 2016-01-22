@@ -56,23 +56,27 @@ footer {
 	color: #FFFFFF !important;
 	background-image: none !important;
 	background-color: #2F31A0 !important;
+	border: 1px solid #2F31A0 !important;
 }
 	.btn-primary:visited, .sso-btn:visited {
 		color: #FFFFFF !important;
 		background-image: none;
 		background-color: #2F31A0 !important;
+		border: 1px solid #2F31A0 !important;
 	}
 
 	.btn-primary:hover, .sso-btn:hover {
 		color: #FFFFFF !important;
 		background-image: none !important;
-		background-color: #4549CF !important;	
+		background-color: #4549CF !important;
+		border: 1px solid #2F31A0 !important;	
 	}
 
 	.btn-primary:focus, .sso-btn:focus {
 		color: #FFFFFF !important;
 		background-image: none !important;
 		background-color: #0F1168 !important;
+		border: 1px solid #2F31A0 !important;
 	}
 
 textarea {

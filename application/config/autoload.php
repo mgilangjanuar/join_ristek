@@ -109,7 +109,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('biodata', 'tugas', 'pilihan', 'useradmin');
+$autoload['model'] = array('biodata', 'tugas', 'pilihan', 'useradmin', 'kualifikasi');
 
 
 /* End of file autoload.php */
