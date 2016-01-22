@@ -16,12 +16,19 @@
 	  					<p class="content-font">
 	  						Halo <?= $user['username'] ?>, terima kasih telah mendaftar sebagai calon anggota Ristek Fasilkom UI!	
 							<br><br>
-							Proses Open Recruitment Anggota Ristek Fasilkom UI dilaksanakan dalam 2 tahap yaitu <B>Pengerjaan Tugas dan Wawancara.</b> <br><br>
-							<b>Masa Pengerjaan Tugas adalah <u>26 Januari - 6 Februari 2016</u>.</b> <br><br>
+							Proses Open Recruitment Anggota Ristek Fasilkom UI dilaksanakan dalam 2 tahap yaitu <B>Pengerjaan Tugas dan Wawancara.</b> 
+							<div class="alert alert-info" role="alert">
+							<b>Masa Pengerjaan Tugas adalah <u>26 Januari - 6 Februari 2016</u>.</b>
+							</div>
+
 							Pendaftar dapat melakukan tahap Wawancara <b>jika dan hanya jika lolos seleksi tugas</b> yang akan diumumkan pada <b><u>8 Februari 2016</u></b>.
 							Pendaftar yang lolos ke tahap wawancara dipersilahkan memilih jadwal wawancara yang tersedia. <br><br>
+							
+							<div class="alert alert-info" role="alert">
 							<b>Masa Wawancara adalah <u>9 - 14 Februari 2016</u></b>
-							<br><br>
+							</div>
+
+							
 							Selamat mengerjakan tugas :)
 							<br><br>
 							Ristek Fasilkom UI <br>
@@ -81,17 +88,18 @@
 		    		<div class="col-md-7">
 		    			<h4>Petunjuk</h4>
 			    		<p class="content-font">
-			    			Deadline pengumpulan link tugas adalah <b><u>6 Februari 2016 pukul 23:55</u></b>.
+			    			<div class="alert alert-danger" role="alert">
+			    				Deadline pengumpulan link tugas adalah <b><u>6 Februari 2016 pukul 23:55</u></b>.
+			    			</div>
 			    			Submisi link file tugas dan Resume dapat dilakukan lebih dari satu kali dan hanya file dari link terakhir yang dinilai.		    			
-			    			Template Resume dan file tugas tersedia pada link dibawah. Resume yang Anda buat harus sesuai dengan template yang kami berikan.
-							<br><br>
+			    			Template Resume dan file tugas tersedia pada link dibawah. Resume yang Anda buat harus sesuai dengan template yang kami berikan.							
 			    			Pastikan bahwa link yang Anda share adalah public link, bisa diakses oleh orang lain. 			    			
 							<br><br>
 							<b>Format penamaan CV: CV_Nama.pdf. <br>Contoh: CV_Firza Pratama.pdf</b>
 							<br><br>
 							Selamat mengerjakan tugas :)
 			    		</p>
-		    			<br>
+		    			
 		    			<div class="panel panel-primary info-panel">
 					  		<div class="panel-heading info-panel-heading">
 					    		<h5 class="panel-title">Download File Template Resume dan Tugas</h5>
@@ -161,6 +169,9 @@
 						    	<h5 class="panel-title">Submisi Link Resume dan Tugas</h5>
 						  	</div>
 						  	<div class="panel-body">
+						  		<?php if ((time()-(60*60*24)) > strtotime('2016-02-06 23:59:59.0')): ?>
+						  		<div class="well well-lg content-font">Masa pengumpulan tugas sudah berakhir. Anda tidak diperkenankan lagi untuk submit tugas.</div>
+						  		<?php else: ?>
 						  		<p class="content-font text-danger"><?php echo form_error('essay_link_input').form_error('resume_link_input').form_error('tugas1_link_input').form_error('tugas2_link_input'); ?></p>			
 								<?php if ($tugas->essay != NULL):?>
 							  	<div class="form-group well-sm list-group-item-success">
@@ -263,7 +274,9 @@
 						    			</div>
 							  		</form>						  			
 							  	</div>
-								<?php endif; ?>						  	
+
+								<?php endif; ?>		
+								<?php endif; ?>				  	
 						  	</div>
 						</div>				
 			    	</div>	    		    
@@ -274,11 +287,12 @@
 	  		<div class="col-md-12">
 	  			<div class="row">
 		  			<div class="col-md-12">
-				 		<?php if(((time()-(60*60*24)) < strtotime('2016-02-09 00:00:00.0')) | ($isUserQualified->isPil1Qualified == 0 & $isUserQualified->isPil2Qualified == 0)): ?>
+				 		<?php if(((time()-(60*60*24)) < strtotime('2016-02-08 00:00:00.0')) | ($isUserQualified->isPil1Qualified == 0 & $isUserQualified->isPil2Qualified == 0)): ?>
 				 		<br>
 				 		<div class="well well-lg content-font">Masa Wawancara belum dibuka atau Anda tidak lolos seleksi tugas. <br><b>Masa Wawancara adalah <u>9-14 Februari 2016</u></b></div>
 				 		<?php else: ?>
 		  				<ul class="nav pagination nav-tabs">
+
 		  					<?php if ($isUserQualified->isPil1Qualified == 1):?>		  				
 		  					<li class="active"><a class="ristek-color" data-toggle="tab" href="#ycbm-sig1"><?= $sigprop1->linkname ?></a></li>		  						    					    		
 		  					<?php endif; ?>
@@ -286,6 +300,7 @@
 		  					<?php if ($isUserQualified->isPil2Qualified == 1):?>
 				    		<li><a class="ristek-color" data-toggle="tab" href="#ycbm-sig2"><?= $sigprop2->linkname ?></a></li>				    				    		
 				    		<?php endif; ?>
+
 				 		</ul>
 				 		<div class="tab-content">
 							
