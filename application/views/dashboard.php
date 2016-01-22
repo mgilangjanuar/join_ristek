@@ -46,6 +46,17 @@
 									<span class="content-font headline"><b><?= $sigprop2->signame ?></b></span>
 		  						</div>
 		  					</div>
+		  				</div>
+		  				<div class="panel panel-primary info-panel">
+		  					<div class="panel-heading info-panel-heading">
+		  						<div class="panel-title">STATUS SELEKSI TUGAS</div>
+		  					</div>
+		  					<div class="panel-body">
+		  						<span class="content-font"><b>SIG/Divisi Pilihan 1:</b></span>
+		  						<h4 class="text-danger text-center"><b>BELUM LOLOS SELEKSI TUGAS</b></h4>
+		  						<span class="content-font"><b>SIG/Divisi Pilihan 2:</b></span>
+		  						<h4 class="text-danger text-center"><b>BELUM LOLOS SELEKSI TUGAS</b></h4>
+		  					</div>
 		  				</div>			  			
 			  		</div>		  						
 	  			</div>
@@ -78,7 +89,7 @@
 					  			<p class="content-font">Download file template resume dan file tugas SIG/Divisi pilihan Anda pada ink dibawah ini:</p>				    
 					    		<ul>
 					    			<li>
-					    				<a href="<?= base_url() ?>">Template Resume</a>
+					    				<a href="<?= base_url().'files/template_resume_ristek.docx' ?>">Template Resume</a>
 					    			</li>
 							    	<li>
 							    		<?php if(strcmp((string)$pilihan->sig1, 'cp') == 0): ?>

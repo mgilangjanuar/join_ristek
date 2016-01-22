@@ -16,11 +16,16 @@ Class Admin747835 extends MY_Controller {
 			// redirect to index
 			redirect(site_url('ssologin'));
 		} else {
-
 			if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-				# code...
-			} else {
-
+				// check if user logged in or not
+				if (!$this->is_logged_in()) {
+					// user not logged in
+					// redirect to sso login
+					redirect(site_url('ssologin'));
+				} else {
+					$this->biodata->qualify($this->input->post('biohash'), $this->input->post('isQualified'));
+					redirect(site_url('admin747835'));					
+				}
 			}
 		}
 

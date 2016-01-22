@@ -8,6 +8,7 @@
 		 		<p>
 		 			<span class="text-success"><b>HIJAU</b></span>: Pendaftar sudah memenuhi <br>
 		 			<span class="text-danger"><b>MERAH</b></span>: Pendaftar belum memenuhi <br>
+		 			<span class="text-muted"><b>ABU</b></span>: Pendaftar tidak perlu submit <br>
 		 			<p><b>Q</b>: Status lolos, <b>E</b>: Status Essay, <b>R:</b> Status Resume, <B>T1</b>: Status Tugas 1, <b>T2</b>: Status Tugas 2</p> 
 		 		</p>
 		 	</div>
@@ -20,7 +21,7 @@
 					  		<div class="panel panel-default">
 					  			<div class="panel-heading">
 					      			<h4 class="panel-title">					      								      							
-										<a data-toggle="collapse" data-parent="#accordion" href="<?php echo '#'.md5($p->username); ?>"><?= $p->name ?></a>
+										<a data-toggle="collapse" data-parent="#accordion" href="<?php echo '#'.md5($p->username); ?>"><b><?= $p->name ?></b></a>
 										<span>
 											<?php 
 						    					$sig1 = $p->sig1; 
@@ -53,13 +54,14 @@
 						    				?>
 										</span>
 
-										<?php if ($p->sig2 != $p->sig1):?>
-										<?php if (($p->tugas2 != NULL)):?>
+										<?php if ($p->sig2 == $p->sig1):?>
+										<span class="text-muted pull-right"><b>T2 &nbsp;</b></span>
+										<?php elseif (($p->tugas2 != NULL)):?>
 										<span class="text-success pull-right"><b>T2 &nbsp;</b></span>
 										<?php else: ?>
 										<span class="text-danger pull-right"><b>T2 &nbsp;</b></span>
 										<?php endif; ?>	
-										<?php endif; ?>	
+										
 										
 
 										<?php if (($p->tugas1 != NULL)):?>
@@ -177,10 +179,13 @@
 
 					      					</div>
 					      				</div>
-					      				<form action="<?= site_url() ?>" method="POST">
+					      				<form action="<?= site_url('admin747835') ?>" method="POST">
+					      					<input type="hidden" name="biohash" value="<?= $p->biohash ?>">
 					      					<?php if ($p->isQualified == 0):?>
+					      					<input type="hidden" name="isQualified" value="0">
 					      					<button type="submit" class="btn btn-primary pull-right">Qualify</button>
-					      					<?php else: ?>	
+					      					<?php else: ?>
+					      					<input type="hidden" name="isQualified" value="1">	
 					      					<button type="submit" class="btn btn-primary pull-right">Undo Qualify</button>
 					      					<?php endif; ?>	
 					      				</form>					      				

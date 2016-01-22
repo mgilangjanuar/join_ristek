@@ -53,5 +53,5 @@ Class Useradmin extends CI_Model {
 		$result = $this->db->get('admin')->row();
 
 		return $result;
-	}
+	}	
 }

@@ -24,6 +24,25 @@ Class Biodata extends CI_Model {
 		return $this->db->update('biodata', $user_arr);
 	}
 
+	public function qualify($biohash, $isQualify) {
+		$this->db->where('biohash', $biohash);		
+		if ($isQualify == 0) {
+			// qualify
+			return $this->db->update('biodata', array('isQualified' => 1));
+		} else {
+			// undo qualify
+			return $this->db->update('biodata', array('isQualified' => 0));
+		}
+	}
+
+	public function isUserQualified($username) {
+		$this->db->select('isqualified');
+		$this->db->where('username', $username);
+		$result = $this->db->get('biodata')->row();
+
+		return $result->isqualified;
+	}
+
 	public function isUserRegistered($username) {		
 		// check if timestamp available or not
 		$this->db->select('timestamp');
