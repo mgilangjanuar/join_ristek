@@ -76,8 +76,13 @@
 						</div>
 						
 					</div><br>
-					<div class="row">						
-						<div class="col-md-4 col-md-offset-3 text-center ">					
+					<div class="row">			
+
+						<?php if ((time()-(60*60*24)) < strtotime('2016-01-26 08:59:59.0')): ?>
+						<p class="text-center">Registrasi dibuka pada 26 Januari 2016 pkl 18.00wib</p>					
+						<?php endif; ?>
+
+						<div class="col-md-4 col-md-offset-2 text-center ">					
 							<a href="<?= site_url('info') ?>" class="btn btn-primary btn-lg center-block sso-btn">More info</a>	
 						</div>
 						<div class="col-md-4 text-center ">					
