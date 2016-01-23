@@ -49,7 +49,7 @@ INSERT INTO admin VALUES ('teresa.pranyoto', 'md');
 -- ----------------------------
 DROP TABLE IF EXISTS biodata;
 CREATE TABLE biodata (
-  timestamp datetime(6) DEFAULT NULL,
+  `timestamp` datetime(6) DEFAULT NULL,
   username varchar(30) NOT NULL,
   name varchar(100) NOT NULL,
   npm char(10) NOT NULL,
