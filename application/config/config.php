@@ -22,7 +22,7 @@
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/join_ristek/';
+$config['base_url'] = 'http://ristek.cs.ui.ac.id/join_ristek/';
 
 /*
 |--------------------------------------------------------------------------
