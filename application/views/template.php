@@ -20,9 +20,7 @@
 			<span class="head-font page-title"><b><?= $title; ?></b></span> <!-- $title -->
 			<a class="btn btn-danger well-sm pull-right" href="<?= site_url('logout') ?>">Logout</a>	 <!-- $username -->									
 			<p class="pull-right">&nbsp;&nbsp;</p>															
-			<div class="well well-sm pull-right hidden-phone">
-					Logged in as <?= $user['username'] ?>								
-			</div>
+			<div class="well well-sm pull-right hidden-phone"><?= $user['username'] ?></div>
 		</header>
 		
 		<div class="container">
