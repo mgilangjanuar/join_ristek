@@ -21,26 +21,7 @@ class Welcome extends MY_Controller {
 	{	
 		# load home view
 		$this->load->view('home');
-	}
-
-	public function form() {
-		$data['title'] = 'Registration Form';
-		$data['username'] = 'jundialwan';		
-		$this->render('form', $data);
-	}
-
-	public function template() {
-		$data['title'] = 'Registration Form';
-		$data['username'] = 'jundialwan';		
-		$data['content'] = '';	
-		$this->load->view('template', $data);
-	}
-
-	public function dashboard() {
-		$data['title'] = 'Dashboard';
-		$data['username'] = 'jundialwan';				
-		$this->render('dashboard', $data);	
-	}
+	}	
 
 	// public function in() {
 	// 	$data['register'] = $this;
