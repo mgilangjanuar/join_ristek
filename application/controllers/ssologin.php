@@ -1,9 +1,11 @@
 <?php
 
 // SSO library
-require_once 'http://ristek.cs.ui.ac.id/vendor/SSO/SSO/SSO.php';
-use SSO\SSO;
-SSO::setCASPath('http://ristek.cs.ui.ac.id/vendor/CAS/CAS.php');
+// require_once 'http://ristek.cs.ui.ac.id/vendor/SSO/SSO/SSO.php';
+// use SSO\SSO;
+// SSO::setCASPath('http://ristek.cs.ui.ac.id/vendor/CAS/CAS.php');
+
+require 'http://ristek.cs.ui.ac.id/sso-api/vendor/autoload.php'
 
 Class Ssologin extends MY_Controller {
 	
