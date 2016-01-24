@@ -1,8 +1,8 @@
 <?php
 
 // SSO library
-require_once('/vendor/SSO/SSO/SSO.php');
-SSO::setCASPath('/vendor/CAS/CAS.php');
+require_once '/vendor/SSO/SSO/SSO.php';
+SSO\SSO::setCASPath('/vendor/CAS/CAS.php');
 
 // require 'http://ristek.cs.ui.ac.id/sso-api/vendor/autoload.php'
 
