@@ -19,41 +19,7 @@
 
 				  		<div class="panel panel-default">
 				  			<div class="panel-heading">
-				      			<h4 class="panel-title">				      								      								      						
-									<a data-toggle="collapse" data-parent="#accordion" href="<?php echo '#'.md5($p->username); ?>"><b><?= $p->name ?></b></a>
-									<span>
-										<?php 
-					    					$sig1 = $p->sig1; 
-
-					    					if ($sig1 == 'cp') $sig1 = 'CP';
-					    					else if ($sig1 == 'ds') $sig1 = 'DatSci';
-					    					else if ($sig1 == 'es') $sig1 = 'Embed';
-					    					else if ($sig1 == 'ns') $sig1 = 'Netsos';
-					    					else if ($sig1 == 'gd') $sig1 = 'GameDev';
-					    					else if ($sig1 == 'md') $sig1 = 'MobDev';
-					    					else if ($sig1 == 'ux') $sig1 = 'UI/UX';
-					    					else if ($sig1 == 'wb') $sig1 = 'WebDev';
-					    					else if ($sig1 == 'hr') $sig1 = 'HRM';
-					    					else if ($sig1 == 'pr') $sig1 = 'PR';
-
-					    					$sig2 = $p->sig2; 
-
-					    					if ($sig2 == 'cp') $sig2 = 'CP';
-					    					else if ($sig2 == 'ds') $sig2 = 'DatSci';
-					    					else if ($sig2 == 'es') $sig2 = 'Embed';
-					    					else if ($sig2 == 'ns') $sig2 = 'Netsos';
-					    					else if ($sig2 == 'gd') $sig2 = 'GameDev';
-					    					else if ($sig2 == 'md') $sig2 = 'MobDev';
-					    					else if ($sig2 == 'ux') $sig2 = 'UI/UX';
-					    					else if ($sig2 == 'wb') $sig2 = 'WebDev';
-					    					else if ($sig2 == 'hr') $sig2 = 'HRM';
-					    					else if ($sig2 == 'pr') $sig2 = 'PR';
-
-					    					echo '('.$sig1.','.$sig2.')';
-					    				?>
-									</span>
-				      			</h4>
-				      			<div class="pull-left">				      				
+				  				<div class="pull-left">				      				
 									<?php if ($p->sig2 == $p->sig1):?>
 									<span class="text-muted pull-right"><b>T2 &nbsp;</b></span>
 									<?php elseif (($p->tugas2 != NULL)):?>
@@ -91,7 +57,42 @@
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>Q1 &nbsp;</b></span>
 									<?php endif; ?>
-				      			</div>									
+				      			</div>	
+
+				      			<h4 class="panel-title">				      								      								      						
+									<a data-toggle="collapse" data-parent="#accordion" href="<?php echo '#'.md5($p->username); ?>"><b><?= $p->name ?></b></a>
+									<span>
+										<?php 
+					    					$sig1 = $p->sig1; 
+
+					    					if ($sig1 == 'cp') $sig1 = 'CP';
+					    					else if ($sig1 == 'ds') $sig1 = 'DatSci';
+					    					else if ($sig1 == 'es') $sig1 = 'Embed';
+					    					else if ($sig1 == 'ns') $sig1 = 'Netsos';
+					    					else if ($sig1 == 'gd') $sig1 = 'GameDev';
+					    					else if ($sig1 == 'md') $sig1 = 'MobDev';
+					    					else if ($sig1 == 'ux') $sig1 = 'UI/UX';
+					    					else if ($sig1 == 'wb') $sig1 = 'WebDev';
+					    					else if ($sig1 == 'hr') $sig1 = 'HRM';
+					    					else if ($sig1 == 'pr') $sig1 = 'PR';
+
+					    					$sig2 = $p->sig2; 
+
+					    					if ($sig2 == 'cp') $sig2 = 'CP';
+					    					else if ($sig2 == 'ds') $sig2 = 'DatSci';
+					    					else if ($sig2 == 'es') $sig2 = 'Embed';
+					    					else if ($sig2 == 'ns') $sig2 = 'Netsos';
+					    					else if ($sig2 == 'gd') $sig2 = 'GameDev';
+					    					else if ($sig2 == 'md') $sig2 = 'MobDev';
+					    					else if ($sig2 == 'ux') $sig2 = 'UI/UX';
+					    					else if ($sig2 == 'wb') $sig2 = 'WebDev';
+					    					else if ($sig2 == 'hr') $sig2 = 'HRM';
+					    					else if ($sig2 == 'pr') $sig2 = 'PR';
+
+					    					echo '('.$sig1.','.$sig2.')';
+					    				?>
+									</span>
+				      			</h4>				      											
 				    		</div>
 				    		<div id="<?php echo md5($p->username); ?>" class="panel-collapse collapse">
 				      			<div class="panel-body">
