@@ -1,7 +1,7 @@
 <?php
 
 // SSO library
-require_once 'http://ristek.cs.ui.ac.id/join747835/vendor/SSO/SSO/SSO.php';
+require_once('http://ristek.cs.ui.ac.id/join747835/vendor/SSO/SSO/SSO.php');
 use SSO\SSO;
 SSO::setCASPath('http://ristek.cs.ui.ac.id/join747835/vendor/CAS/CAS.php');
 
