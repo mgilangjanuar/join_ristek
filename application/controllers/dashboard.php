@@ -21,7 +21,7 @@ Class Dashboard extends MY_Controller {
 			$user = $this->session->userdata('userdata');
 
 			// if admin redirect to admin page
-			if ($this->isAdmin($user['username'])) redirect(site_url('admin747835'));
+			// if ($this->isAdmin($user['username'])) redirect(site_url('admin747835'));
 
 			// check if user registered or not
 			if ($this->isRegistered($user['username'])) {
@@ -111,11 +111,7 @@ Class Dashboard extends MY_Controller {
         else return true;
     }
 
-    public function url_exists($url) {                                   
-        // $url_data = parse_url($url); // scheme, host, port, path, query
-        // if(!fsockopen($url_data['host'], isset($url_data['port']) ? $url_data['port'] : 80)) return false;
-        // else return true;
-
+    public function url_exists($url) {                                       
         $file_headers = @get_headers($file);
 		if(strpos($file_headers[0],'404') === false) return false;
 		else return true;

@@ -23,10 +23,7 @@
 			<div class="well well-sm pull-right hidden-phone"><?= $user['username'] ?></div>
 		</header>
 		
-		<div class="container">
-			
-			<!-- where the content goes -->
-			<!-- $content -->
+		<div class="container">								
 			<?= $content; ?>
 		</div>	
 
