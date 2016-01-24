@@ -36,7 +36,7 @@ class Ssologin extends MY_Controller {
 		// check if user is admin
 		if ($this->useradmin->isAdmin($user->username)) {
 			// redirect to admin747835
-			// redirect(site_url('admin747835'));
+			redirect(site_url('admin747835'));
 		} 
 
 		// check if user exist or not
