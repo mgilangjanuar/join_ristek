@@ -1,9 +1,9 @@
 <?php
 
 // SSO library
-require_once base_url().'/vendor/SSO/SSO/SSO.php';
+require_once '/vendor/SSO/SSO/SSO.php';
 use SSO\SSO;
-SSO::setCASPath(base_url().'/vendor/CAS/CAS.php');
+SSO::setCASPath('/vendor/CAS/CAS.php');
 
 Class Ssologin extends MY_Controller {
 	
@@ -88,5 +88,4 @@ Class Ssologin extends MY_Controller {
 		# create initial kualifikasi record
 		$this->kualifikasi->create(array('username' => $user_data['username'], 'biohash' => $user_data['biohash']));
 	}
-
 }
