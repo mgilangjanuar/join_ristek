@@ -18,7 +18,7 @@ Class Dashboard extends MY_Controller {
 		} else {			
 
 			// user logged in			
-			$user = $this->session->userdata('user_data');
+			$user = $this->session->userdata('userdata');
 
 			// if admin redirect to admin page
 			if ($this->isAdmin($user['username'])) redirect(site_url('admin747835'));

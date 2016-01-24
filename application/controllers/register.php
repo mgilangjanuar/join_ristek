@@ -14,7 +14,7 @@ Class Register extends MY_Controller {
 			# user logged in
 
 			// get user data from session
-			$user = $this->session->userdata('user_data');
+			$user = $this->session->userdata('userdata');
 
 			// if admin redirect to admin page
 			if ($this->isAdmin($user['username'])) redirect(site_url('admin747835'));

@@ -7,7 +7,7 @@ Class Admin747835 extends MY_Controller {
 	}
 
 	public function index() {
-		$user = $this->session->userdata('user_data');
+		$user = $this->session->userdata('userdata');
 		$admin_username = $user['username'];
 
 		//check if user is admin

@@ -15,7 +15,7 @@ Class Ssologin extends MY_Controller {
 		if(!SSO::check()) SSO::authenticate();
 
 		$user = SSO::getUser();
-		$user_data = array(
+		$userdata = array(
 				'username' 				=> $user->username,
 				'name' 					=> $user->name,
 				'npm' 					=> $user->npm,
@@ -25,13 +25,13 @@ Class Ssologin extends MY_Controller {
 			);
 
 		// 2012-- is not allowed, redirect to index
-		if($user_data['angkatan'] != '2013' & $user_data['angkatan'] != '2014' & $user_data['angkatan'] != '2015') {
+		if($userdata['angkatan'] != '2013' & $userdata['angkatan'] != '2014' & $userdata['angkatan'] != '2015') {
 			redirect(site_url());
 		}
 
 		// re-set session
-		$this->session->unset_userdata('user_data');
-		$this->session->set_userdata('user_data', $user_data);
+		$this->session->unset_userdata('userdata');
+		$this->session->set_userdata('userdata', $userdata);
 
 		// check if user is admin
 		if ($this->useradmin->isAdmin($user->username)) {
@@ -47,7 +47,7 @@ Class Ssologin extends MY_Controller {
 		} else {
 			// user not exist
 			// create initial data in database
-			if(!($this->biodata->get($user->username))) $this->saveUserDataToDatabase($user_data);
+			if(!($this->biodata->get($user->username))) $this->saveUserDataToDatabase($userdata);
 			// redirect to form
 			redirect(site_url('register'));
 		}		
@@ -67,25 +67,25 @@ Class Ssologin extends MY_Controller {
 		return $tahun;
 	}
 
-	private function saveUserDataToDatabase($user_data) {
+	private function saveUserDataToDatabase($userdata) {
 		$user_arr = array(
-				'username' 				=> $user_data['username'],
-				'name' 					=> $user_data['name'],
-				'npm' 					=> $user_data['npm'],
-				'angkatan'				=> $user_data['angkatan'],
-				'jurusan' 				=> $user_data['jurusan'],
+				'username' 				=> $userdata['username'],
+				'name' 					=> $userdata['name'],
+				'npm' 					=> $userdata['npm'],
+				'angkatan'				=> $userdata['angkatan'],
+				'jurusan' 				=> $userdata['jurusan'],
 			);
 
 		# create initial biodata record
 		$this->biodata->create($user_arr);
 
 		# create initial tugas record
-		$this->tugas->create(array('username' => $user_data['username']));
+		$this->tugas->create(array('username' => $userdata['username']));
 
 		# create initial pilihan record
-		$this->pilihan->create(array('username' => $user_data['username']));
+		$this->pilihan->create(array('username' => $userdata['username']));
 
 		# create initial kualifikasi record
-		$this->kualifikasi->create(array('username' => $user_data['username'], 'biohash' => $user_data['biohash']));
+		$this->kualifikasi->create(array('username' => $userdata['username'], 'biohash' => $userdata['biohash']));
 	}
 }
