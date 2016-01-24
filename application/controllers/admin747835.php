@@ -23,7 +23,7 @@ Class Admin747835 extends MY_Controller {
 					// redirect to sso login
 					redirect(site_url('ssologin'));
 				} else {
-					$qualify_data = $this->kualifikasi->getQualifyData($user['username']);
+					$qualify_data = $this->kualifikasi->getQualifyData($this->input->post('biohash'));
 
 					if ($this->input->post('qualifyWhat') == 1) 
 						$this->kualifikasi->qualifyPil1($this->input->post('biohash'), $qualify_data->isPil1Qualified);

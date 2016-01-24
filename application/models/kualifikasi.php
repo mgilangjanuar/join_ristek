@@ -10,8 +10,8 @@ Class Kualifikasi extends CI_Model {
 		return $this->db->insert('kualifikasi', $user_arr);
 	}
 
-	public function getQualifyData($username) {
-		$this->db->where('username', $username);
+	public function getQualifyData($biohash) {
+		$this->db->where('biohash', $biohash);
 		$result = $this->db->get('kualifikasi')->row();
 		return $result;
 	}
