@@ -10,7 +10,7 @@
 }
 
 body {
-	padding-bottom: 24px;
+	padding-bottom: 52px;
 }
 
 header {
@@ -22,7 +22,7 @@ footer {
 	background: #FFFFFF;
 	position: absolute;
 	bottom: 0;
-	height: 36px;
+	height: auto;
 	padding: 8px;
 	margin-top: 24px;
 }
