@@ -76,16 +76,16 @@ Class Ssologin extends MY_Controller {
 				'jurusan' 				=> $userdata['jurusan'],
 			);
 
-		# create initial biodata record
+		// create initial biodata record
 		$this->biodata->create($user_arr);
 
-		# create initial tugas record
+		// create initial tugas record
 		$this->tugas->create(array('username' => $userdata['username']));
 
-		# create initial pilihan record
+		// create initial pilihan record
 		$this->pilihan->create(array('username' => $userdata['username']));
 
-		# create initial kualifikasi record
+		// create initial kualifikasi record
 		$this->kualifikasi->create(array('username' => $userdata['username'], 'biohash' => $userdata['biohash']));
 	}
 }
