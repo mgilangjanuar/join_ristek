@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row-fluid">
 	<div class="col-md-12">		
 		<div class="panel panel-primary info-panel">
 		 	<!-- Default panel contents -->
@@ -11,7 +11,7 @@
 		 			<p><b>Q1</b>: Status lolos Pilihan 1, <b>Q2</b>: Status lolos Pilihan 2, <b>E</b>: Status Essay, <b>R:</b> Status Resume, <B>T1</b>: Status Tugas 1, <b>T2</b>: Status Tugas 2</p> 
 		 		</p>
 		 	</div>
-			<div class="row">
+			<div class="row-fluid">
 		 		<div class="col-md-12">
 				  	<div class="panel-group" id="accordion">
 						
@@ -52,7 +52,7 @@
 					    					echo '('.$sig1.','.$sig2.')';
 					    				?>
 									</span>
-
+									
 									<?php if ($p->sig2 == $p->sig1):?>
 									<span class="text-muted pull-right"><b>T2 &nbsp;</b></span>
 									<?php elseif (($p->tugas2 != NULL)):?>
@@ -96,7 +96,7 @@
 				    		</div>
 				    		<div id="<?php echo md5($p->username); ?>" class="panel-collapse collapse">
 				      			<div class="panel-body">
-				      				<div class="row">
+				      				<div class="row-fluid">
 				      					<div class="col-md-3">	
 				      						<span class="content-font"><b>Waktu Daftar:</b></span><br>
 					      					<p>
