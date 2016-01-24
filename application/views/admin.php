@@ -1,7 +1,6 @@
 <div class="row">
 	<div class="col-md-12">		
-		<div class="panel panel-primary info-panel">
-		 	<!-- Default panel contents -->
+		<div class="panel panel-primary info-panel">		 	
 		 	<div class="panel-heading info-panel-heading">Pendaftar</div>
 		 	<div class="panel-body">
 		 		<p>

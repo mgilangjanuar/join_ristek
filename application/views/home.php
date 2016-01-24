@@ -8,9 +8,6 @@
 
 		<title>Open Recruitment Portal - Ristek Fasilkom UI</title>
 
-		<!-- <link rel="stylesheet" href=" site_url('assets/css/bootstrap.min.css') ">
-		<link rel="stylesheet" href=" site_url('assets/css/main.css') ">
-		<link rel="stylesheet" href=" site_url('assets/css/template.css') "> -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>">
 		<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
@@ -92,10 +89,8 @@
 				</div>
 			</div>
 			
-		</div>
-		<!--<script type="text/javascript" src=" site_url('assets/js/jquery.min.js')"></script>-->
-		<script type="text/javascript" src="<?= base_url().'assets/js/jquery.min.js' ?> "></script>
-		<!--<script type="text/javascript" src="site_url('assets/js/bootstrap.min.js')"></script>-->
+		</div>		
+		<script type="text/javascript" src="<?= base_url().'assets/js/jquery.min.js' ?> "></script>		
 		<script type="text/javascript" src="<?= base_url().'assets/js/bootstrap.min.js' ?>"></script>
 	</body>
 </html>

@@ -8,9 +8,6 @@
 
 		<title><?= $title ?> - Ristek Fasilkom UI</title>
 
-		<!-- <link rel="stylesheet" href=" site_url('assets/css/bootstrap.min.css') ">
-		<link rel="stylesheet" href=" site_url('assets/css/main.css') ">
-		<link rel="stylesheet" href=" site_url('assets/css/template.css') "> -->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>">
 		<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
@@ -341,9 +338,12 @@
 				</div>
 			</div>			
 		</div>
-		<!--<script type="text/javascript" src=" site_url('assets/js/jquery.min.js')"></script>-->
-		<script type="text/javascript" src="<?= base_url().'assets/js/jquery.min.js' ?> "></script>
-		<!--<script type="text/javascript" src="site_url('assets/js/bootstrap.min.js')"></script>-->
+
+		<footer class="navbar-fixed-bottom text-center">
+			<span class="content-font text-info">Ristek Fasilkom UI. Powered by <a href="http://www.codeigniter.com">Codeigniter</a>. Source available on <a href="https://github.com/jundialwan/join_ristek">GitHub</a></span>
+		</footer>
+				
+		<script type="text/javascript" src="<?= base_url().'assets/js/jquery.min.js' ?> "></script>		
 		<script type="text/javascript" src="<?= base_url().'assets/js/bootstrap.min.js' ?>"></script>
 	</body>
 </html>
