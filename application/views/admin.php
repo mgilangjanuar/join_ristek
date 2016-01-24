@@ -146,7 +146,7 @@
 												<?php if (($p->essay != NULL)):?>
 						      					<a href="<?= $p->essay ?>" class="btn btn-primary" target="_blank">Download&nbsp;<span class="glyphicon glyphicon-save"></span></a>
 												<?php else: ?>
-												<a href="#" class="btn btn-primary disabled" role="button" target="_blank">Download&nbsp;<span class="glyphicon glyphicon-save"></span></a>
+												<span class="glyphicon glyphicon-remove"></span>
 												<?php endif; ?>
 											</p>
 
@@ -155,7 +155,7 @@
 												<?php if (($p->resume != NULL)):?>
 						      					<a href="<?= $p->resume ?>" class="btn btn-primary" target="_blank">Download&nbsp;<span class="glyphicon glyphicon-save"></span></a>
 												<?php else: ?>
-												<a href="#" class="btn btn-primary disabled" role="button" target="_blank">Download&nbsp;<span class="glyphicon glyphicon-save"></span></a>
+												<span class="glyphicon glyphicon-remove"></span>
 												<?php endif; ?>
 											</p>
 
@@ -164,7 +164,7 @@
 												<?php if (($p->tugas1 != NULL)):?>
 						      					<a href="<?= $p->tugas1 ?>" class="btn btn-primary" target="_blank">Download&nbsp;<span class="glyphicon glyphicon-save"></span></a>
 												<?php else: ?>
-												<a href="#" class="btn btn-primary disabled" role="button" target="_blank">Download&nbsp;<span class="glyphicon glyphicon-save"></span></a>
+												<span class="glyphicon glyphicon-remove"></span>
 												<?php endif; ?>
 											</p>
 											
@@ -174,7 +174,7 @@
 												<?php if (($p->tugas2 != NULL)):?>
 						      					<a href="<?= $p->tugas2 ?>" class="btn btn-primary" target="_blank">Download&nbsp;<span class="glyphicon glyphicon-save"></span></a>
 												<?php else: ?>
-												<a href="#" class="btn btn-primary disabled" role="button" target="_blank">Download&nbsp;<span class="glyphicon glyphicon-save"></span></a>
+												<span class="glyphicon glyphicon-remove"></span>
 												<?php endif; ?>
 											</p>
 											<?php endif; ?>
