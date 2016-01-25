@@ -77,6 +77,7 @@
 							</div>							
 						</div>
 					</div>
+					<!-- Sasaran Strategis -->
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-primary info-panel">
@@ -97,9 +98,79 @@
 						</div>
 					</div>
 					<br>
+					<!-- Benefit -->
+					<!-- Sasaran Strategis -->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-primary info-panel">
+						  		<div class="panel-heading info-panel-heading">
+						    		<h3 class="panel-title text-center">Benefit</h3>
+						  		</div>
+						  		<div class="panel-body">
+							    	<!-- <ul class="info-content">
+							    		<li>Menjadikan Ristek Fasilkom UI menjadi rumah terbaik dalam pengembangan minat-bakat yang terkait dengan teknologi informasi bagi seluruh mahasiswa Fasilkom UI</li>
+							    		<li>Memiliki portofolio Ristek Fasilkom UI yang berisi produk hasil pengembangan dari setiap SIG</li>
+							    		<li>Menjadi juara umum pada Gemastik 9</li>
+							    		<li>Memunculkan juara-juara baru pada kompetisi berbasis teknologi informasi</li>
+							    		<li>Setiap anggota Ristek Fasilkom UI siap untuk terjun ke dalam proyek nyata</li>
+							    		<li>Membangun citra Ristek Fasilkom UI yang positif bagi internal maupun eksternal</li>
+							    	</ul> -->							    	
+						  		</div>
+							</div>							
+						</div>
+					</div>
+					<br>
+					<!-- Penjelasan Divisi -->
 					<div class="row">						
 						<div class="col-md-12">
 							<div class="panel-group" id="accordion">
+								<h3 class="headline content-font">Supporting Division</h3>
+
+						  		<div class="panel panel-primary info-panel">
+						    		<div class="panel-heading info-panel-heading">
+						      			<h4 class="panel-title">
+						        			<a data-toggle="collapse" data-parent="#accordion" href="#hr">Human Resources Management Division</a>
+						      			</h4>
+						    		</div>
+						    		<div id="hr" class="panel-collapse collapse">
+						      			<div class="panel-body">
+						      				<div class="row">
+						      					<div class="col-md-12 text-center">	
+							      					<img class="img-responsive center-block" src="<?= base_url().'assets/img/hr.png' ?>" alt="game" width="60" height="80">
+													<span class="content-font headline"><b>Human Resources Management Division</b></span>	
+						      					</div>
+						      				</div>
+						      				<br>
+						      				<p class="info-content">
+						      					Human Resources Management adalah divisi khusus yang bertanggung jawab dalam membangun dan menjaga hubungan baik dalam internal Ristek Fasilkom UI. Divisi ini akan membuat berbagai acara yang dapat meningkatkan hubungan internal Ristek Fasilkom UI. Divisi ini juga akan membantu dan mengawasi kinerja tiap anggota SIG dan proker tiap SIG.
+						      				</p>
+						  				</div>
+						    		</div>
+						  		</div>					  
+
+						  		<div class="panel panel-primary info-panel">
+						    		<div class="panel-heading info-panel-heading">
+						      			<h4 class="panel-title">
+						        			<a data-toggle="collapse" data-parent="#accordion" href="#pr">Public Relation Division</a>
+						      			</h4>
+						    		</div>
+						    		<div id="pr" class="panel-collapse collapse">
+						      			<div class="panel-body">
+						      				<div class="row">
+						      					<div class="col-md-12 text-center">	
+							      					<img class="img-responsive center-block" src="<?= base_url().'assets/img/pr.png' ?>" alt="mobapps" width="60" height="80">
+													<span class="content-font headline"><b>Public Relation Division</b></span>	
+						      					</div>
+						      				</div>
+						      				<br>
+						      				<p class="info-content">
+						      					Public Relation adalah divisi khusus yang bertanggung jawab dalam membangun dan menjaga relasi baik secara internal maupun eksternal Ristek Fasilkom UI. Divisi ini menyusun segala bentuk publikasi yang dilakukan oleh Ristek Fasilkom UI serta menjaga hubungan kerjasama dengan partner.
+						      				</p>
+						  				</div>
+						    		</div>
+						  		</div>	
+
+						  		<br><br>
 								<h3 class="headline content-font">Computer System &amp; Computational Intelligence Group</h3>
 
 						  		<div class="panel panel-primary info-panel">
@@ -279,58 +350,12 @@
 						      				</p>
 						  				</div>
 						    		</div>
-						  		</div>
-
-						  		<br><br>
-						  		<h3 class="headline content-font">Supporting Division</h3>
-
-						  		<div class="panel panel-primary info-panel">
-						    		<div class="panel-heading info-panel-heading">
-						      			<h4 class="panel-title">
-						        			<a data-toggle="collapse" data-parent="#accordion" href="#hr">Human Resources Management Division</a>
-						      			</h4>
-						    		</div>
-						    		<div id="hr" class="panel-collapse collapse">
-						      			<div class="panel-body">
-						      				<div class="row">
-						      					<div class="col-md-12 text-center">	
-							      					<img class="img-responsive center-block" src="<?= base_url().'assets/img/hr.png' ?>" alt="game" width="60" height="80">
-													<span class="content-font headline"><b>Human Resources Management Division</b></span>	
-						      					</div>
-						      				</div>
-						      				<br>
-						      				<p class="info-content">
-						      					Human Resources Management adalah divisi khusus yang bertanggung jawab dalam membangun dan menjaga hubungan baik dalam internal Ristek Fasilkom UI. Divisi ini akan membuat berbagai acara yang dapat meningkatkan hubungan internal Ristek Fasilkom UI. Divisi ini juga akan membantu dan mengawasi kinerja tiap anggota SIG dan proker tiap SIG.
-						      				</p>
-						  				</div>
-						    		</div>
-						  		</div>					  
-
-						  		<div class="panel panel-primary info-panel">
-						    		<div class="panel-heading info-panel-heading">
-						      			<h4 class="panel-title">
-						        			<a data-toggle="collapse" data-parent="#accordion" href="#pr">Public Relation Division</a>
-						      			</h4>
-						    		</div>
-						    		<div id="pr" class="panel-collapse collapse">
-						      			<div class="panel-body">
-						      				<div class="row">
-						      					<div class="col-md-12 text-center">	
-							      					<img class="img-responsive center-block" src="<?= base_url().'assets/img/pr.png' ?>" alt="mobapps" width="60" height="80">
-													<span class="content-font headline"><b>Public Relation Division</b></span>	
-						      					</div>
-						      				</div>
-						      				<br>
-						      				<p class="info-content">
-						      					Public Relation adalah divisi khusus yang bertanggung jawab dalam membangun dan menjaga relasi baik secara internal maupun eksternal Ristek Fasilkom UI. Divisi ini menyusun segala bentuk publikasi yang dilakukan oleh Ristek Fasilkom UI serta menjaga hubungan kerjasama dengan partner.
-						      				</p>
-						  				</div>
-						    		</div>
-						  		</div>			
+						  		</div>						  								  				
 							</div>								
 						</div>
 					</div>
 					<br><br>
+					<!-- button -->
 					<div class="col-md-4 col-md-offset-4 text-center">	
 						<p>Ready? Login to proceed</p>				
 						<a href="<?= site_url('ssologin') ?>" class="btn btn-primary btn-lg center-block">SSO Login</a>	

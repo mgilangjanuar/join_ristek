@@ -91,10 +91,10 @@
 					</div>
 				</div>
 				<div class="col-md-5">
-							<br><br><br>
+					<br><br><br><br><br><br>
 					<div class="row">
 						<div class="col-md-12">
-							<span class="content-font"><i>“Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself” <br>-Rumi</i></span>	
+							<span class="content-font"><b><i>“Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself” <br>-Rumi</i></b></span>	
 						</div>						
 					</div><br>
 					<div class="row">			
@@ -105,7 +105,7 @@
 								<?php endif; ?>
 
 								<div class="col-md-4 col-md-offset-2 text-center ">					
-									<a href="<?= site_url('info') ?>" class="btn btn-primary btn-lg center-block sso-btn">More info</a>	
+									<a href="<?= site_url('info') ?>" class="btn btn-primary btn-lg center-block">More info</a>	
 								</div>
 								<div class="col-md-4 text-center ">					
 									<a href="<?= site_url('ssologin') ?>" class="btn btn-link btn-lg center-block">SSO Login</a>	
