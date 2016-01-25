@@ -17,8 +17,8 @@
 	<body>
 		<div class="container">	
 			<div class="row">
-				<div class="col-md-6"><br><br><br>
-					<div class="row">
+				<div class="col-md-12"><br><br><br>
+					<div class="row text-center">
 						<img class="img-responsive center-block" src="http://ristek.cs.ui.ac.id/img/logo-blue.png" alt="logo-ristek" width="90" height="120">
 						<h2 class="headline head-font"><b>EXPLORING WHAT?</b></h2>
 						<br>
