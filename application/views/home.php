@@ -91,15 +91,14 @@
 					</div>
 				</div>
 				<div class="col-md-5">
+							<br><br><br>
 					<div class="row">
 						<div class="col-md-12">
 							<span class="content-font"><i>“Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself” <br>-Rumi</i></span>	
-						</div>
-						
+						</div>						
 					</div><br>
 					<div class="row">			
 						<div class="col-md-12">
-							<br><br><br>
 							<div class="row">
 								<?php if ((time()-(60*60*24)) < strtotime('2016-01-26 08:59:59.0')): ?>
 								<p class="text-center">Registrasi dibuka pada 26 Januari 2016 pkl 18.00wib</p>					
