@@ -187,6 +187,7 @@
 				      					</div>
 				      				</div>
 				      				<form action="<?= site_url('admin747835') ?>" method="POST">
+				      					<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
 				      					<input type="hidden" name="biohash" value="<?= $p->biohash ?>">
 										<input type="hidden" name="qualifyWhat" value="2">
 
@@ -198,6 +199,7 @@
 				      				</form>					      				
 									<p class="pull-right">&nbsp;&nbsp;</p>
 									<form action="<?= site_url('admin747835') ?>" method="POST">
+										<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
 										<input type="hidden" name="biohash" value="<?= $p->biohash ?>">
 										<input type="hidden" name="qualifyWhat" value="1">
 

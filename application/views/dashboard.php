@@ -129,8 +129,8 @@
 						  	<div class="panel-body">
 						  		<?php if ((time()-(60*60*24)) > strtotime('2016-02-07 08:59:59.0')): ?>
 						  		<div class="well well-lg content-font">Masa pengumpulan tugas sudah berakhir. Anda tidak diperkenankan lagi untuk submit tugas.</div>
-						  		<?php endif; ?>
-						  			
+						  		<?php else: ?>
+						  		
 								<?php if ($tugas->essay != NULL):?>
 							  	<div class="form-group well-sm list-group-item-success">
 							  	<?php else:?>
