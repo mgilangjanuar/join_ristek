@@ -14,12 +14,13 @@ class Logout extends MY_Controller {
 	public function index() {
 		if (!$this->is_logged_in()) {
 			redirect(site_url());
-		}
-		
-		# unset session data
-		$this->session->unset_userdata('user_data');
+		} else {
+			# unset session data
+			$this->session->unset_userdata('user_data');
 
-		# logout SSO
-		SSO::logout();
+			# logout SSO
+			SSO::logout();			
+		}
+
 	}
 }
