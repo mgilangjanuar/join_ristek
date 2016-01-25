@@ -159,7 +159,7 @@
 
 							  		<label for="essay_link_input">Link Essay Motivasi</label>	
 						  			<p class="content-font"><?= form_error('essay_link_input') ?></p>
-						  			<form id="essay_link_form" action="<?= site_url('dashboard#tugas') ?>" method="post" class="form-inline">
+						  			<form id="essay_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">
 						  				<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
 							  			<div class="form-group">
 							  			   	<div class="input-group">						  			   		
@@ -185,7 +185,7 @@
 
 							  		<label for="resume_link_input">Link Resume</label>	
 						  			<p class="content-font"><?= form_error('resume_link_input') ?></p>
-						  			<form id="resume_link_form" action="<?= site_url('dashboard#tugas') ?>" method="post" class="form-inline">
+						  			<form id="resume_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">
 						  				<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
 						  				<div class="form-group">
 						  					<div class="input-group">
