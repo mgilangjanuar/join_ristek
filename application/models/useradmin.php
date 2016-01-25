@@ -7,10 +7,10 @@ Class Useradmin extends CI_Model {
 	}
 
 	public function getAllPendaftar($sig) {
-		$this->db->from('biodata b');
-		$this->db->join('tugas t', 't.username=b.username');
-		$this->db->join('pilihan p', 'p.username=b.username');
-		$this->db->join('kualifikasi k', 'k.username=b.username');
+		$this->db->from('pilihan p');
+		$this->db->join('tugas t', 't.username=p.username');
+		$this->db->join('biodata b', 'b.username=p.username');
+		$this->db->join('kualifikasi k', 'k.username=p.username');
 
 		$where = '';
 		if ($sig == 'cs') {
