@@ -303,7 +303,7 @@ $config['global_xss_filtering'] = TRUE;
 */
 $config['csrf_protection'] = TRUE;
 $config['csrf_token_name'] = 'vaclisdartef';
-$config['csrf_cookie_name'] = 'csrf_cookie_name';
+$config['csrf_cookie_name'] = 'ci_csrf_cookie';
 $config['csrf_expire'] = 7200;
 
 /*
