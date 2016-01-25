@@ -111,7 +111,7 @@
 			    			</div>
 			    			Submisi link file tugas dan Resume dapat dilakukan lebih dari satu kali dan hanya file dari link terakhir yang dinilai.		    			
 			    			Template Resume dan file tugas tersedia pada link dibawah. Resume yang Anda buat harus sesuai dengan template yang kami berikan.							
-			    			Pastikan bahwa link yang Anda share adalah public link, bisa diakses oleh orang lain. 			    			
+			    			Pastikan bahwa link yang Anda submit adalah public dan valid, bukan fake link, agar  bisa diakses oleh orang lain. 			    			
 							<br><br>
 							<b>Format penamaan Resume: Resume_Nama.pdf. <br>Contoh: Resume_Firza Pratama.pdf</b>
 							<br><br>
