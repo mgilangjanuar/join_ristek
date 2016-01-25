@@ -15,6 +15,7 @@
 				  	<div class="panel-group" id="accordion">
 						
 						<?php foreach($pendaftar as $p): ?>
+						<?php if($p->timestamp != NULL): ?>
 
 				  		<div class="panel panel-default">
 				  			<div class="panel-heading">
@@ -204,8 +205,9 @@
 				      				</form>				      				
 				  				</div>
 				    		</div>
-				  		</div>	
+				  		</div>
 
+						<?php endif; ?>
 						<?php endforeach; ?>
 				  	</div>										
 				</div>					
