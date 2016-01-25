@@ -11,7 +11,7 @@ Class Admin747835 extends MY_Controller {
 		$admin_username = $user['username'];
 
 		//check if user is admin
-		if (!$this->isAdmin($user['username']) & !$this->is_logged_in()) {
+		if (!$this->isAdmin($user['username']) | !$this->is_logged_in()) {
 			// if it's not
 			// redirect to index
 			redirect(site_url('ssologin'));
