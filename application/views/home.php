@@ -21,8 +21,9 @@
 				<div class="col-md-6"><br><br><br>
 					<div class="row">
 						<img class="img-responsive center-block" src="http://ristek.cs.ui.ac.id/img/logo-blue.png" alt="logo-ristek" width="90" height="120">
+						<h3 class="headline content-font">Ristek Fasilkom UI</h3>				
 						<h2 class="headline head-font"><b>EXPLORING TECHNOLOGY</b></h2>
-						<h3 class="headline content-font">Open Recruitment <br>SIG Junior Member &amp; Supporting Division Staff <bR> Ristek Fasilkom UI</h3>				
+						<h4 class="headline content-font">Open Recruitment <br>SIG Junior Member &amp; Supporting Division Staff</h4>				
 					</div>
 					<div class="row">
 						<div class="table-responsive">
@@ -62,6 +63,22 @@
 										<td class="text-center">
 											<img class="img-responsive center-block" src="<?= base_url().'assets/img/web.png' ?>" alt="Web Dev" width="60" height="80">
 											<span class="content-font headline"><b>Web<br>Development</b></span>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-center">
+											
+										</td>
+										<td class="text-center">
+											<img class="img-responsive center-block" src="<?= base_url().'assets/img/pr.png' ?>" alt="Mobile Dev" width="60" height="80">
+											<span class="content-font headline"><b>Public Relation</b></span>
+										</td>
+										<td class="text-center">
+											<img class="img-responsive center-block" src="<?= base_url().'assets/img/hr.png' ?>" alt="UI/UX" width="60" height="80">
+											<span class="content-font headline"><b>Human Resources Management</b></span>
+										</td>
+										<td class="text-center">
+											
 										</td>
 									</tr>
 								</tbody>

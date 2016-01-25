@@ -18,7 +18,7 @@
 							<br><br>
 							Proses Open Recruitment Anggota Ristek Fasilkom UI dilaksanakan dalam 2 tahap yaitu <B>Pengerjaan Tugas dan Wawancara.</b> 
 							<div class="alert alert-info" role="alert">
-							<b>Masa Pengerjaan Tugas adalah <u>26 Januari - 7 Februari 2016</u>.</b>
+							<b>Masa Pengerjaan Tugas adalah <u>26 Januari - 6 Februari 2016 pkl 23:55</u>.</b>
 							</div>
 
 							Pendaftar dapat melakukan tahap Wawancara <b>jika dan hanya jika lolos seleksi tugas</b> yang akan diumumkan pada <b><u>8 Februari 2016</u></b>.
@@ -87,7 +87,7 @@
 		    			<h4>Petunjuk</h4>
 			    		<p class="content-font">
 			    			<div class="alert alert-danger" role="alert">
-			    				Deadline pengumpulan link tugas adalah <b><u>7 Februari 2016 pukul 09:00</u></b>.
+			    				Deadline pengumpulan link tugas adalah <b><u>6 Februari 2016 pukul 23:55</u></b>.
 			    			</div>
 			    			Submisi link file tugas dan Resume dapat dilakukan lebih dari satu kali dan hanya file dari link terakhir yang dinilai.		    			
 			    			Template Resume dan file tugas tersedia pada link dibawah. Resume yang Anda buat harus sesuai dengan template yang kami berikan.							
