@@ -56,7 +56,7 @@
 							<option value="ux">&nbsp;&nbsp;&nbsp;&nbsp;UI/UX SIG</option>
 							<option value="wb">&nbsp;&nbsp;&nbsp;&nbsp;Web Development SIG</option>
 							<option disabled>Supporting Division</option>
-							<option value="hr">&nbsp;&nbsp;&nbsp;&nbsp;Human Resource Management Division</option>
+							<option value="hr">&nbsp;&nbsp;&nbsp;&nbsp;Human Resources Management Division</option>
 							<option value="pr">&nbsp;&nbsp;&nbsp;&nbsp;Public Relation Division</option>
 						</select>
 					</div>
@@ -79,7 +79,7 @@
 							<option value="ux">&nbsp;&nbsp;&nbsp;&nbsp;UI/UX SIG</option>
 							<option value="wb">&nbsp;&nbsp;&nbsp;&nbsp;Web Development SIG</option>
 							<option disabled>Supporting Division</option>
-							<option value="hr">&nbsp;&nbsp;&nbsp;&nbsp;Human Resource Management Division</option>
+							<option value="hr">&nbsp;&nbsp;&nbsp;&nbsp;Human Resources Management Division</option>
 							<option value="pr">&nbsp;&nbsp;&nbsp;&nbsp;Public Relation Division</option>
 						</select>
 					</div>

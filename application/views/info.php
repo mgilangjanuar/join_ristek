@@ -287,7 +287,7 @@
 						  		<div class="panel panel-primary info-panel">
 						    		<div class="panel-heading info-panel-heading">
 						      			<h4 class="panel-title">
-						        			<a data-toggle="collapse" data-parent="#accordion" href="#hr">Human Resource Management Division</a>
+						        			<a data-toggle="collapse" data-parent="#accordion" href="#hr">Human Resources Management Division</a>
 						      			</h4>
 						    		</div>
 						    		<div id="hr" class="panel-collapse collapse">
@@ -295,7 +295,7 @@
 						      				<div class="row">
 						      					<div class="col-md-12 text-center">	
 							      					<img class="img-responsive center-block" src="<?= base_url().'assets/img/hr.png' ?>" alt="game" width="60" height="80">
-													<span class="content-font headline"><b>Human Resource Management Division</b></span>	
+													<span class="content-font headline"><b>Human Resources Management Division</b></span>	
 						      					</div>
 						      				</div>
 						      				<br>
@@ -342,7 +342,7 @@
 		<footer class="navbar-fixed-bottom text-center">
 			<span class="content-font text-info">Ristek Fasilkom UI. Powered by <a href="http://www.codeigniter.com">Codeigniter</a>. Source available on <a href="https://github.com/jundialwan/join_ristek">GitHub</a></span>
 		</footer>
-				
+
 		<script type="text/javascript" src="<?= base_url().'assets/js/jquery.min.js' ?> "></script>		
 		<script type="text/javascript" src="<?= base_url().'assets/js/bootstrap.min.js' ?>"></script>
 	</body>

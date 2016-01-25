@@ -290,7 +290,7 @@
 		  		<div class="row">
 		  			<div class="col-md-6">
 				  		<div class="panel panel-primary info-panel">
-					  		<div class="panel-heading info-panel-heading">Head of Human Resource Management Division</div>
+					  		<div class="panel-heading info-panel-heading">Head of Human Resources Management Division</div>
 					  		<div class="panel-body">Ifa Nasution: +6287887241010</div>
 						</div>
 			  		</div>
