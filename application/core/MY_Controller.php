@@ -28,7 +28,7 @@ class MY_Controller extends CI_Controller {
 		$this->render('404', $data);
 	}
 
-	public function forbidden() {
+	public function error_403() {
 		$data['title'] = 'Forbidden Page - Ristek Fasilkom UI';
 		$this->render('forbidden', $data);
 	}
