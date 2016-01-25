@@ -20,14 +20,14 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row">
-						<img class="img-responsive center-block" src="http://ristek.cs.ui.ac.id/img/logo-blue.png" alt="logo-ristek" width="90" height="120">
+						<img class="img-responsive center-block" src="http://ristek.cs.ui.ac.id/img/logo-blue.png" alt="logo-ristek" width="60" height="80">
 						<h3 class="headline content-font">Ristek Fasilkom UI</h3>				
-						<h2 class="headline head-font"><b>EXPLORING TECHNOLOGY</b></h2>
+						<h3 class="headline head-font"><b>EXPLORING TECHNOLOGY</b></h3>
 					</div>					
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-7">
 					<h4 class="headline content-font">Open Recruitment <br>SIG Junior Member &amp; Supporting Division Staff</h4>				
 					<div class="row">
 						<div class="table-responsive">
@@ -90,7 +90,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-5">
 					<div class="row">
 						<div class="col-md-12 col-md-offset-1">
 							<span class="content-font quote"><i>“Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself” <br>-Rumi</i></span>	
