@@ -56,21 +56,12 @@ Class Register extends MY_Controller {
 
 						# run form validation
 						if (!($this->form_validation->run())) {
-							# if form input invalid
-							# set errors flashdata
-
-							# get back to form						
-							// render form.php
+							# if form input invalid							
+							# get back to form													
 							$data['title'] = 'Registration Form';
 							$this->render('form', $data);
 						} else {
-							# if form valid
-
-							# check to model if user is logged in
-							// if (!$this->is_logged_in()) {
-							// 	# if not logged in
-							// 	# redirect to index
-							// }
+							# if form valid							
 
 							# submit form to database through model
 							# submit update biodata							

@@ -2,7 +2,8 @@
 
 // SSO library
 require_once(__DIR__.'/../../vendor/SSO/SSO/SSO.php');
-SSO\SSO::setCASPath(__DIR__.'/../../vendor/CAS/CAS.php');
+use SSO\SSO;
+SSO::setCASPath(__DIR__.'/../../vendor/CAS/CAS.php');
 
 class Logout extends MY_Controller {
 
@@ -15,6 +16,6 @@ class Logout extends MY_Controller {
 		$this->session->unset_userdata('user_data');
 
 		# logout SSO
-		SSO\SSO::logout();
+		SSO::logout();
 	}
 }

@@ -21,17 +21,7 @@ class Welcome extends MY_Controller {
 	{	
 		# load home view
 		$this->load->view('home');
-	}	
-
-	// public function in() {
-	// 	$data['register'] = $this;
-	// 	$this->load->view('sso_in', $data);
-	// }
-
-	// public function out() {
-	// 	$this->session->unset_userdata('user_data');
-	// 	$this->load->view('sso_out');
-	// }
+	}
 }
 
 /* End of file welcome.php */

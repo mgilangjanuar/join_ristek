@@ -23,16 +23,6 @@ class MY_Controller extends CI_Controller {
 		$this->load->view('template', $data);
 	}
 
-	public function error_404() {
-		$data['title'] = 'Nothing Interesting Here - Ristek Fasilkom UI';
-		$this->render('404', $data);
-	}
-
-	public function error_403() {
-		$data['title'] = 'Forbidden Page - Ristek Fasilkom UI';
-		$this->render('forbidden', $data);
-	}
-
 	public function is_logged_in() {
 		return $this->session->userdata('userdata');
 	}

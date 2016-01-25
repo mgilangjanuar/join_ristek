@@ -2,7 +2,8 @@
 
 // SSO library
 require_once(__DIR__.'/../../vendor/SSO/SSO/SSO.php');
-SSO\SSO::setCASPath(__DIR__.'/../../vendor/CAS/CAS.php');
+use SSO\SSO;
+SSO::setCASPath(__DIR__.'/../../vendor/CAS/CAS.php');
 
 // require 'http://ristek.cs.ui.ac.id/sso-api/vendor/autoload.php'
 
@@ -13,9 +14,9 @@ Class Ssologin extends MY_Controller {
 	}
 
 	public function index() {
-		if(!SSO\SSO::check()) SSO\SSO::authenticate();
+		if(!SSO::check()) SSO::authenticate();
 
-		$user = SSO\SSO::getUser();
+		$user = SSO::getUser();
 		$userdata = array(
 				'username' 				=> $user->username,
 				'name' 					=> $user->name,
