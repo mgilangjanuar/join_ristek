@@ -2,8 +2,8 @@
 	<form action="<?= site_url('register') ?>" class="" method="post">
 		<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
 		<div class="col-md-6">
-			<div class="panel panel-primary">
-				<div class="panel-heading">Biodata</div>
+			<div class="panel panel-primary info-panel">
+				<div class="panel-heading info-panel-heading">Biodata</div>
 				<div class="panel-body">
 					<div class="form-group">
 						<label for="namalengkap_input">Nama Lengkap</label>
@@ -39,8 +39,8 @@
 			</div>				
 		</div>
 		<div class="col-md-6">			
-			<div class="panel panel-primary">
-		  		<div class="panel-heading">SIG &amp; Divisi</div>
+			<div class="panel panel-primary info-panel">
+		  		<div class="panel-heading info-panel-heading">SIG &amp; Divisi</div>
 		  		<div class="panel-body">				    
 		  			<p>Jika Anda hanya ingin memliih satu SIG/Divisi saja maka isi pilihan 2 dengan SIG/Divisi yang sama begitu juga dengan kolom alasan</p>
 		    		<div class="form-group">
