@@ -73,29 +73,29 @@ Class Dashboard extends MY_Controller {
 						}
 					}
 					// redirect(site_url('dashboard#tugas'));
-				} else {
-					// get tugas data
-					$r_tugas = $this->tugas->get($user['username']);
-					$data['tugas'] = $r_tugas;
+				}
 
-					// get pilihan data
-					$r_pilihan = $this->pilihan->get($user['username']);
-					$data['pilihan'] = $r_pilihan;
+				// get tugas data
+				$r_tugas = $this->tugas->get($user['username']);
+				$data['tugas'] = $r_tugas;
 
-					// get sig property object
-					$sigprop1 = $this->sigproperty->getSIGProperty($r_pilihan->sig1);
-					$sigprop2 = $this->sigproperty->getSIGProperty($r_pilihan->sig2);
+				// get pilihan data
+				$r_pilihan = $this->pilihan->get($user['username']);
+				$data['pilihan'] = $r_pilihan;
 
-					$data['sigprop1'] = $sigprop1;
-					$data['sigprop2'] = $sigprop2;
+				// get sig property object
+				$sigprop1 = $this->sigproperty->getSIGProperty($r_pilihan->sig1);
+				$sigprop2 = $this->sigproperty->getSIGProperty($r_pilihan->sig2);
 
-					// is User Qualified
-					$data['isUserQualified'] = $this->kualifikasi->getQualifyData($user['biohash']);
+				$data['sigprop1'] = $sigprop1;
+				$data['sigprop2'] = $sigprop2;
 
-					// render dashboard
-					$data['title'] = 'Dashboard';				
-					$this->render('dashboard', $data);														
-				}			
+				// is User Qualified
+				$data['isUserQualified'] = $this->kualifikasi->getQualifyData($user['biohash']);
+
+				// render dashboard
+				$data['title'] = 'Dashboard';				
+				$this->render('dashboard', $data);																			
 			} else {
 				// user not registered
 				// redirect to form
