@@ -1,5 +1,6 @@
 <div class="row">	
 	<form action="<?= site_url('register') ?>" class="" method="post">
+		<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
 		<div class="col-md-6">
 			<div class="panel panel-primary">
 				<div class="panel-heading">Biodata</div>

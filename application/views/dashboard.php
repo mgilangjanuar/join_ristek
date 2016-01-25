@@ -140,6 +140,7 @@
 							  		<label for="essay_link_input">Link Essay Motivasi</label>	
 						  			<p class="content-font"><?= form_error('essay_link_input') ?></p>
 						  			<form id="essay_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">
+						  				<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
 							  			<div class="form-group">
 							  			   	<div class="input-group">						  			   		
 								  				<div class="input-group-addon">http://</div>
@@ -165,6 +166,7 @@
 							  		<label for="resume_link_input">Link Resume</label>	
 						  			<p class="content-font"><?= form_error('resume_link_input') ?></p>
 						  			<form id="resume_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">
+						  				<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
 						  				<div class="form-group">
 						  					<div class="input-group">
 						  						<div class="input-group-addon">http://</div>
@@ -189,7 +191,8 @@
 	
 							  		<label for="tugas1_link_input">Link Tugas SIG Pilihan 1</label>
 							  		<p class="content-font"><?= form_error('tugas1_link_input') ?></p>					    
-							  		<form id="tugas1_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">				  							   
+							  		<form id="tugas1_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">	
+							  			<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">			  							   
 							  			<div class="form-group">
 							  				<div class="input-group">
 							  					<div class="input-group-addon">http://</div>
@@ -216,7 +219,8 @@
 
 							  		<label for="tugas2_link_input">Link Tugas SIG Pilihan 2</label>					    
 							  		<p class="content-font"><?= form_error('tugas2_link_input') ?></p>
-							  		<form id="tugas2_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">				  							   
+							  		<form id="tugas2_link_form" action="<?= site_url('dashboard') ?>" method="post" class="form-inline">	
+							  			<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">			  							   
 							  			<div class="form-group">
 							  				<div class="input-group">
 												<div class="input-group-addon">http://</div>
