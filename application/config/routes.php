@@ -40,8 +40,6 @@
 
 $route['default_controller'] = 'welcome';
 $route['404_override'] = 'errors/error_404';
-$route['403_override'] = 'errors/error_404';
-
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
