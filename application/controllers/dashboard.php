@@ -1,4 +1,4 @@
-<?php //if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 Class Dashboard extends MY_Controller {
 	public function __construct() {
@@ -72,7 +72,6 @@ Class Dashboard extends MY_Controller {
 							if ($this->form_validation->run()) $result = $this->tugas->submitTugas2($user['username'], $link);															
 						}
 					}
-
 					// redirect(site_url('dashboard#tugas'));
 				}				
 
@@ -96,7 +95,10 @@ Class Dashboard extends MY_Controller {
 
 				// render dashboard
 				$data['title'] = 'Dashboard';
-				$this->render('dashboard', $data);									
+				if ($_SERVER['REQUEST_METHOD'] == 'POST')
+					$this->render('dashboard#tugas', $data);	
+				else
+					$this->render('dashboard', $data);									
 			} else {
 				// user not registered
 				// redirect to form
@@ -105,15 +107,15 @@ Class Dashboard extends MY_Controller {
 		}	
 	}	
 
-	public function valid_url_format($str) {
-    	$pattern = "|^http(s)?://[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(/.*)?$|i";
-        if (!preg_match($pattern, $str)) return false;
-        else return true;
-    }
+	// public function valid_url_format($str) {
+ //    	$pattern = "|^http(s)?://[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(/.*)?$|i";
+ //        if (!preg_match($pattern, $str)) return false;
+ //        else return true;
+ //    }
 
-    public function url_exists($url) {                                       
-        $file_headers = @get_headers($file);
-		if(strpos($file_headers[0],'404') === false) return false;
-		else return true;
-    } 
+ //    public function url_exists($url) {                                       
+ //        $file_headers = @get_headers($file);
+	// 	if(strpos($file_headers[0],'404') === false) return false;
+	// 	else return true;
+ //    } 
 }
