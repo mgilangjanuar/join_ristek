@@ -21,6 +21,5 @@ class Logout extends MY_Controller {
 			# logout SSO
 			SSO::logout();			
 		}
-
 	}
 }
