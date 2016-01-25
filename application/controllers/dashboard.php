@@ -73,7 +73,7 @@ Class Dashboard extends MY_Controller {
 						}
 					}
 
-					redirect(site_url('dashboard#tugas'));
+					// redirect(site_url('dashboard#tugas'));
 				}				
 
 				// get tugas data
