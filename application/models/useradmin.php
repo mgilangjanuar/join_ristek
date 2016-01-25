@@ -27,7 +27,7 @@ Class Useradmin extends CI_Model {
 				sig1="ux" or sig2="ux" or
 				sig1="md" or sig2="md"
 			';			
-		} else $where = 'sig1='.$sig.' or sig2='.$sig;
+		} else $where = 'sig1="'.$sig.'" or sig2="'.$sig.'"';
 
 		if ($sig != 'sp') $this->db->where($where);
 
