@@ -40,13 +40,11 @@ Class Useradmin extends CI_Model {
 
 	public function isAdmin($username) {
 		$this->db->select('username');
-		$result = $this->db->get('admin')->result_array();
-		$admin_arr = array();
-
-		foreach ($result as $r) array_push($admin_arr, $r['username']);
+		$result = $this->db->get('admin')->result();
+		$admin_arr = array();		
 		
-		if (in_array($username, $admin_arr)) return true;
-		else return false;
+		if (cout($result) == 0) return false;
+		else return true;
 	}
 
 	public function getAdmin($username) {
