@@ -1,6 +1,10 @@
 <div class="row">
-	<div class="col-md-12">		
-		<div class="panel panel-primary info-panel">		 	
+	<div class="col-md-12">	
+		<br>	
+		<div class="well well-sm text-center" role="alert">			
+			<b>Logged in as <?= $user['username'] ?></b>
+		</div>	
+		<div class="panel panel-primary info-panel">					 
 		 	<div class="panel-heading info-panel-heading">Pendaftar</div>
 		 	<div class="panel-body">
 		 		<p>

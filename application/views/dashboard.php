@@ -14,7 +14,7 @@
 	  				<div class="col-md-7">
 	  					<h4>Informasi</h4>
 	  					<p class="content-font">
-	  						Halo <?= $user['username'] ?>, terima kasih telah mendaftar sebagai calon anggota Ristek Fasilkom UI!	
+	  						Halo <b><?= $user['username'] ?></b>, terima kasih telah mendaftar sebagai calon anggota Ristek Fasilkom UI!	
 							<br><br>
 							Proses Open Recruitment Anggota Ristek Fasilkom UI dilaksanakan dalam 2 tahap yaitu <B>Pengerjaan Tugas dan Wawancara.</b> 
 							<div class="alert alert-info" role="alert">
