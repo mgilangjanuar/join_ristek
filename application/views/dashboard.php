@@ -7,7 +7,11 @@
 	</ul>
 
 	<div class="tab-content">
+		<?php if (!isset($afterSubmit)): ?>
 		<div id="home" class="tab-pane in active">	 
+		<?php else: ?>
+		<div id="home" class="tab-pane">	 
+		<?php endif; ?>
 	  		<br>
 	  		<div class="col-md-12">
 	  			<div class="row">	  									
@@ -76,10 +80,14 @@
 		  				</div>			  			
 			  		</div>		  						
 	  			</div>
-	  		</div>
-	  		
+	  		</div>	  		
 	  	</div>
+
+	  	<?php if (!isset($afterSubmit)): ?>
 	  	<div id="tugas" class="tab-pane">
+	  	<?php else: ?>
+	  	<div id="tugas" class="tab-pane in active">
+	  	<?php endif; ?>
 		  	<br>	 
 		  	<div class="col-md-12">
 		  		<div class="row">
