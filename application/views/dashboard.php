@@ -1,9 +1,21 @@
 <div class="row">
 	<ul class="nav nav-tabs">
-	  <li class="active"><a class="ristek-color" data-toggle="tab" href="#home">HOME</a></li>
-	  <li><a class="ristek-color" data-toggle="tab" href="#tugas">TUGAS</a></li>
-	  <li><a class="ristek-color" data-toggle="tab" href="#wawancara">WAWANCARA</a></li>
-	  <li><a class="ristek-color" data-toggle="tab" href="#kontak">KONTAK</a></li>
+		<?php if (!isset($afterSubmit)): ?>
+		<li class="active">
+		<?php else: ?>
+		<li>
+		<?php endif; ?>
+	  		<a class="ristek-color" data-toggle="tab" href="#home">HOME</a>
+	  	</li>
+	  	<?php if (!isset($afterSubmit)): ?>
+		<li>
+		<?php else: ?>
+		<li class="active">
+		<?php endif; ?>
+		  	<a class="ristek-color" data-toggle="tab" href="#tugas">TUGAS</a>
+	  	</li>
+	  	<li><a class="ristek-color" data-toggle="tab" href="#wawancara">WAWANCARA</a></li>
+	  	<li><a class="ristek-color" data-toggle="tab" href="#kontak">KONTAK</a></li>
 	</ul>
 
 	<div class="tab-content">
