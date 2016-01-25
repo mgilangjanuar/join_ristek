@@ -94,11 +94,8 @@ Class Dashboard extends MY_Controller {
 				$data['isUserQualified'] = $this->kualifikasi->getQualifyData($user['biohash']);
 
 				// render dashboard
-				$data['title'] = 'Dashboard';
-				if ($_SERVER['REQUEST_METHOD'] == 'POST')
-					$this->render('dashboard#tugas', $data);	
-				else
-					$this->render('dashboard', $data);									
+				$data['title'] = 'Dashboard';				
+				$this->render('dashboard', $data);									
 			} else {
 				// user not registered
 				// redirect to form
