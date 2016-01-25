@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Open Recruitment SIG Junior Member &amp; Supporting Division Staff Ristek Fasilkom UI dibuka 26 Januari 2016 pkl 19.00. Silakan login dengan akun SSO Anda untuk melanjutkan.">
+		<meta name="author" content="Ristek Fasilkom UI">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Open Recruitment Portal - Ristek Fasilkom UI</title>
