@@ -40,6 +40,7 @@ Class Useradmin extends CI_Model {
 
 	public function isAdmin($username) {
 		$this->db->select('username');
+		$this->db->where('username', $username);
 		$result = $this->db->get('admin')->result();
 		$admin_arr = array();		
 		
