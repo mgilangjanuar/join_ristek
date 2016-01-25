@@ -118,7 +118,7 @@
 						      				</div>
 						      				<br>
 						      				<p class="info-content">
-						      					SIG yang mewadahi para peminat Competitive Programming khususnya para pemula yang tertarik untuk mendalami "bakat terpendam"-nya di bidang ini. Selain memperkenalkan dunia pemrograman kompetitif, tujuan SIG ini adalah mengasah kemampuan para anggota setahap demi setahap sehingga muncul Competitive Programmers baru sekaligus meningkatkan daya saing mahasiswa Universitas Indonesia dalam bidang Competitive Programming secara umum. Mahasiswa diajak untuk mengenal lebih dalam dan terus berlatih mengasah kemampuan problem solving dan logical.
+						      					Pemrograman Gemastik, ACM-ICPC, CPC CompFest: Tiga dari sekian banyak kompetisi yang mempertandingkan kemampuan memecahkan persoalan komputasional. Sudah bertahun-tahun, Fasilkom UI telah menjadi ujung tombak dalam mengharumkan nama UI di kancah kompetisi-kompetisi tersebut. Jadilah bagian dari Competitive Programming SIG Ristek Fasilkom UI untuk berlatih, mengasah, dan memperkaya diri dalam memperjuangkan nama besar UI di kancah pemrograman kompetitif!
 						      				</p>
 						  				</div>
 						    		</div>
@@ -140,7 +140,7 @@
 						      				</div>
 						      				<br>
 						      				<p class="info-content">
-						      					SIG yang mewadahi para peminat data science yang mencakup data mining, artificial intelligence atau machine learning, serta hal-hal lain yang berhubungan dengan ekstraksi pengetahuan dari data. SIG ini bertujuan untuk memberikan informasi-informasi terkait pengolahan data yang terstruktur dari awal hingga pada akhirnya dapat menumbuhkan sikap kritis dalam menganalisis kesimpulan pada pemecahan masalah ataupun menumbuhkan kreativitas dalam pengembangan AI. Pentingnya data atau bahkan big data serta urgensinya untuk diolah di zaman modern ini juga diperkenalkan oleh SIG ini.
+						      					Kita telah menyaksikan sangat banyak aplikasi seperti Search Engine Google, Spam Filter pada email, Cortana, Siri, BOT Dota2 maupun CS:GO; yang semuanya ternyata bermuara pada Data Science! Sekarang, bagaimana jika saya katakan bahwa semua itu mengenai A.I dan yang dilakukan A.I-based application adalah menggantikan pekerjaan manusia (which is quite pricey). Guess what? Di sini, di Data Science SIG, kalian akan belajar untuk melakukan itu: membuat BOT beberapa game, membuat email filter, membu.. ah masih banyak lagi! What are you waiting for!? Join Data Science SIG now, and let’s have some fun!
 						      				</p>
 						  				</div>
 						    		</div>
@@ -162,7 +162,7 @@
 						      				</div>
 						      				<br>
 						      				<p class="info-content">
-						      					SIG yang mewadahi para peminat Embedded System dan hardware. Selain memperkenalkan dunia sistem tertanam, tujuan adanya SIG ini adalah mempersiapkan para anggota dalam mengembangkan produk-produk terapan dengan tema apa pun yang pada implementasinya berlandaskan embedded system sehingga dapat menghasilkan karya yang bermanfaat bagi Fasilkom UI dan masyarakat.
+						      					Perkembangan teknologi yang pesat, menuntut kita untuk tidak hanya mahir dalam bidang pengembangan perangkat lunak, tetapi juga implementasinya dalam perangkat keras tertanam (Embedded System) yang murah dan mudah dijumpai dimana-mana. Kalau kalian tertarik mempelajari lebih lanjut mengenai Raspberry Pi, Arduino, AVR, dan pengembangan sensor serta komponen lainnya serta aplikasinya pada programming, ayo bergabung bersama Embedded System SIG!
 						      				</p>
 						  				</div>
 						    		</div>
@@ -184,7 +184,7 @@
 						      				</div>
 						      				<br>
 						      				<p class="info-content">
-						      					SIG yang mewadahi para peminat cyber security, system engineering, serta operating system yang berbasis open source. Budaya yang ditanamkan di dalam SIG ini adalah hacking culture yang mengedepankan pemecahan masalah, curiosity, berpikir di luar kotak, continuous learning, dan kebebasan dalam mengeksplorasi sistem. Selain untuk memberikan security awareness, SIG ini juga bertujuan untuk mengenalkan operating system yang berbasis open source atau bahkan memperkenalkan open source products itu sendiri kepada mahasiswa umum.
+						      					NetSOS adalah SIG yang mempelajari keamanan jaringan dan sistem operasi. Di SIG ini, kita akan bersama-sama mengeksplorasi dunia cyber security yang luas dan terus berkembang, dari sisi offense maupun defense. Materi-materi yang akan dipelajari di antaranya adalah Web Hacking, Binary Exploitation, Reverse Engineering, Unix-based Operating Systems, Cryptography, dan masih banyak lagi. Merasa tertantang untuk menjadi seorang Hacker? Come join us! :)
 						      				</p>
 						  				</div>
 						    		</div>
@@ -209,7 +209,7 @@
 						      				</div>
 						      				<br>
 						      				<p class="info-content">
-						      					SIG yang mewadahi minat-bakat mahasiswa Fasilkom UI dalam pengembangan game. SIG ini diharapkan dapat menghasilkan game developer yang mahir dan unggul serta game yang berkualitas. Pengmbangan game pada SIG ini bukan hanya membuat sebuah game, namun juga didasari dengan teori-teori yang mendasari dan bimbingan dari para ahli pada bidang ini.
+						      					Game Development adalah tempat dimana talenta artistik dan ilmu komputer dipadukan untuk membuat karya seni interaktif yang disebut game. Yuk, ikut kami membuat game karena melalui game kamu sebagai developer dapat menyalurkan kreatifitas, ide, dan passion kamu kepada semua orang.
 						      				</p>
 						  				</div>
 						    		</div>
@@ -231,7 +231,7 @@
 						      				</div>
 						      				<br>
 						      				<p class="info-content">
-						      					SIG yang mewadahi peminat mobile application untuk mengembangkan mobile application yang berkualitas dan bermanfaat. Pengembangan aplikasi ini akan didasari oleh kebutuhan masyarakat sehingga produk yang dihasilkan akan memecahkan masalah yang ada.
+						      					Sekarang apapun bisa dilakukan dengan smartphone, mulai dari mencari makanan hingga menyelamatkan dunia. Punya inovasi baru yang siap mengguncang dunia? Mari wujudkan ide tersebut menjadi kenyataan.
 						      				</p>
 						  				</div>
 						    		</div>
@@ -253,7 +253,7 @@
 						      				</div>
 						      				<br>
 						      				<p class="info-content">
-						      					SIG yang mewadahi potensi dan minat-bakat mahasiswa Fasilkom UI dalam bidang UI/UX. Fokus dari SIG ini bukan hanya pada teori pengembangan UI/UX, namun juga akan menerapkan langsung UI/UX untuk memecahkan permasalahan yang ada. Dalam pelaksanaannya, SIG UI/UX juga akan berkolaborasi dengan SIG Mobile Application Development, Game Development, dan Web Development agar Ristek dapat menghasilkan produk-produk yang memiliki desain yang menarik dan User Experience yang baik. SIG ini juga diharapkan dapat menghasilkan individu-individu yang dapat secara mandiri menyelesaikan permasalahan secara umum dengan pendekatan User Experience.
+						      					SIG UI/UX adalah tempat yang tepat bagi kalian yang menyukai bidang visual design serta aplikasinya terhadap produk digital, juga tepat bagi kalian yang ingin menambah kepuasan user dengan meningkatkan sisi usability, accessibility, dan pleasure yang terdapat pada interaksi antara user dan produk. Because life's complicated enough, let's make it simple and efficient with good UI/UX Design!
 						      				</p>
 						  				</div>
 						    		</div>
@@ -275,7 +275,7 @@
 						      				</div>
 						      				<br>
 						      				<p class="info-content">
-						      					SIG yang mewadahi dan mengembangkan potensi mahasiswa Fasilkom UI dalam bidang web development. SIG Web Development diharapkan dapat menjadi pusat perkembangan teknologi web di Fasilkom UI. Untuk produktivitas, SIG Web Development akan mengembangkan aplikasi-aplikasi berbasis web yang dapat bermanfaat bagi masyarakat.
+						      					Survey terbaru mengatakan bahwa sebuah website terdiri atas 40% kode dan 60% semangat. 60%-nya mungkin dari kamu. Berani buktiin?
 						      				</p>
 						  				</div>
 						    		</div>
@@ -300,7 +300,7 @@
 						      				</div>
 						      				<br>
 						      				<p class="info-content">
-						      					Human Resource Management adalah divisi khusus yang bertanggung jawab dalam membangun dan menjaga hubungan baik dalam internal Ristek Fasilkom UI. Divisi ini akan membuat berbagai acara yang dapat meningkatkan hubungan internal Ristek Fasilkom UI. Divisi ini juga akan membantu dan mengawasi kinerja tiap anggota SIG dan proker tiap SIG.
+						      					Human Resources Management adalah divisi khusus yang bertanggung jawab dalam membangun dan menjaga hubungan baik dalam internal Ristek Fasilkom UI. Divisi ini akan membuat berbagai acara yang dapat meningkatkan hubungan internal Ristek Fasilkom UI. Divisi ini juga akan membantu dan mengawasi kinerja tiap anggota SIG dan proker tiap SIG.
 						      				</p>
 						  				</div>
 						    		</div>
