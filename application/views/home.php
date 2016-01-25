@@ -22,7 +22,7 @@
 					<div class="row">
 						<img class="img-responsive center-block" src="http://ristek.cs.ui.ac.id/img/logo-blue.png" alt="logo-ristek" width="60" height="80">
 						<h4 class="headline content-font">Ristek Fasilkom UI</h4>				
-						<h5 class="headline head-font"><b>EXPLORING TECHNOLOGY</b></h5>
+						<h4 class="headline head-font"><b>EXPLORING TECHNOLOGY</b></h4>
 					</div>					
 				</div>
 			</div>
@@ -92,23 +92,27 @@
 				</div>
 				<div class="col-md-5">
 					<div class="row">
-						<div class="col-md-12 col-md-offset-1">
+						<div class="col-md-12">
 							<span class="content-font"><i>“Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself” <br>-Rumi</i></span>	
 						</div>
 						
 					</div><br>
 					<div class="row">			
+						<div class="col-md-12">
+							<br><br><br>
+							<div class="row">
+								<?php if ((time()-(60*60*24)) < strtotime('2016-01-26 08:59:59.0')): ?>
+								<p class="text-center">Registrasi dibuka pada 26 Januari 2016 pkl 18.00wib</p>					
+								<?php endif; ?>
 
-						<?php if ((time()-(60*60*24)) < strtotime('2016-01-26 08:59:59.0')): ?>
-						<p class="text-center">Registrasi dibuka pada 26 Januari 2016 pkl 18.00wib</p>					
-						<?php endif; ?>
-
-						<div class="col-md-4 col-md-offset-2 text-center ">					
-							<a href="<?= site_url('info') ?>" class="btn btn-primary btn-lg center-block sso-btn">More info</a>	
+								<div class="col-md-4 col-md-offset-2 text-center ">					
+									<a href="<?= site_url('info') ?>" class="btn btn-primary btn-lg center-block sso-btn">More info</a>	
+								</div>
+								<div class="col-md-4 text-center ">					
+									<a href="<?= site_url('ssologin') ?>" class="btn btn-link btn-lg center-block">SSO Login</a>	
+								</div>												
+							</div>
 						</div>
-						<div class="col-md-4 text-center ">					
-							<a href="<?= site_url('ssologin') ?>" class="btn btn-default btn-lg center-block">SSO Login</a>	
-						</div>				
 					</div>
 				</div>
 			</div>
