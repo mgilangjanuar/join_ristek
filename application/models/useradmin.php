@@ -15,19 +15,19 @@ Class Useradmin extends CI_Model {
 		$where = '';
 		if ($sig == 'cs') {
 			$where = '
-				sig1="cp" or sig2="cp" or
-				sig1="ds" or sig2="ds" or
-				sig1="es" or sig2="es" or
-				sig1="ns" or sig2="ns"
+				p.sig1="cp" or p.sig2="cp" or
+				p.sig1="ds" or p.sig2="ds" or
+				p.sig1="es" or p.sig2="es" or
+				p.sig1="ns" or p.sig2="ns"
 			';			
 		} else if ($sig == 'dv') {
 			$where = '
-				sig1="gd" or sig2="gd" or
-				sig1="wb" or sig2="wb" or
-				sig1="ux" or sig2="ux" or
-				sig1="md" or sig2="md"
+				p.sig1="gd" or p.sig2="gd" or
+				p.sig1="wb" or p.sig2="wb" or
+				p.sig1="ux" or p.sig2="ux" or
+				p.sig1="md" or p.sig2="md"
 			';			
-		} else $where = 'sig1="'.$sig.'" or sig2="'.$sig.'"';
+		} else $where = 'p.sig1="'.$sig.'" or p.sig2="'.$sig.'"';
 
 		if ($sig != 'sp') $this->db->where($where);
 
