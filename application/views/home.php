@@ -24,46 +24,48 @@
 						<h3 class="headline content-font">Open Recruitment <br>SIG Junior Member &amp; Supporting Division Staff <bR> Ristek Fasilkom UI</h3>				
 					</div>
 					<div class="row">
-						<table class="table borderless SIG-table col-md-10">
-							<tbody>
-								<tr>
-									<td class="text-center">
-										<img class="img-responsive center-block" src="<?= base_url().'assets/img/cp.png' ?>" alt="CP" width="60" height="80">
-										<span class="content-font headline"><b>Competitive<br>Programming</b></span>
-									</td>
-									<td class="text-center">
-										<img class="img-responsive center-block" src="<?= base_url().'assets/img/ds.png' ?>" alt="Data Science" width="60" height="80">
-										<span class="content-font headline"><b>Data<br>Science</b></span>
-									</td>
-									<td class="text-center">
-										<img class="img-responsive center-block" src="<?= base_url().'assets/img/embed.png' ?>" alt="Embeded System" width="60" height="80">
-										<span class="content-font headline"><b>Embedded<br>System</b></span>
-									</td>
-									<td class="text-center">
-										<img class="img-responsive center-block" src="<?= base_url().'assets/img/netsos.png' ?>" alt="NetSos" width="60" height="80">
-										<span class="content-font headline"><b>Network Security and<br>Operating System</b></span>
-									</td>
-								</tr>
-								<tr>
-									<td class="text-center">
-										<img class="img-responsive center-block" src="<?= base_url().'assets/img/game.png' ?>" alt="Game Dev" width="60" height="80">
-										<span class="content-font headline"><b>Game<br>Development</b></span>
-									</td>
-									<td class="text-center">
-										<img class="img-responsive center-block" src="<?= base_url().'assets/img/mob.png' ?>" alt="Mobile Dev" width="60" height="80">
-										<span class="content-font headline"><b>Mobile Application<br>Development</b></span>
-									</td>
-									<td class="text-center">
-										<img class="img-responsive center-block" src="<?= base_url().'assets/img/ux.png' ?>" alt="UI/UX" width="60" height="80">
-										<span class="content-font headline"><b>UI/UX<br>&nbsp;</b></span>
-									</td>
-									<td class="text-center">
-										<img class="img-responsive center-block" src="<?= base_url().'assets/img/web.png' ?>" alt="Web Dev" width="60" height="80">
-										<span class="content-font headline"><b>Web<br>Development</b></span>
-									</td>
-								</tr>
-							</tbody>
-						</table>				
+						<div class="table-responsive">
+							<table class="table borderless SIG-table col-md-10">
+								<tbody>
+									<tr>
+										<td class="text-center">
+											<img class="img-responsive center-block" src="<?= base_url().'assets/img/cp.png' ?>" alt="CP" width="60" height="80">
+											<span class="content-font headline"><b>Competitive<br>Programming</b></span>
+										</td>
+										<td class="text-center">
+											<img class="img-responsive center-block" src="<?= base_url().'assets/img/ds.png' ?>" alt="Data Science" width="60" height="80">
+											<span class="content-font headline"><b>Data<br>Science</b></span>
+										</td>
+										<td class="text-center">
+											<img class="img-responsive center-block" src="<?= base_url().'assets/img/embed.png' ?>" alt="Embeded System" width="60" height="80">
+											<span class="content-font headline"><b>Embedded<br>System</b></span>
+										</td>
+										<td class="text-center">
+											<img class="img-responsive center-block" src="<?= base_url().'assets/img/netsos.png' ?>" alt="NetSos" width="60" height="80">
+											<span class="content-font headline"><b>Network Security and<br>Operating System</b></span>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-center">
+											<img class="img-responsive center-block" src="<?= base_url().'assets/img/game.png' ?>" alt="Game Dev" width="60" height="80">
+											<span class="content-font headline"><b>Game<br>Development</b></span>
+										</td>
+										<td class="text-center">
+											<img class="img-responsive center-block" src="<?= base_url().'assets/img/mob.png' ?>" alt="Mobile Dev" width="60" height="80">
+											<span class="content-font headline"><b>Mobile Application<br>Development</b></span>
+										</td>
+										<td class="text-center">
+											<img class="img-responsive center-block" src="<?= base_url().'assets/img/ux.png' ?>" alt="UI/UX" width="60" height="80">
+											<span class="content-font headline"><b>UI/UX<br>&nbsp;</b></span>
+										</td>
+										<td class="text-center">
+											<img class="img-responsive center-block" src="<?= base_url().'assets/img/web.png' ?>" alt="Web Dev" width="60" height="80">
+											<span class="content-font headline"><b>Web<br>Development</b></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>											
+						</div>
 					</div>
 				</div>
 				<div class="col-md-6 quote-row">
