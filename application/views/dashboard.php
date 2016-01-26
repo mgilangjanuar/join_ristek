@@ -147,7 +147,7 @@
 						    	<h5 class="panel-title">Submisi Link Resume dan Tugas</h5>
 						  	</div>
 						  	<div class="panel-body">
-						  		<?php if ((time()-(60*60*24)) > strtotime('2016-02-07 08:59:59.0')): ?>
+						  		<?php if (time() < (strtotime('6th February 2016 23:55:00.0')-(21*60+30))): ?>
 						  		<div class="well well-lg content-font">Masa pengumpulan tugas sudah berakhir. Anda tidak diperkenankan lagi untuk submit tugas.</div>
 						  		<?php else: ?>
 						  		
@@ -257,7 +257,8 @@
 							  		</form>						  			
 							  	</div>
 
-								<?php endif; ?>		
+								<?php endif; ?>
+
 								<?php endif; ?>				  	
 						  	</div>
 						</div>				
@@ -269,7 +270,7 @@
 	  		<div class="col-md-12">
 	  			<div class="row">
 		  			<div class="col-md-12">
-				 		<?php if(((time()-(60*60*24)) < strtotime('2016-02-08 20:00:00.0')) | ($isUserQualified->isPil1Qualified == 0 & $isUserQualified->isPil2Qualified == 0)): ?>
+				 		<?php if(time() < (strtotime('8th February 2016 19:30:00.0')-(21*60+30))) | ($isUserQualified->isPil1Qualified == 0 & $isUserQualified->isPil2Qualified == 0)): ?>
 				 		<br>
 				 		<div class="well well-lg content-font">Masa Wawancara belum dibuka atau Anda tidak lolos seleksi tugas. <br><b>Masa Wawancara adalah <u>9-14 Februari 2016</u></b></div>
 				 		<?php else: ?>

@@ -12,6 +12,11 @@ class Logout extends MY_Controller {
 	}
 
 	public function index() {
+
+		if (time() < (strtotime('26th January 2016 18:16:00.0')-(21*60+30))) {
+			redirect(site_url());
+		}
+		
 		if (!$this->is_logged_in()) {
 			redirect(site_url());
 		} else {

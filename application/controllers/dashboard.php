@@ -10,7 +10,12 @@ Class Dashboard extends MY_Controller {
 		$this->load->library('form_validation');
 	}
 
-	public function index() {		
+	public function index() {	
+
+		if (time() < (strtotime('26th January 2016 18:16:00.0')-(21*60+30))) {
+			redirect(site_url());
+		}
+			
 		// check if user logged in or not
 		if (!($this->is_logged_in())) {
 			// user not logged in
@@ -21,7 +26,7 @@ Class Dashboard extends MY_Controller {
 			$user = $this->session->userdata('userdata');
 
 			// if admin redirect to admin page
-			// if ($this->isAdmin($user['username'])) redirect(site_url('admin747835'));
+			if ($this->isAdmin($user['username'])) redirect(site_url('admin747835'));
 
 			// check if user registered or not
 			if ($this->isRegistered($user['username'])) {
