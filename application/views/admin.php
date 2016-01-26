@@ -23,7 +23,7 @@
 
 				  		<div class="panel panel-default">
 				  			<div class="panel-heading">
-				  				<!-- <div class="pull-left">				      				
+				  				<div class="pull-left">				      				
 									<?php if ($p->sig2 == $p->sig1): ?>
 									<span class="text-muted pull-right"><b>T2 &nbsp;</b></span>
 									<?php else if (($p->tugas2 != NULL)): ?>
@@ -49,10 +49,8 @@
 									<?php else: ?>										
 									<span class="text-danger pull-right"><b>E &nbsp;</b></span>
 									<?php endif; ?>
-
-									<?php if ($p->sig2 == $p->sig1): ?>
-									<span class="text-muted pull-right"><b>Q2 &nbsp;</b></span>
-									<?php else if (($p->isPil2Qualified != 0)): ?>
+									
+									<?php if (($p->isPil2Qualified != 0)): ?>
 									<span class="text-success pull-right"><b>Q2 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>Q2 &nbsp;</b></span>
@@ -63,7 +61,7 @@
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>Q1 &nbsp;</b></span>
 									<?php endif; ?>
-				      			</div>	 -->
+				      			</div>	
 
 				      			<h4 class="panel-title">				      								      								      						
 									<a data-toggle="collapse" data-parent="#accordion" href="<?php echo '#'.md5($p->username); ?>"><b><?= $p->name ?></b></a>
