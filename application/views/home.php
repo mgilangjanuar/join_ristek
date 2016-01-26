@@ -126,7 +126,7 @@
 									<a href="<?= site_url('info') ?>" class="btn btn-primary btn-lg center-block">More info</a>	
 								</div>
 								<div class="col-md-4 text-center ">
-									<?php if (time() < (strtotime('26th January 2016 17:50:00.0')-(22*60+70))): ?>					
+									<?php if (time() < (strtotime('26th January 2016 17:50:00.0')-(22*60+40))): ?>					
 									<a href="<?= site_url('ssologin') ?>" class="btn btn-link btn-lg center-block disabled" role="button" disabled>SSO Login</a>	
 									<?php else: ?>
 									<a href="<?= site_url('ssologin') ?>" class="btn btn-link btn-lg center-block" role="button">SSO Login</a>	
