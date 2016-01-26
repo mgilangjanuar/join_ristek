@@ -135,7 +135,7 @@
 					</div>
 				</div>
 			</div>			
-			<footer class="navbar navbar-bottom text-center">
+			<footer class="text-center">
 				<span class="content-font text-info">Ristek Fasilkom UI. Powered by <a href="http://www.codeigniter.com" class="btn btn-xs btn-default">Codeigniter</a>. Available on <a href="https://github.com/jundialwan/join_ristek" class="btn btn-xs btn-default">GitHub</a></span>
 			</footer>
 		</div>	
