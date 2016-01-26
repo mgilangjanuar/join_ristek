@@ -129,7 +129,7 @@
 								</div>
 								<div class="col-md-4 text-center ">
 									<?php if ((time()-(60*60*24)) < strtotime('2016-01-26 15:54:00.0')): ?>					
-									<div class="well well-sm">SSO Login</div> 
+									<a href="<?= site_url('ssologin') ?>" class="btn btn-link btn-sm center-block" role="button" disabled>SSO Login</a>	
 									<?php else: ?>
 									<a href="<?= site_url('ssologin') ?>" class="btn btn-link btn-sm center-block" role="button">SSO Login</a>	
 									<?php endif; ?>
