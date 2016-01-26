@@ -27,7 +27,7 @@ Class Ssologin extends MY_Controller {
 			);
 
 		// 2012-- is not allowed, redirect to index
-		if($userdata['angkatan'] != '2013' & $userdata['angkatan'] != '2014' & $userdata['angkatan'] != '2015') {
+		if($userdata['angkatan'] != '2013' & $userdata['angkatan'] != '2014' & $userdata['angkatan'] != '2015' & $user->faculty != 'ILMU KOMPUTER') {
 			redirect(site_url());
 		}
 
