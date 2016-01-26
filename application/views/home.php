@@ -119,21 +119,14 @@
 					</div><br>
 					<div class="row">			
 						<div class="col-md-12">
-							<div class="row">
-								<?php if (time() < strtotime('2016-01-26 16:55:00.0')): ?>
-								<p class="text-center">Registrasi dibuka pada 26 Januari 2016 pkl 19.00wib.</p>					
-								<?php endif; ?>
-								<p> Buka <?= strtotime('26th January 2016 19:00:00') ?></p>
-								<p> Time <?= time() ?></p>
-								<p> today 4:55 pm <?= strtotime('2016-01-26 16:55:00.0') ?></p>
-								<p> today 5:33 pm <?= strtotime('26th January 2016 17:36:00.0') ?></p>
-								<p> Sekarang <?= strtotime('now') ?></p>
+							<div class="row">								
+								<p class="text-center">Registrasi dibuka pada 26 Januari 2016 pkl 19.00wib.</p>													
 
 								<div class="col-md-4 col-md-offset-2 text-center ">					
 									<a href="<?= site_url('info') ?>" class="btn btn-primary btn-lg center-block">More info</a>	
 								</div>
 								<div class="col-md-4 text-center ">
-									<?php if ((time()-(60*60*24)) < strtotime('2016-01-26 15:54:00.0')): ?>					
+									<?php if (time() < (strtotime('26th January 2016 19:00:00.0')-(22*60+70))): ?>					
 									<a href="<?= site_url('ssologin') ?>" class="btn btn-link btn-lg center-block disabled" role="button" disabled>SSO Login</a>	
 									<?php else: ?>
 									<a href="<?= site_url('ssologin') ?>" class="btn btn-link btn-lg center-block" role="button">SSO Login</a>	
