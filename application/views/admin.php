@@ -186,6 +186,8 @@
 
 				      					</div>
 				      				</div>
+
+				      				<?php if ($p->sig2 != $p->sig1): ?>		
 				      				<form action="<?= site_url('admin747835') ?>" method="POST">
 				      					<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
 				      					<input type="hidden" name="biohash" value="<?= $p->biohash ?>">
@@ -197,8 +199,8 @@
 				      					<button type="submit" class="btn btn-primary pull-right">Undo Qualify Pil. 2</button>
 				      					<?php endif; ?>	
 				      				</form>
-
-				      				<?php if ($p->sig2 != $p->sig1): ?>					      				
+									<?php endif; ?>
+				      							      				
 									<p class="pull-right">&nbsp;&nbsp;</p>
 									<form action="<?= site_url('admin747835') ?>" method="POST">
 										<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
@@ -211,7 +213,7 @@
 				      					<button type="submit" class="btn btn-primary pull-right">Undo Qualify Pil. 1</button>
 				      					<?php endif; ?>
 				      				</form>				      				
-				      				<?php endif; ?>
+				      				
 				  				</div>
 				    		</div>
 				  		</div>
