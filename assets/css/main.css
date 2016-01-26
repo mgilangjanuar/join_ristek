@@ -130,41 +130,5 @@ textarea {
 }
 
 .form-control {
-	border-radius: 0 !important;
+	/*border-radius: 0 !important;*/
 }
-
-.login-btn {
-	border: 0;
-	border-radius: 0;
-	background: #2F31A0;
-}
-	.login-btn:focus {
-		background: #0F1168 !important;
-	}
-
-	.login-btn:hover {
-		background: #4549CF !important;
-	}
-
-/*.ristek-btn {
-	border-radius: 0;
-	border: 1px solid #000000;
-	color: #FFFFFF;
-	background-color: #2F31A0;
-	max-width: 124px;	
-}	
-	.ristek-btn:active {
-		color: #FFFFFF;
-		background-color: #2F31A0;
-	}
-
-	.ristek-btn:hover {
-		color: #FFFFFF;
-		background-color: #4549CF;	
-	}	
-
-	.ristek-btn:visited {
-		color: #FFFFFF;
-		background-color: #2F31A0;
-		border: 1px solid #000000;
-	}*/

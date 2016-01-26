@@ -79,7 +79,7 @@
 										</td>
 										<td class="text-center">
 											<img class="img-responsive center-block" src="<?= base_url().'assets/img/hr.png' ?>" alt="UI/UX" width="60" height="80">
-											<span class="content-font headline"><b>Human Resources Management</b></span>
+											<span class="content-font headline"><b>Human <br>Resources <br>Management</b></span>
 										</td>
 										<td class="text-center">
 											
