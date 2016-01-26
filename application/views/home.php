@@ -139,7 +139,7 @@
 		</div>	
 
 		<footer class="navbar-fixed-bottom text-center">
-			<span class="content-font text-info">Ristek Fasilkom UI. Powered by <a href="http://www.codeigniter.com">Codeigniter</a>. Source available on <a href="https://github.com/jundialwan/join_ristek">GitHub</a></span>
+			<span class="content-font text-info">Ristek Fasilkom UI. Powered by <a href="http://www.codeigniter.com" class="navbar-btn btn-default">Codeigniter</a>. Source available on <a href="https://github.com/jundialwan/join_ristek">GitHub</a></span>
 		</footer>
 
 		<script type="text/javascript" src="<?= base_url().'assets/js/jquery.min.js' ?> " async="async"></script>		
