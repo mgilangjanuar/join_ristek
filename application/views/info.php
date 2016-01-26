@@ -388,8 +388,9 @@
 						<?php else: ?>
 						<a href="<?= site_url('ssologin') ?>" class="btn btn-primary btn-lg center-block">SSO Login</a>	
 						<?php endif; ?>
-					</div>	
-					<br><br>
+						<br><br>
+						<p></p>
+					</div>						
 				</div>
 			</div>			
 		</div>		
