@@ -90,6 +90,8 @@ Class Dashboard extends MY_Controller {
 
 				if (isset($_SERVER['REQUEST_METHOD'])) $data['afterSubmit'] = 1;
 
+				unset($_SERVER['REQUEST_METHOD']);
+
 				// render dashboard
 				$data['title'] = 'Dashboard';				
 				$this->render('dashboard', $data);																			
