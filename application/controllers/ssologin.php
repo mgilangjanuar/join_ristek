@@ -13,10 +13,7 @@ Class Ssologin extends MY_Controller {
 		parent::__construct();		
 	}
 
-	public function index() {
-		if (time() < (strtotime('26th January 2016 18:16:00.0')-(21*60+30))) {
-			redirect(site_url());
-		}
+	public function index() {		
 
 		if(!SSO::check()) SSO::authenticate();
 
