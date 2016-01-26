@@ -18,7 +18,6 @@
 			<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
 		</noscript>	
 		<link rel="shortcut icon" type="image/x-icon" href="<?= base_url().'assets/img/favicon.ico' ?>">
-		
 	</head>
 	<body>
 		<header>			

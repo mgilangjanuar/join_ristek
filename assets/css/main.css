@@ -28,6 +28,14 @@ footer {
 	margin-top: 24px;
 }
 
+textarea {
+	resize: none;
+}
+
+header .page-title {
+	font-size: 1em;
+}
+
 .headline { text-align: center; }
 
 .borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
@@ -92,10 +100,6 @@ footer {
 		background-color: #0F1168 !important;
 		border: 1px solid #2F31A0 !important;
 	}
-
-textarea {
-	resize: none;
-}
 
 .container {
 	height: 100%;
