@@ -32,7 +32,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row">
-						<img class="img-responsive center-block" src="http://ristek.cs.ui.ac.id/img/logo-blue.png" alt="logo-ristek" width="60" height="80">
+						<img class="img-responsive center-block" src="<?= base_url().'assets/img/logo-blue.png' ?>" alt="logo-ristek" width="60" height="80">
 						<h4 class="headline content-font">Ristek Fasilkom UI</h4>				
 						<h4 class="headline head-font"><b>EXPLORING TECHNOLOGY</b></h4>
 						<h3 class="headline content-font">Open Recruitment <br>SIG Junior Member &amp; Supporting Division Staff</h3>				

@@ -19,7 +19,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row">
-						<img class="img-responsive center-block" src="http://ristek.cs.ui.ac.id/img/logo-blue.png" alt="logo-ristek" width="90" height="120">
+						<img class="img-responsive center-block" src="<?= base_url().'assets/img/logo-blue.png' ?>" alt="logo-ristek" width="90" height="120">
 						<h2 class="headline content-font">Ristek Fasilkom UI</h2>	
 						<h2 class="headline head-font"><b>EXPLORING TECHNOLOGY</b></h2>
 					</div><br><br>
