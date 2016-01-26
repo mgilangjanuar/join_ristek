@@ -9,8 +9,7 @@ Class Dashboard extends MY_Controller {
 		$this->load->library('form_validation');
 	}
 
-	public function index() {	
-		if (isset($data['afterSubmit'])) unset($data['afterSubmit']);
+	public function index() {			
 		// check if user logged in or not
 		if (!($this->is_logged_in())) {
 			// user not logged in
