@@ -21,8 +21,7 @@ Class Dashboard extends MY_Controller {
 			$user = $this->session->userdata('userdata');
 
 			// if admin redirect to admin page
-			if (($this->isAdmin($user['username']))) 
-				redirect(site_url('admin747835'));
+			if (($this->isAdmin($user['username']))) redirect(site_url('admin747835'));
 
 			// check if user registered or not
 			if ($this->isRegistered($user['username'])) {
@@ -89,9 +88,7 @@ Class Dashboard extends MY_Controller {
 				// is User Qualified
 				$data['isUserQualified'] = $this->kualifikasi->getQualifyData($user['biohash']);
 
-				if (isset($_SERVER['REQUEST_METHOD'])) $data['afterSubmit'] = 1;
-
-				unset($_SERVER['REQUEST_METHOD']);
+				if (isset($_SERVER['REQUEST_METHOD'])) $data['afterSubmit'] = 1;				
 
 				// render dashboard
 				$data['title'] = 'Dashboard';				
