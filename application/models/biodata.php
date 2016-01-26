@@ -35,14 +35,6 @@ Class Biodata extends CI_Model {
 		}
 	}
 
-	public function isUserQualified($username) {
-		$this->db->select('isqualified');
-		$this->db->where('username', $username);
-		$result = $this->db->get('biodata')->row();
-
-		return $result->isqualified;
-	}
-
 	public function isUserRegistered($username) {		
 		// check if timestamp available or not
 		$this->db->select('timestamp');
