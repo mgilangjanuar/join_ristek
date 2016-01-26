@@ -52,6 +52,21 @@ footer {
 	color: #FFFFFF;
 }
 
+.btn-link {
+	color: #2F31A0 !important;
+}
+	.btn-link:visited {
+		color: #2F31A0 !important;
+	}
+
+	.btn-link:hover {
+		color: #4549CF !important;
+	}
+
+	.btn-link:focus {
+		color: #0F1168 !important;
+	}
+
 .btn-primary, .sso-btn:link {
 	color: #FFFFFF !important;
 	background-image: none !important;
