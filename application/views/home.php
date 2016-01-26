@@ -9,7 +9,7 @@
 
 		<title>Open Recruitment Portal - Ristek Fasilkom UI</title>
 
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
 		<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>">
 		<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
 		<link rel="stylesheet" href="<?= base_url().'assets/css/home.css' ?>">

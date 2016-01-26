@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 @font-face {
 	font-family: Montserrat;
 	src: url('http://ristek.cs.ui.ac.id/fonts/montserrat/Montserrat-Light.otf') format('opentype');
@@ -8,6 +10,7 @@
 	font-weight: bold;
 	src: url('http://ristek.cs.ui.ac.id/fonts/montserrat/Montserrat-Bold.otf') format('opentype');
 }
+
 
 body {
 	padding-bottom: 52px;
