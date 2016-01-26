@@ -17,13 +17,7 @@
 			<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>">		
 			<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
 		</noscript>		
-		<link rel="shortcut icon" type="image/x-icon" href="<?= base_url().'assets/img/favicon.ico' ?>">
-		<style>
-			header {
-				background: <?php echo 'url\(base_url().assets/img/bg.png\)' ?>;
-				padding:8px;
-			}
-		</style>
+		<link rel="shortcut icon" type="image/x-icon" href="<?= base_url().'assets/img/favicon.ico' ?>">		
 	</head>
 	<body>
 		<header>			
