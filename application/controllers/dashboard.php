@@ -42,6 +42,7 @@ Class Dashboard extends MY_Controller {
 						// user logged in
 
 						// set error custom message
+						
 						$this->form_validation->set_message('required', '%s is empty, not a valid URL, or it is not accessible/exists');
 
 						// check which form submitted
