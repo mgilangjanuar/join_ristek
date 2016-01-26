@@ -11,7 +11,7 @@
 
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>">		
-		<link rel="stylesheet" href="<?= base_url().'assets/css/home.css' ?>">
+		<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
 
 		<style>
 			body { background: url('http://ristek.cs.ui.ac.id/img/bg.png'); }
