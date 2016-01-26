@@ -382,9 +382,14 @@
 					<br><br>
 					<!-- button -->
 					<div class="col-md-4 col-md-offset-4 text-center">	
-						<p>Ready? Login to proceed</p>				
+						<p>Ready? Login to proceed</p>	
+						<?php if (time() < (strtotime('26th January 2016 19:00:00.0')-(21*60+30)) | time() > (strtotime('6th February 2016 23:55:00.0')-(21*60+30))): ?>			
+						<a href="#" class="btn btn-primary btn-lg center-block disabled" role="button">SSO Login</a>	
+						<?php else: ?>
 						<a href="<?= site_url('ssologin') ?>" class="btn btn-primary btn-lg center-block">SSO Login</a>	
+						<?php endif; ?>
 					</div>	
+					<br><br>
 				</div>
 			</div>			
 		</div>		
