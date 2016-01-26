@@ -23,13 +23,14 @@
 						<img class="img-responsive center-block" src="http://ristek.cs.ui.ac.id/img/logo-blue.png" alt="logo-ristek" width="60" height="80">
 						<h4 class="headline content-font">Ristek Fasilkom UI</h4>				
 						<h4 class="headline head-font"><b>EXPLORING TECHNOLOGY</b></h4>
-						<h4 class="headline content-font">Open Recruitment <br>SIG Junior Member &amp; Supporting Division Staff</h4>				
+						<h3 class="headline content-font">Open Recruitment <br>SIG Junior Member &amp; Supporting Division Staff</h3>				
 					</div>					
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-7">
 					<div class="row">
+						<br><br><br>
 						<div class="table-responsive">
 							<table class="table borderless SIG-table col-md-10">
 								<tbody>
