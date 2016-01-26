@@ -5,7 +5,7 @@
 		<?php else: ?>
 		<li>
 		<?php endif; ?>
-	  		<a class="ristek-color" data-toggle="tab" href="#home">HOME</a>
+	  		<a class="ristek-color" data-toggle="tab" href="#beranda">BERANDA</a>
 	  	</li>
 	  	<?php if (!isset($afterSubmit)): ?>
 		<li>
@@ -20,9 +20,9 @@
 
 	<div class="tab-content">
 		<?php if (!isset($afterSubmit)): ?>
-		<div id="home" class="tab-pane in active">	 
+		<div id="beranda" class="tab-pane in active">	 
 		<?php else: ?>
-		<div id="home" class="tab-pane">	 
+		<div id="beranda" class="tab-pane">	 
 		<?php endif; ?>
 	  		<br>
 	  		<div class="col-md-12">
@@ -60,11 +60,13 @@
 		  							<img class="img-responsive center-block" src="<?= base_url().($sigprop1->logolink) ?>" alt="CP" width="60" height="80">
 									<span class="content-font headline"><b><?= $sigprop1->signame ?></b></span>
 		  						</div>
+		  						<?php if ($sigprop2->sig != $sigprop1->sig):?>
 		  						<div class="col-md-6 text-center">
 		  							<span class="content-font">Pilihan 2</span><br><br>
 		  							<img class="img-responsive center-block" src="<?= base_url().($sigprop2->logolink) ?>" alt="CP" width="60" height="80">
 									<span class="content-font headline"><b><?= $sigprop2->signame ?></b></span>
 		  						</div>
+		  						<?php endif; ?>
 		  					</div>
 		  				</div>
 		  				<div class="panel panel-primary info-panel">
