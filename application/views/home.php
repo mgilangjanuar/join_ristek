@@ -95,7 +95,11 @@
 					<br><br><br><br><br><br>
 					<div class="row">
 						<div class="col-md-12">
-							<span class="content-font"><b><i>“Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself” <br>-Rumi</i></b></span>	
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<span class="content-font"><b><i>“Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself” <br>-Rumi</i></b></span>										
+								</div>
+							</div>
 						</div>						
 					</div><br>
 					<div class="row">			
