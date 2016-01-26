@@ -104,7 +104,7 @@
 						<div class="col-md-12">
 							<div class="panel panel-primary info-panel">
 						  		<div class="panel-heading info-panel-heading">
-						    		<h3 class="panel-title text-center">Benefit</h3>
+						    		<h3 class="panel-title text-center">BENEFIT</h3>
 						  		</div>
 						  		<div class="panel-body">
 							    	<ul class="info-content">
