@@ -92,7 +92,7 @@
 					</div>
 				</div>
 				<div class="col-md-5">
-					<br><br><br><br><br><br>
+					<br><br><br>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-default">
