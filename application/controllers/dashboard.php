@@ -91,9 +91,7 @@ Class Dashboard extends MY_Controller {
 				$data['sigprop2'] = $sigprop2;
 
 				// is User Qualified
-				$data['isUserQualified'] = $this->kualifikasi->getQualifyData($user['biohash']);
-				
-				if (isset($_SERVER['REQUEST_METHOD'])) $data['afterSubmit'] = 1;
+				$data['isUserQualified'] = $this->kualifikasi->getQualifyData($user['biohash']);								
 
 				// render dashboard
 				$data['title'] = 'Dashboard';				
