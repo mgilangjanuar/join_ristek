@@ -120,7 +120,7 @@
 					<div class="row">			
 						<div class="col-md-12">
 							<div class="row">
-								<?php if ((time()-(60*60*24)) < strtotime('2016-01-26 08:59:59.0')): ?>
+								<?php if ((time()-(60*60*24)) < strtotime('2016-01-26 20:59:59.0')): ?>
 								<p class="text-center">Registrasi dibuka pada 26 Januari 2016 pkl 18.00wib</p>					
 								<?php endif; ?>
 
@@ -128,7 +128,7 @@
 									<a href="<?= site_url('info') ?>" class="btn btn-primary btn-lg center-block">More info</a>	
 								</div>
 								<div class="col-md-4 text-center ">
-									<?php if ((time()-(60*60*24)) < strtotime('2016-01-25 00:00:00.0')): ?>					
+									<?php if ((time()-(60*60*24)) < strtotime('2016-01-26 19:00:00.0')): ?>					
 									<a href="<?= site_url('ssologin') ?>" class="btn btn-link btn-lg center-block disabled" role="button">SSO Login</a>	
 									<?php else: ?>
 									<a href="<?= site_url('ssologin') ?>" class="btn btn-link btn-lg center-block" role="button">SSO Login</a>	
