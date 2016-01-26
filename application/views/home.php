@@ -121,9 +121,10 @@
 						<div class="col-md-12">
 							<div class="row">
 								<?php if ((time()-(60*60*24)) < strtotime('2016-01-26 15:45:00.0')): ?>
-								<p class="text-center">Registrasi dibuka pada 26 Januari 2016 pkl 19.00wib. Sekarang <?= now() ?></p>					
+								<p class="text-center">Registrasi dibuka pada 26 Januari 2016 pkl 19.00wib.</p>					
 								<?php endif; ?>
-								
+								<p> Sekarang <?php now() ?></p>
+
 								<div class="col-md-4 col-md-offset-2 text-center ">					
 									<a href="<?= site_url('info') ?>" class="btn btn-primary btn-lg center-block">More info</a>	
 								</div>

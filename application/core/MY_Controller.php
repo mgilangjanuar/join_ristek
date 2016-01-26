@@ -5,6 +5,7 @@ class MY_Controller extends CI_Controller {
 		parent::__construct();
 		$this->load->library('session');
 		$this->load->helper('url');
+		$this->load->helper('date');
 	}
 
 	// render template.php and the content which user request
