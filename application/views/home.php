@@ -126,7 +126,7 @@
 								<p> Buka <?= strtotime('26th January 2016 19:00:00') ?></p>
 								<p> Time <?= time() ?></p>
 								<p> today 4:55 pm <?= strtotime('2016-01-26 16:55:00.0') ?></p>
-								<p> today 5:13 pm <?= strtotime('2016-01-26 17:33:00.0') ?></p>
+								<p> today 5:33 pm <?= strtotime('26th January 2016 17:36:00.0') ?></p>
 								<p> Sekarang <?= strtotime('now') ?></p>
 
 								<div class="col-md-4 col-md-offset-2 text-center ">					
