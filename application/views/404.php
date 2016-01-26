@@ -26,10 +26,8 @@
 						<h4 class="content-font headline">Are you lost? This <a href="<?= site_url() ?>">way</a></h4>						
 					</div>					
 				</div>
-			</div>
-			
+			</div>			
 		</div>	
-
 		<script type="text/javascript" src="<?= base_url().'assets/js/jquery.min.js' ?> "></script>		
 		<script type="text/javascript" src="<?= base_url().'assets/js/bootstrap.min.js' ?>"></script>
 	</body>
