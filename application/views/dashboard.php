@@ -86,13 +86,15 @@
 		  						<?php else: ?>
 		  						<h4 class="text-success text-center"><b>LOLOS SELEKSI TUGAS</b></h4>
 		  						<?php endif; ?>
-
+								
+								<?php if ($sigprop2->sig != $sigprop1->sig):?>
 		  						<span class="content-font"><b>SIG/Divisi Pilihan 2:</b></span>
 
 		  						<?php if ($isUserQualified->isPil2Qualified == 0): ?>
 		  						<h4 class="text-danger text-center"><b>BELUM LOLOS SELEKSI TUGAS</b></h4>
 		  						<?php else: ?>
 		  						<h4 class="text-success text-center"><b>LOLOS SELEKSI TUGAS</b></h4>
+		  						<?php endif; ?>
 		  						<?php endif; ?>
 
 		  					</div>
