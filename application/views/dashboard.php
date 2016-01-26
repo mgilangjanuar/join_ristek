@@ -55,8 +55,13 @@
 		  						<div class="panel-title">SIG/Divisi Plihan</div>
 		  					</div>
 		  					<div class="panel-body">
-		  						<div class="col-md-6 text-center">
+		  						<?php if ($sigprop2->sig != $sigprop1->sig):?>
+		  						<div class="col-md-12 text-center">
 		  							<span class="content-font">Pilihan 1</span><br><br>
+		  						<?php else: ?>
+								<div class="col-md-12 text-center">
+		  							<span class="content-font">Pilihan</span><br><br>
+		  						<?php endif; ?>
 		  							<img class="img-responsive center-block" src="<?= base_url().($sigprop1->logolink) ?>" alt="CP" width="60" height="80">
 									<span class="content-font headline"><b><?= $sigprop1->signame ?></b></span>
 		  						</div>
