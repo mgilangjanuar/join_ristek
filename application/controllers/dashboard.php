@@ -10,7 +10,7 @@ Class Dashboard extends MY_Controller {
 	}
 
 	public function index() {	
-
+		if (isset($data['afterSubmit'])) unset($data['afterSubmit']);
 		// check if user logged in or not
 		if (!($this->is_logged_in())) {
 			// user not logged in
