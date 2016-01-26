@@ -68,9 +68,9 @@ Class Dashboard extends MY_Controller {
 							// run form validation
 							if ($this->form_validation->run()) $result = $this->tugas->submitTugas2($user['username'], $link);															
 						}
+						
+						redirect(site_url('dashboard'));
 					}	
-
-					redirect(site_url('dashboard'));
 				}
 
 				// get tugas data
