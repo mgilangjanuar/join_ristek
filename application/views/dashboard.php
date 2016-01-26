@@ -79,7 +79,11 @@
 		  						<div class="panel-title">STATUS SELEKSI TUGAS</div>
 		  					</div>
 		  					<div class="panel-body">
+		  						<?php if ($sigprop2->sig != $sigprop1->sig):?>
 		  						<span class="content-font"><b>SIG/Divisi Pilihan 1:</b></span>
+		  						<?php else: ?>
+		  						<span class="content-font"><b>SIG/Divisi Pilihan:</b></span>
+		  						<?php endif; ?>
 								
 								<?php if ($isUserQualified->isPil1Qualified == 0): ?>
 		  						<h4 class="text-danger text-center"><b>BELUM LOLOS SELEKSI TUGAS</b></h4>
