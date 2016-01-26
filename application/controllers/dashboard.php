@@ -66,9 +66,7 @@ Class Dashboard extends MY_Controller {
 
 							// run form validation
 							if ($this->form_validation->run()) $result = $this->tugas->submitTugas2($user['username'], $link);															
-						}
-
-						redirect(site_url('dashboard'));
+						}						
 					}	
 				}
 
@@ -88,7 +86,9 @@ Class Dashboard extends MY_Controller {
 				$data['sigprop2'] = $sigprop2;
 
 				// is User Qualified
-				$data['isUserQualified'] = $this->kualifikasi->getQualifyData($user['biohash']);								
+				$data['isUserQualified'] = $this->kualifikasi->getQualifyData($user['biohash']);
+
+				if (isset($_SERVER['REQUEST_METHOD'])) $data['afterSubmit'] = 1;
 
 				// render dashboard
 				$data['title'] = 'Dashboard';				
