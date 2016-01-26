@@ -10,8 +10,12 @@
 		<title>Open Recruitment Portal - Ristek Fasilkom UI</title>
 
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>">		
-		<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
+		<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>" media="none" onload="if(media!='all')media='all'">		
+		<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>" media="none" onload="if(media!='all')media='all'">
+		<noscript>
+			<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>">		
+			<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
+		</noscript>
 
 		<style>
 			body { background: url('http://ristek.cs.ui.ac.id/img/bg.png'); }
@@ -139,8 +143,8 @@
 			<span class="content-font text-info">Ristek Fasilkom UI. Powered by <a href="http://www.codeigniter.com">Codeigniter</a>. Source available on <a href="https://github.com/jundialwan/join_ristek">GitHub</a></span>
 		</footer>
 
-		<script type="text/javascript" src="<?= base_url().'assets/js/jquery.min.js' ?> "></script>		
-		<script type="text/javascript" src="<?= base_url().'assets/js/bootstrap.min.js' ?>"></script>
+		<script type="text/javascript" src="<?= base_url().'assets/js/jquery.min.js' ?> " async="async"></script>		
+		<script type="text/javascript" src="<?= base_url().'assets/js/bootstrap.min.js' ?>" async="async"></script>
 
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
