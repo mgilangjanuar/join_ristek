@@ -6,12 +6,12 @@ class MY_Controller extends CI_Controller {
 		$this->load->library('session');
 		$this->load->helper('url');
 		$this->load->helper('date');
+
+		date_default_timezone_set('Asia/Jakarta');
 	}
 
 	// render template.php and the content which user request
-	public function render($view, $data = array()) {
-		if (function_exists('date_default_timezone_set')) date_default_timezone_set('Asia/Jakarta');
-		
+	public function render($view, $data = array()) {				
 		$userdata = $this->session->userdata('userdata');
 		$date = new DateTime();
 		$data['date'] = $date->getTimestamp();
