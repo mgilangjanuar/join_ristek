@@ -41,8 +41,7 @@ Class Useradmin extends CI_Model {
 	public function isAdmin($username) {
 		$this->db->select('username');
 		$this->db->where('username', $username);
-		$result = $this->db->get('admin')->num_rows();
-		$admin_arr = array();		
+		$result = $this->db->get('admin')->num_rows();		
 		
 		if ($result == 0) return false;
 		else return true;

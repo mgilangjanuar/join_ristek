@@ -5,8 +5,7 @@ Class Dashboard extends MY_Controller {
 		parent::__construct();
 
 		# load helper and library
-		$this->load->helper('form');
-		$this->load->model('sigproperty');		
+		$this->load->helper('form');		
 		$this->load->library('form_validation');
 	}
 
@@ -68,7 +67,7 @@ Class Dashboard extends MY_Controller {
 							// run form validation
 							if ($this->form_validation->run()) $result = $this->tugas->submitTugas2($user['username'], $link);															
 						}
-						
+
 						redirect(site_url('dashboard'));
 					}	
 				}
