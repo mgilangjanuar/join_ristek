@@ -104,16 +104,5 @@ Class Dashboard extends MY_Controller {
 			}		
 		}	
 	}	
-
-	// public function valid_url_format($str) {
- //    	$pattern = "|^http(s)?://[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(/.*)?$|i";
- //        if (!preg_match($pattern, $str)) return false;
- //        else return true;
- //    }
-
- //    public function url_exists($url) {                                       
- //        $file_headers = @get_headers($file);
-	// 	if(strpos($file_headers[0],'404') === false) return false;
-	// 	else return true;
- //    } 
 }
+
