@@ -9,11 +9,25 @@
 
 		<title><?= $title; ?> - Ristek Fasilkom UI</title>
 		
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>">
-		<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
-		<link rel="stylesheet" href="<?= base_url().'assets/css/template.css' ?>">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+		<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>" media="none" onload="if(media!='all')media='all'">		
+		<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>" media="none" onload="if(media!='all')media='all'">
+		<noscript>
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+			<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>">		
+			<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
+		</noscript>	
 		<link rel="shortcut icon" type="image/x-icon" href="<?= base_url().'assets/img/favicon.ico' ?>">
+
+		<style>
+			header {
+				background: url('http://ristek.cs.ui.ac.id/img/bg.png');
+			}
+
+			header .page-title {
+				font-size: 1em;
+			}
+		</style>
 	</head>
 	<body>
 		<header>			

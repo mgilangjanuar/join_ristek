@@ -28,6 +28,8 @@ footer {
 	margin-top: 24px;
 }
 
+.headline { text-align: center; }
+
 .borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
     border: none;
 }

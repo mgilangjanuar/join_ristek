@@ -9,18 +9,18 @@
 
 		<title>Open Recruitment Portal - Ristek Fasilkom UI</title>
 
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
 		<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>" media="none" onload="if(media!='all')media='all'">		
 		<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>" media="none" onload="if(media!='all')media='all'">
 		<noscript>
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 			<link rel="stylesheet" href="<?= base_url().'assets/css/bootstrap.min.css' ?>">		
 			<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
 		</noscript>
+		<link rel="shortcut icon" type="image/x-icon" href="<?= base_url().'assets/img/favicon.ico' ?>">
 
 		<style>
-			body { background: url('http://ristek.cs.ui.ac.id/img/bg.png'); }
-
-			.headline { text-align: center; }
+			body { background: url('http://ristek.cs.ui.ac.id/img/bg.png'); }			
 
 			.quote { font-size: 1.6em; }
 
@@ -29,7 +29,6 @@
 			.SIG-table { border-spacing: 8px; }	
 		</style>
 
-		<link rel="shortcut icon" type="image/x-icon" href="<?= base_url().'assets/img/favicon.ico' ?>">
 	</head>
 	<body>
 		<div class="container">
