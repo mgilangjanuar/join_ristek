@@ -120,7 +120,7 @@
 					<div class="row">			
 						<div class="col-md-12">
 							<div class="row">
-								<?php if (time() < strtotime('2016-01-26 15:45:00.0')): ?>
+								<?php if (time() < strtotime('2016-01-26 16:49:00.0')): ?>
 								<p class="text-center">Registrasi dibuka pada 26 Januari 2016 pkl 19.00wib.</p>					
 								<?php endif; ?>
 								<p> Sekarang <?= strtotime('now') ?></p>
