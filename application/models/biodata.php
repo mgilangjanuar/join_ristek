@@ -47,12 +47,12 @@ Class Biodata extends CI_Model {
 		// check if timestamp available or not
 		$this->db->select('timestamp');
 		$this->db->where('username', $username);
-		$result = $this->db->get('biodata')->row();
+		$result = $this->db->get('biodata')->num_rows();
 
 		// if timestamp NULL, user not yet registered
-		if (count($result) == 0) return false;
+		if ($result == 0) return false;
 		else {
-			if ($result->timestamp == NULL) return false;
+			if ($result->row()->timestamp == NULL) return false;
 			else return true;
 		}		
 	}
