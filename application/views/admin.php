@@ -50,7 +50,9 @@
 									<span class="text-danger pull-right"><b>E &nbsp;</b></span>
 									<?php endif; ?>
 
-									<?php if ($p->isPil2Qualified != 0): ?>
+									<?php if ($p->sig2 == $p->sig1): ?>
+									<span class="text-muted pull-right"><b>Q2 &nbsp;</b></span>
+									<?php else if ($p->isPil2Qualified != 0): ?>
 									<span class="text-success pull-right"><b>Q2 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>Q2 &nbsp;</b></span>
