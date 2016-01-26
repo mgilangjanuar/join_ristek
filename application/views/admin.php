@@ -26,7 +26,7 @@
 				  				<div class="pull-left">				      				
 									<?php if ($p->sig2 == $p->sig1): ?>
 									<span class="text-muted pull-right"><b>T2 &nbsp;</b></span>
-									<?php else if (($p->tugas2 != NULL)): ?>
+									<?php elseif (($p->tugas2 != NULL)): ?>
 									<span class="text-success pull-right"><b>T2 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>T2 &nbsp;</b></span>
@@ -50,7 +50,10 @@
 									<span class="text-danger pull-right"><b>E &nbsp;</b></span>
 									<?php endif; ?>
 									
-									<?php if (($p->isPil2Qualified != 0)): ?>
+									<!-- nope -->
+									<?php if ($p->sig2 == $p->sig1): ?>
+									<span class="text-muted pull-right"><b>Q2 &nbsp;</b></span>
+									<?php elseif (($p->isPil2Qualified != 0)): ?>
 									<span class="text-success pull-right"><b>Q2 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>Q2 &nbsp;</b></span>
