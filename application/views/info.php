@@ -107,14 +107,25 @@
 						    		<h3 class="panel-title text-center">Benefit</h3>
 						  		</div>
 						  		<div class="panel-body">
-							    	<!-- <ul class="info-content">
-							    		<li>Menjadikan Ristek Fasilkom UI menjadi rumah terbaik dalam pengembangan minat-bakat yang terkait dengan teknologi informasi bagi seluruh mahasiswa Fasilkom UI</li>
-							    		<li>Memiliki portofolio Ristek Fasilkom UI yang berisi produk hasil pengembangan dari setiap SIG</li>
-							    		<li>Menjadi juara umum pada Gemastik 9</li>
-							    		<li>Memunculkan juara-juara baru pada kompetisi berbasis teknologi informasi</li>
-							    		<li>Setiap anggota Ristek Fasilkom UI siap untuk terjun ke dalam proyek nyata</li>
-							    		<li>Membangun citra Ristek Fasilkom UI yang positif bagi internal maupun eksternal</li>
-							    	</ul> -->							    	
+							    	<ul class="info-content">
+							    		<li>
+							    			Mempunyai relasi ke anggota dan alumni Ristek Fasilkom UI yang sudah berhasil di nasional maupun internasional, yang di antaranya <b>membangun startup, software engineer di Sillicon Valey, dan peruashaan IT ternama lainnya</b>
+							    		</li>
+							    		<li>
+							    			Mendapatkan ilmu terbaik dan terbaru di dunia IT yang tidak bisa didapatkan di tempat lain di Fasilkom 
+							    		</li>
+							    		<li>
+							    			Menjadi bagian dari mahasiswa yang berprestasi di Fasilkom UI, di antaranya: <b>World Finalists ACM-ICPC, Juara umum Gemastik6 dan Gemastik7, Juara 1 CTF Hacking, dan Juara 1 CTF Forensic</b>
+							    		</li>
+							    		<li>Dipersiapkan untuk memenangkan lomba tingkat nasional dan internasional</li>
+							    		<li>Tempat yang cocok untuk sharing pengetahuan dan berkarya (paper ataupun product) di bidang IT</li>
+							    		<li>Membangun dan memperluas relasi dengan partner industri di bidang IT</li>
+							    		<li>Saling berkolaborasi dengan para anggota dan alumni Ristek Fasilkom UI untuk menciptakan development culture yang lebih baik di Fasilkom UI</li>
+							    		<li>Mempelajari dan menjelajahi hal yang belum anda pelajari, seperti dunia silat hitam (NetSOS), infrastructure (Embed), big data (Data Science) and analytic (CP)</li>
+							    		<li>Mendapatkan kesempatan untuk terjun langsung menyelesaikan suatu project IT secara profesional, bekerja sama dengan divisi Project Development</li>
+							    		<li>Mempelajari bagaimana membangun hubungan internal yang baik sekaligus mengawasi kinerja dan proker tiap SIG bersama dengan Human Resource Management Ristek Fasilkom UI</li>
+							    		<li>Mempelajari secara mendalam bagaimana menganalisa, menyusun, membuat, dan memaintain marketing dan branding Ristek Fasilkom UI bersama dengan Public Relation Ristek Fasilkom UI</li>
+							    	</ul>							    	
 						  		</div>
 							</div>							
 						</div>
