@@ -35,12 +35,7 @@ Class Dashboard extends MY_Controller {
 						// redirect to sso login
 						redirect(site_url('ssologin'));
 					} else {
-						// user logged in
-
-						// set error custom message
-						
-						$this->form_validation->set_message('required', '%s is empty, not a valid URL, or it is not accessible/exists');
-
+						// user logged in						
 						// check which form submitted
 						if ($this->input->post('which_form') == 'resume') {
 							// form resume submitted
@@ -73,7 +68,9 @@ Class Dashboard extends MY_Controller {
 							// run form validation
 							if ($this->form_validation->run()) $result = $this->tugas->submitTugas2($user['username'], $link);															
 						}
-					}					
+					}	
+
+					redirect(site_url('dashboard'));
 				}
 
 				// get tugas data
