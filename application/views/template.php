@@ -18,16 +18,7 @@
 			<link rel="stylesheet" href="<?= base_url().'assets/css/main.css' ?>">
 		</noscript>	
 		<link rel="shortcut icon" type="image/x-icon" href="<?= base_url().'assets/img/favicon.ico' ?>">
-
-		<style>
-			header {
-				background: url('http://ristek.cs.ui.ac.id/img/bg.png');
-			}
-
-			header .page-title {
-				font-size: 1em;
-			}
-		</style>
+		
 	</head>
 	<body>
 		<header>			
