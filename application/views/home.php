@@ -124,8 +124,8 @@
 								<p class="text-center">Registrasi dibuka pada 26 Januari 2016 pkl 19.00wib.</p>					
 								<?php endif; ?>
 								<p> Buka <?= strtotime('26th January 2016 19:00:00') ?></p>
-								<p><?= strtotime('2016-01-26 16:55:00.0') ?></p>
-								<p>today 5:13 pm<?= strtotime('2016-01-26 17:13:00.0') ?></p>
+								<p> today 4:55 pm <?= strtotime('2016-01-26 16:55:00.0') ?></p>
+								<p> today 5:13 pm <?= strtotime('2016-01-26 17:13:00.0') ?></p>
 								<p> Sekarang <?= strtotime('now') ?></p>
 
 								<div class="col-md-4 col-md-offset-2 text-center ">					
