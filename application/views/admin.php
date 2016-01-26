@@ -24,39 +24,39 @@
 				  		<div class="panel panel-default">
 				  			<div class="panel-heading">
 				  				<div class="pull-left">				      				
-									<?php if ($p->sig2 == $p->sig1):?>
+									<?php if ($p->sig2 == $p->sig1): ?>
 									<span class="text-muted pull-right"><b>T2 &nbsp;</b></span>
-									<?php else if (($p->tugas2 != NULL)):?>
+									<?php else if (($p->tugas2 != NULL)): ?>
 									<span class="text-success pull-right"><b>T2 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>T2 &nbsp;</b></span>
 									<?php endif; ?>																			
 
-									<?php if (($p->tugas1 != NULL)):?>
+									<?php if (($p->tugas1 != NULL)): ?>
 									<span class="text-success pull-right"><b>T1 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>T1 &nbsp;</b></span>
 									<?php endif; ?>
 
-									<?php if (($p->resume != NULL)):?>
+									<?php if (($p->resume != NULL)): ?>
 									<span class="text-success pull-right"><b>R &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>R &nbsp;</b></span>
 									<?php endif; ?>
 
-									<?php if (($p->essay != NULL)):?>
+									<?php if (($p->essay != NULL)): ?>
 									<span class="text-success pull-right"><b>E &nbsp;</b></span>
 									<?php else: ?>										
 									<span class="text-danger pull-right"><b>E &nbsp;</b></span>
 									<?php endif; ?>
 
 									<?php if ($p->sig2 == $p->sig1): ?>
-									<span class="text-muted pull-right"><b>Q2 &nbsp;</b></span>
-									<?php else if ($p->isPil2Qualified != 0): ?>
-									<span class="text-success pull-right"><b>Q2 &nbsp;</b></span>
+									<span class="text-muted pull-right"><b>T2 &nbsp;</b></span>
+									<?php else if (($p->isPil2Qualified != 0)): ?>
+									<span class="text-success pull-right"><b>T2 &nbsp;</b></span>
 									<?php else: ?>
-									<span class="text-danger pull-right"><b>Q2 &nbsp;</b></span>
-									<?php endif; ?>
+									<span class="text-danger pull-right"><b>T2 &nbsp;</b></span>
+									<?php endif; ?>		
 
 									<?php if ($p->isPil1Qualified != 0): ?>
 									<span class="text-success pull-right"><b>Q1 &nbsp;</b></span>
