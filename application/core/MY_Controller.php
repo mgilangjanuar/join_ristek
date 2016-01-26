@@ -7,6 +7,7 @@ class MY_Controller extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->helper('date');
 
+		ini_set('date.timezone', 'Asia/Jakarta');
 		date_default_timezone_set('Asia/Jakarta');
 	}
 
