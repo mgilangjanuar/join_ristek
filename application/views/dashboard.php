@@ -160,7 +160,7 @@
 						    	<h5 class="panel-title">Submisi Link Resume dan Tugas</h5>
 						  	</div>
 						  	<div class="panel-body">
-						  		<?php if (time() < (strtotime('6th February 2016 23:55:00.0')-(21*60+30))): ?>
+						  		<?php if (time() > (strtotime('6th February 2016 23:55:00.0')-(21*60+30))): ?>
 						  		<div class="well well-lg content-font">Masa pengumpulan tugas sudah berakhir. Anda tidak diperkenankan lagi untuk submit tugas.</div>
 						  		<?php else: ?>
 						  		
