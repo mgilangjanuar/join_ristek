@@ -136,7 +136,11 @@
 				</div>
 			</div>			
 			<footer class="text-center">
-				<span class="content-font text-info">Ristek Fasilkom UI. Powered by <a href="http://www.codeigniter.com" class="btn btn-xs btn-default">Codeigniter</a>. Available on <a href="https://github.com/jundialwan/join_ristek" class="btn btn-xs btn-default">GitHub</a></span>
+				<div class="container text-center">					
+					<div class="row">						
+						<span class="content-font text-info">Ristek Fasilkom UI. Powered by <a href="http://www.codeigniter.com" class="btn btn-xs btn-default">Codeigniter</a>. Available on <a href="https://github.com/jundialwan/join_ristek" class="btn btn-xs btn-default">GitHub</a></span>
+					</div>
+				</div>
 			</footer>
 		</div>	
 
