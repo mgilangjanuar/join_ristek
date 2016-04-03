@@ -2,8 +2,7 @@
 
 Class Admin747835 extends MY_Controller {
 	public function __construct() {
-		parent::__construct();
-		$this->load->model('sigproperty');
+		parent::__construct();		
 	}
 
 	public function index() {

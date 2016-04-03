@@ -5,13 +5,11 @@ Class Dashboard extends MY_Controller {
 		parent::__construct();
 
 		# load helper and library
-		$this->load->helper('form');
-		$this->load->model('sigproperty');		
+		$this->load->helper('form');		
 		$this->load->library('form_validation');
 	}
 
-	public function index() {	
-
+	public function index() {			
 		// check if user logged in or not
 		if (!($this->is_logged_in())) {
 			// user not logged in
@@ -22,7 +20,8 @@ Class Dashboard extends MY_Controller {
 			$user = $this->session->userdata('userdata');
 
 			// if admin redirect to admin page
-			// if ($this->isAdmin($user['username'])) redirect(site_url('admin747835'));
+			if ( ($this->isAdmin($user['username'])) & ($user['username'] != 'jundi.ahmad') ) 
+				redirect(site_url('admin747835'));
 
 			// check if user registered or not
 			if ($this->isRegistered($user['username'])) {
@@ -67,10 +66,8 @@ Class Dashboard extends MY_Controller {
 
 							// run form validation
 							if ($this->form_validation->run()) $result = $this->tugas->submitTugas2($user['username'], $link);															
-						}
+						}						
 					}	
-
-					redirect(site_url('dashboard'));
 				}
 
 				// get tugas data
@@ -89,7 +86,9 @@ Class Dashboard extends MY_Controller {
 				$data['sigprop2'] = $sigprop2;
 
 				// is User Qualified
-				$data['isUserQualified'] = $this->kualifikasi->getQualifyData($user['biohash']);								
+				$data['isUserQualified'] = $this->kualifikasi->getQualifyData($user['biohash']);
+
+				if ($_SERVER['REQUEST_METHOD'] == 'POST') $data['afterSubmit'] = 1;				
 
 				// render dashboard
 				$data['title'] = 'Dashboard';				

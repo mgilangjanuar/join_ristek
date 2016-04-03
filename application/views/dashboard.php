@@ -5,7 +5,7 @@
 		<?php else: ?>
 		<li>
 		<?php endif; ?>
-	  		<a class="ristek-color" data-toggle="tab" href="#home">HOME</a>
+	  		<a class="ristek-color" data-toggle="tab" href="#beranda">BERANDA</a>
 	  	</li>
 	  	<?php if (!isset($afterSubmit)): ?>
 		<li>
@@ -20,9 +20,9 @@
 
 	<div class="tab-content">
 		<?php if (!isset($afterSubmit)): ?>
-		<div id="home" class="tab-pane in active">	 
+		<div id="beranda" class="tab-pane in active">	 
 		<?php else: ?>
-		<div id="home" class="tab-pane">	 
+		<div id="beranda" class="tab-pane">	 
 		<?php endif; ?>
 	  		<br>
 	  		<div class="col-md-12">
@@ -55,16 +55,23 @@
 		  						<div class="panel-title">SIG/Divisi Plihan</div>
 		  					</div>
 		  					<div class="panel-body">
-		  						<div class="col-md-6 text-center">
+		  						<?php if ($sigprop2->sig != $sigprop1->sig):?>
+		  						<div class="col-md-12 text-center">
 		  							<span class="content-font">Pilihan 1</span><br><br>
+		  						<?php else: ?>
+								<div class="col-md-12 text-center">
+		  							<span class="content-font">Pilihan</span><br><br>
+		  						<?php endif; ?>
 		  							<img class="img-responsive center-block" src="<?= base_url().($sigprop1->logolink) ?>" alt="CP" width="60" height="80">
 									<span class="content-font headline"><b><?= $sigprop1->signame ?></b></span>
 		  						</div>
+		  						<?php if ($sigprop2->sig != $sigprop1->sig):?>
 		  						<div class="col-md-6 text-center">
 		  							<span class="content-font">Pilihan 2</span><br><br>
 		  							<img class="img-responsive center-block" src="<?= base_url().($sigprop2->logolink) ?>" alt="CP" width="60" height="80">
 									<span class="content-font headline"><b><?= $sigprop2->signame ?></b></span>
 		  						</div>
+		  						<?php endif; ?>
 		  					</div>
 		  				</div>
 		  				<div class="panel panel-primary info-panel">
@@ -72,20 +79,26 @@
 		  						<div class="panel-title">STATUS SELEKSI TUGAS</div>
 		  					</div>
 		  					<div class="panel-body">
+		  						<?php if ($sigprop2->sig != $sigprop1->sig):?>
 		  						<span class="content-font"><b>SIG/Divisi Pilihan 1:</b></span>
+		  						<?php else: ?>
+		  						<span class="content-font"><b>SIG/Divisi Pilihan:</b></span>
+		  						<?php endif; ?>
 								
 								<?php if ($isUserQualified->isPil1Qualified == 0): ?>
 		  						<h4 class="text-danger text-center"><b>BELUM LOLOS SELEKSI TUGAS</b></h4>
 		  						<?php else: ?>
 		  						<h4 class="text-success text-center"><b>LOLOS SELEKSI TUGAS</b></h4>
 		  						<?php endif; ?>
-
+								
+								<?php if ($sigprop2->sig != $sigprop1->sig):?>
 		  						<span class="content-font"><b>SIG/Divisi Pilihan 2:</b></span>
 
 		  						<?php if ($isUserQualified->isPil2Qualified == 0): ?>
 		  						<h4 class="text-danger text-center"><b>BELUM LOLOS SELEKSI TUGAS</b></h4>
 		  						<?php else: ?>
 		  						<h4 class="text-success text-center"><b>LOLOS SELEKSI TUGAS</b></h4>
+		  						<?php endif; ?>
 		  						<?php endif; ?>
 
 		  					</div>
@@ -147,7 +160,7 @@
 						    	<h5 class="panel-title">Submisi Link Resume dan Tugas</h5>
 						  	</div>
 						  	<div class="panel-body">
-						  		<?php if (time() < (strtotime('6th February 2016 23:55:00.0')-(21*60+30))): ?>
+						  		<?php if (time() > (strtotime('6th February 2016 23:55:00.0')-(21*60+30))): ?>
 						  		<div class="well well-lg content-font">Masa pengumpulan tugas sudah berakhir. Anda tidak diperkenankan lagi untuk submit tugas.</div>
 						  		<?php else: ?>
 						  		

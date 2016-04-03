@@ -24,37 +24,40 @@
 				  		<div class="panel panel-default">
 				  			<div class="panel-heading">
 				  				<div class="pull-left">				      				
-									<?php if ($p->sig2 == $p->sig1):?>
+									<?php if ($p->sig2 == $p->sig1): ?>
 									<span class="text-muted pull-right"><b>T2 &nbsp;</b></span>
-									<?php elseif (($p->tugas2 != NULL)):?>
+									<?php elseif (($p->tugas2 != NULL)): ?>
 									<span class="text-success pull-right"><b>T2 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>T2 &nbsp;</b></span>
 									<?php endif; ?>																			
 
-									<?php if (($p->tugas1 != NULL)):?>
+									<?php if (($p->tugas1 != NULL)): ?>
 									<span class="text-success pull-right"><b>T1 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>T1 &nbsp;</b></span>
 									<?php endif; ?>
 
-									<?php if (($p->resume != NULL)):?>
+									<?php if (($p->resume != NULL)): ?>
 									<span class="text-success pull-right"><b>R &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>R &nbsp;</b></span>
 									<?php endif; ?>
 
-									<?php if (($p->essay != NULL)):?>
+									<?php if (($p->essay != NULL)): ?>
 									<span class="text-success pull-right"><b>E &nbsp;</b></span>
 									<?php else: ?>										
 									<span class="text-danger pull-right"><b>E &nbsp;</b></span>
 									<?php endif; ?>
-
-									<?php if ($p->isPil2Qualified != 0): ?>
+									
+									<!-- nope -->
+									<?php if ($p->sig2 == $p->sig1): ?>
+									<span class="text-muted pull-right"><b>Q2 &nbsp;</b></span>
+									<?php elseif (($p->isPil2Qualified != 0)): ?>
 									<span class="text-success pull-right"><b>Q2 &nbsp;</b></span>
 									<?php else: ?>
 									<span class="text-danger pull-right"><b>Q2 &nbsp;</b></span>
-									<?php endif; ?>
+									<?php endif; ?>		
 
 									<?php if ($p->isPil1Qualified != 0): ?>
 									<span class="text-success pull-right"><b>Q1 &nbsp;</b></span>
@@ -186,6 +189,8 @@
 
 				      					</div>
 				      				</div>
+
+				      				<?php if ($p->sig2 != $p->sig1): ?>		
 				      				<form action="<?= site_url('admin747835') ?>" method="POST">
 				      					<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
 				      					<input type="hidden" name="biohash" value="<?= $p->biohash ?>">
@@ -196,7 +201,9 @@
 				      					<?php else: ?>				      					
 				      					<button type="submit" class="btn btn-primary pull-right">Undo Qualify Pil. 2</button>
 				      					<?php endif; ?>	
-				      				</form>					      				
+				      				</form>
+									<?php endif; ?>
+				      							      				
 									<p class="pull-right">&nbsp;&nbsp;</p>
 									<form action="<?= site_url('admin747835') ?>" method="POST">
 										<input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
@@ -209,6 +216,7 @@
 				      					<button type="submit" class="btn btn-primary pull-right">Undo Qualify Pil. 1</button>
 				      					<?php endif; ?>
 				      				</form>				      				
+				      				
 				  				</div>
 				    		</div>
 				  		</div>
